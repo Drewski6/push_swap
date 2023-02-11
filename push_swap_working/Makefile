@@ -16,8 +16,6 @@ NAME = push_swap
 
 SRCS = push_swap.c \
 
-#LIBFT_SRCS = 
-
 SRCS_DIR = srcs/
 
 # ***** Includes *****

@@ -6,7 +6,7 @@
 #    By: dpentlan <dpentlan@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/07 14:36:56 by dpentlan          #+#    #+#              #
-#    Updated: 2022/11/07 14:36:58 by dpentlan         ###   ########.fr        #
+#    Updated: 2023/02/11 18:27:34 by dpentlan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,7 +99,7 @@ FT_PRINTF_OBJS_DIR = objs/
 
 # ***** Compiler and Archiver *****
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 CC = cc
 SLIB = ar rcs
 
