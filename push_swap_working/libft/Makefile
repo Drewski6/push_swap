@@ -10,7 +10,11 @@
 #                                                                              #
 # **************************************************************************** #
 
+.DEFAULT_GOAL = all
+
 NAME = libft.a
+
+# ***** Sources *****
 
 SRCS =	ft_isalpha.c \
 	ft_isdigit.c \
@@ -46,7 +50,7 @@ SRCS =	ft_isalpha.c \
 	ft_putstr_fd.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
-
+	
 BONUS_SRCS =	ft_lstnew.c \
 	ft_lstadd_front.c \
 	ft_lstsize.c \
@@ -57,31 +61,79 @@ BONUS_SRCS =	ft_lstnew.c \
 	ft_lstiter.c \
 	ft_lstmap.c \
 
-OBJS = ${SRCS:.c=.o}
+GNL_SRCS = get_next_line_bonus.c \
 
-BONUS_OBJS = ${BONUS_SRCS:.c=.o}
+FT_PRINTF_SRCS = ft_printf_bonus.c \
+	ft_printf_utils_1_bonus.c \
+	ft_printf_utils_2_bonus.c \
+	ft_printf_utils_3_bonus.c \
+	ft_printf_utils_format_switch_bonus.c \
+	ft_printf_utils_subseq_helpers_bonus.c \
+	ft_printf_utils_t_flags_bonus.c \
+	ft_printf_utils_use_flags_bonus.c
+
+SRCS_DIR = srcs/
+BONUS_SRCS_DIR = srcs/
+GNL_SRCS_DIR = srcs/
+FT_PRINTF_SRCS_DIR = srcs/
+
+# ***** Includes *****
 
 INCS = libft.h
 
+INCS_DIR = includes/
+
+# ***** Objects *****
+
+ALL_OBJS = $(OBJS) $(BONUS_OBJS) $(GNL_OBJS) $(FT_PRINTF_OBJS)
+
+OBJS = $(patsubst %.c,$(OBJS_DIR)%.o,$(SRCS))
+BONUS_OBJS = $(patsubst %.c,$(BONUS_OBJS_DIR)%.o,$(BONUS_SRCS))
+GNL_OBJS = $(patsubst %.c,$(GNL_OBJS_DIR)%.o,$(GNL_SRCS))
+FT_PRINTF_OBJS = $(patsubst %.c,$(FT_PRINTF_OBJS_DIR)%.o,$(FT_PRINTF_SRCS))
+
+OBJS_DIR = objs/
+BONUS_OBJS_DIR = objs/
+GNL_OBJS_DIR = objs/
+FT_PRINTF_OBJS_DIR = objs/
+
+# ***** Compiler and Archiver *****
+
 CFLAGS = -Wall -Wextra -Werror
-
 CC = cc
-
 SLIB = ar rcs
+
+# ***** Build *****
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(INCS)
+$(NAME): $(ALL_OBJS)
+	$(SLIB) $(NAME) -o $(ALL_OBJS)
+
+m: $(OBJS)
 	$(SLIB) $(NAME) -o $(OBJS)
 
-bonus: $(OBJS) $(BONUS_OBJS) $(INCS)
+bonus: $(OBJS) $(BONUS_OBJS)
 	$(SLIB) $(NAME) -o $(OBJS) $(BONUS_OBJS)
 
-%.o: %.c
-	$(CC) ${CFLAGS} -c $< -o ${<:.c=.o}
+$(OBJS_DIR)%.o: $(SRCS_DIR)%.c
+	@mkdir -p $(OBJS_DIR)
+	$(CC) $(CFLAGS) -c -I$(INCS_DIR) $< -o $@
+
+$(BONUS_OBJS_DIR)%.o: $(BONUS_SRCS_DIR)%.c
+	@mkdir -p $(BONUS_OBJS_DIR)
+	$(CC) $(CFLAGS) -c -I$(INCS_DIR) $< -o $@
+
+$(GNL_OBJS_DIR)%.o: $(GNL_SRCS_DIR)%.c
+	@mkdir -p $(GNL_OBJS_DIR)
+	$(CC) $(CFLAGS) -c -I$(INCS_DIR) $< -o $@
+
+$(FT_PRINTF_OBJS_DIR)%.o: $(FT_PRINTF_SRCS_DIR)%.c
+	@mkdir -p $(FT_PRINTF_OBJS_DIR)
+	$(CC) $(CFLAGS) -c -I$(INCS_DIR) $< -o $@
 
 clean:
-	rm -f $(OBJS) $(BONUS_OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS) $(GNL_OBJS) $(FT_PRINTF_OBJS)
 
 fclean:	clean
 	rm -f $(NAME)

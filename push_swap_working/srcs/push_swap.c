@@ -12,7 +12,10 @@
 
 #include "push_swap.h"
 
-int main (void)
+int main (int argc, char **argv)
 {
+	ft_printf("argc = %d\n", argc);
+	ft_printf("argv = %p\n", argv);
+
 	return 0;
 }
