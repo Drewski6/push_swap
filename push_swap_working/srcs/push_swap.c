@@ -12,14 +12,46 @@
 
 #include "push_swap.h"
 
-/*	*** error_and_close (error and close) ***
+/*	*** error (error and close) ***
  *
- *	
+ *	Displays "Error\n" to the terminal.
  */
 
-int	error_and_close()
+int	error()
 {
+	write(2, "Error\n", 6);
+	return (0);
+}
 
+/*	*** arg_switch (argument switch) ***
+ *
+ *	Acts as a switch for which functions to use for parsing the arguments.
+ *	Takes an int 'argc' from main and a table of args 'argv' from main.
+ *	Returns address to t_list 'a' on success or 0 "NULL" on ERROR.
+ */
+
+t_list	*arg_switch(t_list *a, int argc, char **argv)
+{
+	if (argc == 1)
+	{
+		error();
+		return (0);
+	}
+	else if (argc == 2)
+	{
+		a = s_arg_parse(argv[1]))
+		if (!a) 
+		{
+			error();
+			return (0);
+		}
+		return (a);
+	}
+	else if (argc > 2)
+	{
+
+		return (a);
+	}
 	return (0);
 }
 
@@ -30,11 +62,11 @@ int	error_and_close()
 
 int main (int argc, char **argv)
 {
-	if (argc == 1)
-	
-	ft_printf("%s\n", get_next_line(0));
-	ft_printf("argc = %d\n", argc);
-	ft_printf("argv = %p\n", argv);
+	t_list	*a;
 
+	a = 0;
+	a = arg_switch(argc, argv);
+	if (!a)
+		return (-1);
 	return 0;
 }

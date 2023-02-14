@@ -15,6 +15,8 @@ NAME = push_swap
 # ***** Sources *****
 
 SRCS = push_swap.c \
+	ps_utils_args.c \
+	ps_utils_t_list.c \
 
 SRCS_DIR = srcs/
 

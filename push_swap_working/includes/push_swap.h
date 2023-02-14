@@ -14,4 +14,19 @@
 # define PUSH_SWAP_H
 # include "../libft/includes/libft.h"
 
+typedef struct s_list {
+	s_list	*next;
+	int		value;
+}				t_list;
+
+//	push_swap.c
+int	error();
+t_list	*arg_switch(int argc, char **argv);
+
+//	ps_utils_args.c
+int	s_arg_parse(char *s);
+
+//	ps_utils_t_list.c
+t_list	*t_list_construct(char **table);
+
 #endif
