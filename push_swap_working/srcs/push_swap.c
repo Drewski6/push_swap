@@ -68,6 +68,20 @@ int	main(int argc, char **argv)
 		return (-1);
 	}
 	t_list_print(a);
+
+/*
+	- Call sorting algo here.
+		- initialize list b
+
+	- Operation list to buffer.
+		- Thinking of haing each operation function call also write its name
+		to a buffer followed by a newline.
+		- purge the buffer at the end. Can use a write_to_buf like function.
+			- Then ft_printf("%s", buffer)
+		- ex:
+			[pa\nsa\npb\npa\nsa\n\0]
+*/
+
 	ft_lstclear(&a, &t_list_free_content);
 	return (0);
 }

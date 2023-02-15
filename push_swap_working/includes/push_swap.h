@@ -36,6 +36,9 @@ t_list	*t_list_construct(char **table);
 //	ps_utils_t_list_2.c
 void	t_list_free_content(void *content);
 
+//	ps_ops_1.c
+
+
 //	ps_debug_tools.c
 void	t_list_print(t_list *start);
 void	table_print(char **table);
