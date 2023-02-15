@@ -17,7 +17,7 @@
  *	Displays "Error\n" to the terminal.
  */
 
-int	error()
+int	error(void)
 {
 	write(2, "Error\n", 6);
 	return (0);
@@ -33,23 +33,19 @@ int	error()
 t_list	*arg_switch(t_list *a, int argc, char **argv)
 {
 	if (argc == 1)
-	{
-		error();
 		return (0);
-	}
 	else if (argc == 2)
 	{
-		a = s_arg_parse(argv[1]))
-		if (!a) 
-		{
-			error();
+		a = s_arg_parse(argv[1]);
+		if (!a)
 			return (0);
-		}
 		return (a);
 	}
 	else if (argc > 2)
 	{
-
+		a = m_arg_parse(argv);
+		if (!a)
+			return (0);
 		return (a);
 	}
 	return (0);
@@ -60,13 +56,18 @@ t_list	*arg_switch(t_list *a, int argc, char **argv)
  *	Entry point for push_swap program.
  */
 
-int main (int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_list	*a;
 
 	a = 0;
-	a = arg_switch(argc, argv);
+	a = arg_switch(a, argc, argv);
 	if (!a)
+	{
+		error();
 		return (-1);
-	return 0;
+	}
+	t_list_print(a);
+	ft_lstclear(&a, &t_list_free_content);
+	return (0);
 }

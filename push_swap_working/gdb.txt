@@ -1,0 +1,237 @@
++define hook-next
+Reading symbols from ./push_swap...
++break t_list_construct 
+Breakpoint 1 at 0x161a: file srcs/ps_utils_t_list.c, line 117.
++c
+The program is not being run.
++run
+Starting program: /home/drew/Documents/ecole_42/push_swap/push_swap_working/push_swap 234\ 87\ 97\ 9898\ +09\ 55\ -8\ 8\ -2147483648\ +2147483647\ 87987987\ 1\ -23-3\ +-89
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, t_list_construct (table=0x55555555c2a0) at srcs/ps_utils_t_list.c:117
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++print num
+$1 = 234
++n
+++refresh
++n
+++refresh
++n
+++refresh
++print a
+$2 = (t_list *) 0x55555555c500
++print *a
+$3 = {content = 0x55555555c4e0, next = 0x0}
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++print a
+$4 = (t_list *) 0x0
++print *a
+Cannot access memory at address 0x0
++start
+Temporary breakpoint 2 at 0x555555555296: file srcs/push_swap.c, line 61.
+Starting program: /home/drew/Documents/ecole_42/push_swap/push_swap_working/push_swap 234\ 87\ 97\ 9898\ +09\ 55\ -8\ 8\ -2147483648\ +2147483647\ 87987987\ 1\ -23-3\ +-89
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Temporary breakpoint 2, main (argc=2, argv=0x7fffffffdc78) at srcs/push_swap.c:61
++run
+Starting program: /home/drew/Documents/ecole_42/push_swap/push_swap_working/push_swap 234\ 87\ 97\ 9898\ +09\ 55\ -8\ 8\ -2147483648\ +2147483647\ 87987987\ 1\ -23-3\ +-89
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, t_list_construct (table=0x55555555c2a0) at srcs/ps_utils_t_list.c:117
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++print i
+$5 = 3
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++print a*
+A syntax error in expression, near `'.
++print *a
+$6 = {content = 0x55555555c4e0, next = 0x55555555c540}
++print *a->next
+$7 = {content = 0x55555555c520, next = 0x55555555c580}
++print *a->next->next
+$8 = {content = 0x55555555c560, next = 0x55555555c5c0}
++print *a->next->next->next
+$9 = {content = 0x55555555c5a0, next = 0x0}
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++s
+t_list_add (a=0x7fffffffdaa8, content=0x55555555c5e0, i=4) at srcs/ps_utils_t_list.c:81
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++print a
+$10 = (t_list **) 0x7fffffffdaa8
++n
+++refresh
++n
+++refresh
++print a
+$11 = (t_list **) 0x7fffffffdaa8
++print a
+$12 = (t_list **) 0x7fffffffdaa8
++print *a
+$13 = (t_list *) 0x0
++n
+++refresh
++n
+++refresh
+t_list_construct (table=0x55555555c2a0) at srcs/ps_utils_t_list.c:131
++n
+++refresh
++n
+++refresh
++n
+++refresh
+s_arg_parse (s=0x7fffffffe06b "234 87 97 9898 +09 55 -8 8 -2147483648 +2147483647 87987987 1 -23-3 +-89") at srcs/ps_utils_args.c:61
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
+arg_switch (a=0x0, argc=2, argv=0x7fffffffdc78) at srcs/push_swap.c:43
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
+main (argc=2, argv=0x7fffffffdc78) at srcs/push_swap.c:65
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
+__libc_start_call_main (main=main@entry=0x555555555283 <main>, argc=argc@entry=2, argv=argv@entry=0x7fffffffdc78) at ../sysdeps/nptl/libc_start_call_main.h:74
++exit

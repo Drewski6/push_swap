@@ -14,19 +14,30 @@
 # define PUSH_SWAP_H
 # include "../libft/includes/libft.h"
 
-typedef struct s_list {
-	s_list	*next;
-	int		value;
-}				t_list;
-
 //	push_swap.c
-int	error();
-t_list	*arg_switch(int argc, char **argv);
+int		error(void);
+t_list	*arg_switch(t_list *a, int argc, char **argv);
+//	int main (int argc, char **argv);
 
 //	ps_utils_args.c
-int	s_arg_parse(char *s);
+void	table_free(char **table);
+int		table_err_check(char **table);
+char	**table_dup(char **table);
+t_list	*m_arg_parse(char **s_table);
+t_list	*s_arg_parse(char *s);
 
-//	ps_utils_t_list.c
+//	ps_utils_t_list_1.c
+int		t_list_dup_check(t_list *start, int new_value);
+int		t_list_add(t_list **a, void *content);
+int		*t_list_alloc_content(int number);
+int		t_list_atoi_wrapper(char *str_num, int *number);
 t_list	*t_list_construct(char **table);
+
+//	ps_utils_t_list_2.c
+void	t_list_free_content(void *content);
+
+//	ps_debug_tools.c
+void	t_list_print(t_list *start);
+void	table_print(char **table);
 
 #endif
