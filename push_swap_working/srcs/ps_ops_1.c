@@ -59,7 +59,6 @@ int	rra(t_list **a, t_list **ops)
 {
 	t_list	*last;
 
-
 	last = ft_lstlast(*a);
 	last->next = (*a);
 	(*a) = last;

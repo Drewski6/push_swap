@@ -111,13 +111,13 @@ int	sort_entry(t_list **a)
 			return (-1);
 		}
 	}
-	else if (size <= 6)
+	else if (size <= 5)
 	{
-		ft_printf("Size is less than or equal to 6.\n");
+		ft_printf("Size is less than or equal to 5.\n");
 	}
 	else
 	{
-		ft_printf("Size is greater than 6.\n");
+		ft_printf("Size is greater than 5.\n");
 	}
 	t_list_print(*a, &t_list_print_int, 1);
 	t_list_print(ops, &t_list_print_str, 0);
