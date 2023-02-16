@@ -12,6 +12,55 @@
 
 #include "push_swap.h"
 
+/*
+ *
+ *
+ */
+
+int	sort_two_ops(t_list **a, t_list **ops,
+		int (*op1)(t_list **, t_list **),
+		int (*op2)(t_list **, t_list **))
+{
+	if (op1(a, ops))
+		return (-1);
+	if (op2(a, ops))
+		return (-1);
+	return (0);
+}
+
+/*	***  () ***
+ *
+ *
+ */
+
+int	sort_three(t_list **a, t_list **ops)
+{
+	int	first;
+	int	second;
+	int	third;
+	int	ret;
+
+	first = *(int *)(*a)->content;
+	second = *(int *)(*a)->next->content;
+	third = *(int *)(*a)->next->next->content;
+	ret = 0;
+	if (first < second && second < third && third > first)
+		return (0);
+	else if (first > second && second < third && third > first)
+		ret = sa(a, ops);
+	else if (first > second && second > third && third < first)
+		ret = sort_two_ops(a, ops, &sa, &rra);
+	else if (first > second && second < third && third < first)
+		ret = ra(a, ops);
+	else if (first < second && second > third && third > first)
+		ret = sort_two_ops(a, ops, &sa, &ra);
+	else if (first < second && second > third && third < first)
+		ret = rra(a, ops);
+	if (ret < 0)
+		return (-1);
+	return (0);
+}
+
 /*	*** sort_le_three (sort less than or equal to three) ***
  *
  *	Manages sorting when the list is less than or equal to 3 items.
@@ -26,13 +75,15 @@ int	sort_le_three(t_list **a, t_list **ops, int size)
 		return (0);
 	else if (size == 2)
 	{
-		if (*(int *)(*a)->content > *(int *)(*a)->next->content)
+		if (*(int *)(*a)->content < *(int *)(*a)->next->content)
 			return (0);
 		if (sa(a, ops))
 			return (-1);
 	}
 	else if (size == 3)
 	{
+		if (sort_three(a, ops))
+			return (-1);
 	}
 	return (0);
 }

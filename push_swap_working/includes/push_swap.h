@@ -35,16 +35,23 @@ t_list	*t_list_construct(char **table);
 
 //	ps_utils_t_list_2.c
 void	t_list_free_content(void *content);
+int		int_max_check(char *str_num, int *number);
 
 //	ps_utils_t_list_ops.c
 int		t_list_ops_add(t_list **ops, char *content);
 
 //	ps_algo_1.c
+int		sort_two_ops(t_list **a, t_list **ops,
+			int (*op1)(t_list **, t_list **),
+			int (*op2)(t_list **, t_list **));
+int		sort_three(t_list **a, t_list **ops);
 int		sort_le_three(t_list **a, t_list **ops, int size);
 int		sort_entry(t_list **a);
 
 //	ps_ops_1.c
 int		sa(t_list **a, t_list **ops);
+int		ra(t_list **a, t_list **ops);
+int		rra(t_list **a, t_list **ops);
 
 //	ps_debug_tools.c
 void	t_list_print_int(int i, t_list *current, char h_flag);

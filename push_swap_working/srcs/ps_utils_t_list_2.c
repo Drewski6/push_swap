@@ -25,3 +25,24 @@ void	t_list_free_content(void *content)
 	free(content);
 	return ;
 }
+
+/*
+ *
+ *
+ */
+
+int	int_max_check(char *str_num, int *number)
+{
+	char	*itoa_ret;
+
+	itoa_ret = ft_itoa(*number);
+	if (!itoa_ret)
+		return (-1);
+	if (ft_strncmp(str_num, itoa_ret, ft_strlen(str_num)))
+	{
+		free(itoa_ret);
+		return (-1);
+	}
+	free(itoa_ret);
+	return (0);
+}

@@ -29,3 +29,44 @@ int	sa(t_list **a, t_list **ops)
 		return (-1);
 	return (0);
 }
+
+/*	*** ra (swap list a) ***
+ *
+ *
+ */
+
+int	ra(t_list **a, t_list **ops)
+{
+	t_list	*second;
+	t_list	*last;
+
+	second = (*a)->next;
+	last = ft_lstlast(*a);
+	last->next = (*a);
+	last->next->next = 0;
+	(*a) = second;
+	if (t_list_ops_add(ops, "ra\n"))
+		return (-1);
+	return (0);
+}
+
+/*	*** rra (swap list a) ***
+ *
+ *
+ */
+
+int	rra(t_list **a, t_list **ops)
+{
+	t_list	*last;
+
+
+	last = ft_lstlast(*a);
+	last->next = (*a);
+	(*a) = last;
+	while (last->next != *a)
+		last = last->next;
+	last->next = 0;
+	if (t_list_ops_add(ops, "rra\n"))
+		return (-1);
+	return (0);
+}
