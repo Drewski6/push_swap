@@ -70,7 +70,7 @@ int	table_err_check(char **table)
 char	**table_dup(char **table)
 {
 	int		i;
-	int 	size;
+	int		size;
 	char	**new_table;
 
 	i = 0;

@@ -67,7 +67,11 @@ int	main(int argc, char **argv)
 		error();
 		return (-1);
 	}
-	sort_entry(a);
+	if (sort_entry(&a))
+	{
+		error();
+		return (-1);
+	}
 	ft_lstclear(&a, &t_list_free_content);
 	return (0);
 }

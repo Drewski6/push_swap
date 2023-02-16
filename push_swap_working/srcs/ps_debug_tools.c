@@ -25,9 +25,8 @@ void	t_list_print_str(int i, t_list *current, char h_flag)
 	if (h_flag)
 		ft_printf("%5d | %s", i, (char *)current->content);
 	else
-		ft_printf("%s", (char *)current->content);
+		ft_putstr_fd((char *)current->content, 1);
 }
-
 
 /*	*** t_list_print_int (type list (struct) print integer) ***
  *
@@ -49,12 +48,13 @@ void	t_list_print_int(int i, t_list *current, char h_flag)
  *
  *	Prints all the values in a list for debugging purposes.
  *	Takes a pointer to a list start, a function pointer depending the type of
- *	content to print, and a header flag 'h_flag' which turns on headers if
- *	active.
+ *	content to print, and a header flag 'h_flag' which turns 
+ *	on headers if active.
  *	Returns nothing.
  */
 
-void	t_list_print(t_list *start, void (*ptype)(int, t_list *, char), char h_flag)
+void	t_list_print(t_list *start, void (*ptype)(int, t_list *,
+			char), char h_flag)
 {
 	t_list	*current;
 	int		i;

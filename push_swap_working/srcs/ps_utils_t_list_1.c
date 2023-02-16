@@ -117,6 +117,8 @@ int	t_list_atoi_wrapper(char *str_num, int *number)
 	if (signs > 1 || digit == 0)
 		return (-1);
 	*number = ft_atoi(str_num);
+	if (ft_strncmp(str_num, ft_itoa(*number), ft_strlen(str_num)))
+		return (-1);
 	return (0);
 }
 
