@@ -12,24 +12,60 @@
 
 #include "push_swap.h"
 
-/*	*** t_list_print (type list (struct) print) ***
+/*	*** t_list_print_str (type list (struct) print string) ***
  *
- *	Prints all the values in a list for debugging purposes.
- *	Takes a pointer to a list start.
+ *	Used with t_list_print when printing strings.
+ *	Takes an index 'i' and a t_list struct 'current' and a header flag 'h_flag'
+ *	which turns on headers if active.
  *	Returns nothing.
  */
 
-void	t_list_print(t_list *start)
+void	t_list_print_str(int i, t_list *current, char h_flag)
+{
+	if (h_flag)
+		ft_printf("%5d | %s", i, (char *)current->content);
+	else
+		ft_printf("%s", (char *)current->content);
+}
+
+
+/*	*** t_list_print_int (type list (struct) print integer) ***
+ *
+ *	Used with t_list_print when printing integers.
+ *	Takes an index 'i' and a t_list struct 'current' and a header flag 'h_flag'
+ *	which turns on headers if active.
+ *	Returns nothing.
+ */
+
+void	t_list_print_int(int i, t_list *current, char h_flag)
+{
+	if (h_flag)
+		ft_printf("%5d | %d\n", i, *(int *)current->content);
+	else
+		ft_printf("%s", (char *)current->content);
+}
+
+/*	*** t_list_print (type list (struct) print) ***
+ *
+ *	Prints all the values in a list for debugging purposes.
+ *	Takes a pointer to a list start, a function pointer depending the type of
+ *	content to print, and a header flag 'h_flag' which turns on headers if
+ *	active.
+ *	Returns nothing.
+ */
+
+void	t_list_print(t_list *start, void (*ptype)(int, t_list *, char), char h_flag)
 {
 	t_list	*current;
 	int		i;
 
 	current = start;
 	i = 0;
-	ft_printf("Index | Value\n");
+	if (h_flag)
+		ft_printf("Index | Value\n");
 	while (current)
 	{
-		ft_printf("%5d | %d\n", i, *(int *)current->content);
+		ptype(i, current, h_flag);
 		i++;
 		current = current->next;
 	}

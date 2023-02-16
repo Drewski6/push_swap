@@ -36,11 +36,18 @@ t_list	*t_list_construct(char **table);
 //	ps_utils_t_list_2.c
 void	t_list_free_content(void *content);
 
+//	ps_utils_t_list_ops.c
+int		t_list_ops_add(t_list **ops, char *content);
+
+//	ps_algo_1.c
+int		sort_entry(t_list *a);
+
 //	ps_ops_1.c
 
-
 //	ps_debug_tools.c
-void	t_list_print(t_list *start);
+void	t_list_print_int(int i, t_list *current, char h_flag);
+void	t_list_print_str(int i, t_list *current, char h_flag);
+void	t_list_print(t_list *start, void (*ptype)(int, t_list *, char), char h_flag);
 void	table_print(char **table);
 
 #endif
