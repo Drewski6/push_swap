@@ -53,6 +53,18 @@ int		sa(t_list **a, t_list **ops);
 int		ra(t_list **a, t_list **ops);
 int		rra(t_list **a, t_list **ops);
 
+//	ps_ops_2.c
+int		sb(t_list **b, t_list **ops);
+int		rb(t_list **b, t_list **ops);
+int		rrb(t_list **b, t_list **ops);
+
+//	ps_ops_3.c
+int		pa(t_list **a, t_list **b, t_list **ops);
+int		pb(t_list **a, t_list **b, t_list **ops);
+int		ss(t_list **a, t_list **b, t_list **ops);
+int		rr(t_list **a, t_list **b, t_list **ops);
+int		rrr(t_list **a, t_list **b, t_list **ops);
+
 //	ps_debug_tools.c
 void	t_list_print_int(int i, t_list *current, char h_flag);
 void	t_list_print_str(int i, t_list *current, char h_flag);

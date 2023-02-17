@@ -1,71 +1,71 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ps_ops_1.c                                         :+:      :+:    :+:   */
+/*   ps_ops_2.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpentlan <dpentlan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/15 14:56:59 by dpentlan          #+#    #+#             */
-/*   Updated: 2023/02/15 14:57:07 by dpentlan         ###   ########.fr       */
+/*   Created: 2023/02/17 08:38:02 by dpentlan          #+#    #+#             */
+/*   Updated: 2023/02/17 08:38:06 by dpentlan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-/*	*** sa (swap list a) ***
+/*	*** sb (swap list b) ***
  *
  *
  */
 
-int	sa(t_list **a, t_list **ops)
+int	sb(t_list **b, t_list **ops)
 {
-	t_list	*p_a;
+	t_list	*p_b;
 
-	p_a = (*a)->next;
-	(*a)->next = (*a)->next->next;
-	p_a->next = *a;
-	*a = p_a;
-	if (t_list_ops_add(ops, "sa\n"))
+	p_b = (*b)->next;
+	(*b)->next = (*b)->next->next;
+	p_b->next = *b;
+	*b = p_b;
+	if (t_list_ops_add(ops, "sb\n"))
 		return (-1);
 	return (0);
 }
 
-/*	*** ra (rotate list a) ***
+/*	*** rb (rotate list b) ***
  *
  *
  */
 
-int	ra(t_list **a, t_list **ops)
+int	rb(t_list **b, t_list **ops)
 {
 	t_list	*second;
 	t_list	*last;
 
-	second = (*a)->next;
-	last = ft_lstlast(*a);
-	last->next = (*a);
+	second = (*b)->next;
+	last = ft_lstlast(*b);
+	last->next = (*b);
 	last->next->next = 0;
-	(*a) = second;
-	if (t_list_ops_add(ops, "ra\n"))
+	(*b) = second;
+	if (t_list_ops_add(ops, "rb\n"))
 		return (-1);
 	return (0);
 }
 
-/*	*** rra (reverse rotate list a) ***
+/*	*** rrb (reverse rotate list b) ***
  *
  *
  */
 
-int	rra(t_list **a, t_list **ops)
+int	rrb(t_list **b, t_list **ops)
 {
 	t_list	*last;
 
-	last = ft_lstlast(*a);
-	last->next = (*a);
-	(*a) = last;
-	while (last->next != *a)
+	last = ft_lstlast(*b);
+	last->next = (*b);
+	(*b) = last;
+	while (last->next != *b)
 		last = last->next;
 	last->next = 0;
-	if (t_list_ops_add(ops, "rra\n"))
+	if (t_list_ops_add(ops, "rrb\n"))
 		return (-1);
 	return (0);
 }

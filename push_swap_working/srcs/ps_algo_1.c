@@ -99,28 +99,31 @@ int	sort_le_three(t_list **a, t_list **ops, int size)
 int	sort_entry(t_list **a)
 {
 	int		size;
+	int		ret;
 	t_list	*ops;
+	//t_list	*b;
 
+	ret = 0;
 	ops = 0;
+	//b = 0;
+	ft_printf("----- Before Sort -----\n");
+	t_list_print(*a, &t_list_print_int, 1);
 	size = ft_lstsize(*a);
 	if (size <= 3)
-	{
-		if (sort_le_three(a, &ops, size))
-		{
-			ft_lstclear(&ops, &t_list_free_content);
-			return (-1);
-		}
-	}
+		ret = sort_le_three(a, &ops, size);
 	else if (size <= 5)
-	{
 		ft_printf("Size is less than or equal to 5.\n");
-	}
 	else
-	{
 		ft_printf("Size is greater than 5.\n");
+	if (ret < 0)
+	{
+		ft_lstclear(&ops, &t_list_free_content);
+		return (-1);
 	}
-	t_list_print(*a, &t_list_print_int, 1);
+	ft_printf("----- Steps -----------\n");
 	t_list_print(ops, &t_list_print_str, 0);
+	ft_printf("----- After Sort ------\n");
+	t_list_print(*a, &t_list_print_int, 1);
 	ft_lstclear(&ops, &t_list_free_content);
 	return (0);
 }
