@@ -20,6 +20,8 @@ SRCS = push_swap.c \
 	ps_utils_t_list_2.c \
 	ps_utils_t_list_ops.c \
 	ps_algo_1.c \
+	ps_algo_2.c \
+	ps_lst_1.c \
 	ps_ops_1.c \
 	ps_ops_2.c \
 	ps_ops_3.c \

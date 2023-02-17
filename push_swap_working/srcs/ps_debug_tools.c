@@ -41,7 +41,7 @@ void	t_list_print_int(int i, t_list *current, char h_flag)
 	if (h_flag)
 		ft_printf("%5d | %d\n", i, *(int *)current->content);
 	else
-		ft_printf("%s", (char *)current->content);
+		ft_printf("%d ", *(int *)current->content);
 }
 
 /*	*** t_list_print (type list (struct) print) ***

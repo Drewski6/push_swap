@@ -32,9 +32,7 @@ int	error(void)
 
 t_list	*arg_switch(t_list *a, int argc, char **argv)
 {
-	if (argc == 1)
-		return (0);
-	else if (argc == 2)
+	if (argc == 2)
 	{
 		a = s_arg_parse(argv[1]);
 		if (!a)
@@ -61,6 +59,8 @@ int	main(int argc, char **argv)
 	t_list	*a;
 
 	a = 0;
+	if (argc == 1)
+		return (0);
 	a = arg_switch(a, argc, argv);
 	if (!a)
 	{

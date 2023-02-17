@@ -17,7 +17,7 @@
  *
  */
 
-int		pa(t_list **a, t_list **b, t_list **ops)
+int	pa(t_list **a, t_list **b, t_list **ops)
 {
 	t_list	*second_b;
 
@@ -35,7 +35,7 @@ int		pa(t_list **a, t_list **b, t_list **ops)
  *
  */
 
-int		pb(t_list **a, t_list **b, t_list **ops)
+int	pb(t_list **a, t_list **b, t_list **ops)
 {
 	t_list	*second_a;
 
