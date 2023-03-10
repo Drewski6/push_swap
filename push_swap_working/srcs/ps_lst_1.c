@@ -13,7 +13,7 @@
 #include "push_swap.h"
 
 /*
- *
+ * works with seek address right now
  *
  */
 
@@ -23,11 +23,11 @@ t_list	*ft_lstcmpsm(t_list *l1, t_list *l2)
 		return (0);
 	if (*(int *)l1->content < *(int *)l2->content)
 		return (l1);
-	return (l2);
+	return (0);
 }
 
 /*
- *
+ * works with seek address now
  *
  */
 
@@ -37,11 +37,11 @@ t_list	*ft_lstcmpbg(t_list *l1, t_list *l2)
 		return (0);
 	if (*(int *)l1->content > *(int *)l2->content)
 		return (l1);
-	return (l2);
+	return (0);
 }
 
 /*
- *
+ * doesnt work
  *
  */
 
@@ -55,7 +55,7 @@ t_list	*ft_lstcmpeq(t_list *l1, t_list *l2)
 }
 
 /*
- *
+ * working with limited testing with small and big
  *
  */
 
@@ -72,8 +72,8 @@ t_list	*ft_lstseek_a(t_list *l1, t_list *l2, t_list *(*op)(t_list *, t_list *))
 	{
 		if (!l2)
 		{
-			if (op(current, current->next))
-				ret = op(current, current->next);
+			if (op(current, ret))
+				ret = current;
 		}
 		else
 		{
@@ -82,11 +82,13 @@ t_list	*ft_lstseek_a(t_list *l1, t_list *l2, t_list *(*op)(t_list *, t_list *))
 		}
 		current = current->next;
 	}
+	if (op(current, ret))
+		ret = current;
 	return (ret);
 }
 
 /*
- *
+ * not working
  *
  */
 

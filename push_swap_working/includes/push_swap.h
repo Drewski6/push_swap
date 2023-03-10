@@ -49,6 +49,7 @@ int		sort_le_three(t_list **a, t_list **ops, int size);
 int		sort_entry(t_list **a);
 
 //	ps_algo_2.c
+int		sort_placement(t_list **lst_from, t_list **lst_to, t_list **ops);
 int		sort_le_five(t_list **a, t_list **b, t_list **ops, int size);
 
 //	ps_lst_1.c
