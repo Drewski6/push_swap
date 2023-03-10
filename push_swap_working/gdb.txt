@@ -1,0 +1,130 @@
++define hook-next
+Reading symbols from push_swap...
++break t_list_seek
+Breakpoint 1 at 0x1faa: file srcs/ps_algo_2.c, line 53.
++c
+The program is not being run.
++run
+Starting program: /home/drew/Documents/ecole_42/push_swap/push_swap_working/push_swap 5 4 3 2 1
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, t_list_seek (lst=0x7fffffffdb70, op=0x555555555f4d <ft_lstcmpbg>) at srcs/ps_algo_2.c:53
++print *(int *)lst->current
+There is no member named current.
++print *(int *)(*lst->current
+A syntax error in expression, near `'.
++print *(int *)(*lst)->current
+There is no member named current.
++print *(int *)(*lst)->content
+$1 = 1
++n
+++refresh
++n
+++refresh
++n
+++refresh
++s
+ft_lstcmpbg (l1=0x55555555e4a0, l2=0x55555555e460) at srcs/ps_algo_2.c:36
++n
+++refresh
++print *(int *)l2->content
+$2 = 2
++n
+++refresh
++n
+++refresh
++n
+++refresh
+t_list_seek (lst=0x7fffffffdb70, op=0x555555555f4d <ft_lstcmpbg>) at srcs/ps_algo_2.c:57
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++print ret 
+$3 = 0
++exit
++define hook-next
+Reading symbols from push_swap...
++exit
++define hook-next
+Reading symbols from push_swap...
++break ft_lstseek
+Breakpoint 1 at 0x209c: file srcs/ps_lst_1.c, line 53.
++run
+Starting program: /home/drew/Documents/ecole_42/push_swap/push_swap_working/push_swap 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 1 (process 80522) exited normally]
++n
+++refresh
+The program is not being run.
++run
+Starting program: /home/drew/Documents/ecole_42/push_swap/push_swap_working/push_swap 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 1 (process 80541) exited normally]
++exit
++define hook-next
+Reading symbols from push_swap...
++break ft_lstseek
+Breakpoint 1 at 0x209c: file srcs/ps_lst_1.c, line 53.
++run
+Starting program: /home/drew/Documents/ecole_42/push_swap/push_swap_working/push_swap 5 4 3 2 1
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, ft_lstseek (lst=0x7fffffffdb70, op=0x555555556041 <ft_lstcmpbg>) at srcs/ps_lst_1.c:53
++n
+++refresh
++n
+++refresh
++n
+++refresh
++print ret
+$1 = (t_list *) 0x55555555e4a0
++print *lst
+$2 = (t_list *) 0x55555555e4a0
++print *lst
+$3 = (t_list *) 0x55555555e4a0
++print *lst
+$4 = (t_list *) 0x55555555e4a0
++print *lst
+$5 = (t_list *) 0x55555555e4a0
++print *lst
+$6 = (t_list *) 0x55555555e4a0
++print *lst
+$7 = (t_list *) 0x55555555e4a0
++print *lst
+$8 = (t_list *) 0x55555555e4a0
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++n
+++refresh
++exit

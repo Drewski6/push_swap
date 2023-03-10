@@ -12,34 +12,62 @@
 
 NAME = push_swap
 
+# ***** Sources *****
+
 SRCS = push_swap.c \
+	ps_utils_args.c \
+	ps_utils_t_list_1.c \
+	ps_utils_t_list_2.c \
+	ps_utils_t_list_ops.c \
+	ps_algo_1.c \
+	ps_algo_2.c \
+	ps_lst_1.c \
+	ps_ops_1.c \
+	ps_ops_2.c \
+	ps_ops_3.c \
+	ps_debug_tools.c \
 
 SRCS_DIR = srcs/
 
-HEADERS_DIR = includes/
+# ***** Includes *****
+
+INCS = push_swap.h
+
+INCS_DIR = includes/
+
+# ***** Objects *****
 
 OBJS = $(patsubst %.c,$(OBJS_DIR)%.o,$(SRCS))
 
 OBJS_DIR = objs/
 
-CFLAGS = -Wall -Wextra -Werror
+# ***** Compile and Archiver *****
+
+CFLAGS = -Wall -Wextra -Werror -g
 
 CC = cc
+
+LIBFT = -Llibft -lft
+
+# ***** Build *****
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	make -C libft
-	$(CC) $(CFLAGS) -I$(HEADERS_DIR) $(OBJS) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) $(LIBFT) -o $(NAME)
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
-	$(CC) -c $(CFLAGS) -I$(HEADERS_DIR) $< -o $@
+	@mkdir -p $(OBJS_DIR)
+	$(CC) -c $(CFLAGS) -I$(INCS_DIR) $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	@make -C libft clean --silent
+	@rm -f $(OBJS)
 
 
 fclean:	clean
-	rm -f $(NAME)
+	@make -C libft fclean --silent
+	@rm -f $(NAME)
 
 re:	fclean all
