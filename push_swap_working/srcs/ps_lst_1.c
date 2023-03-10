@@ -90,7 +90,7 @@ t_list	*ft_lstseek_a(t_list *l1, t_list *l2, t_list *(*op)(t_list *, t_list *))
  *
  */
 
-int	ft_lstseek_i(t_list *l1, t_list *l2 ,t_list *(*op)(t_list *, t_list *))
+int	ft_lstseek_i(t_list *l1, t_list *l2, t_list *(*op)(t_list *, t_list *))
 {
 	t_list	*current;
 	int		i;
