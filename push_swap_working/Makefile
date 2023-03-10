@@ -38,6 +38,7 @@ $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
 clean:
 	rm -f $(OBJS)
 
+
 fclean:	clean
 	rm -f $(NAME)
 
