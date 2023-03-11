@@ -37,25 +37,22 @@ void	ft_lstcmp_test(t_list *a, t_list *b)
 
 int	sort_cost(t_list **lst_dest, int current_val)
 {
-	size_t	place;
-	size_t	dest_len;
+	int		i;
+	int		dest_len;
 	t_list	*current;
-	int		cost;
 
-	cost = 0;
-	place = 0;
+	i = 0;
 	dest_len = ft_lstsize(*lst_dest);
 	current = *lst_dest;
 	while (*(int *)(current)->content < current_val)
 	{
-		place++;
+		i++;
 		current = current->next;
 	}
-	if (dest_len / 2 >= place)
-		cost = (int)place;
+	if (dest_len / 2 >= i)
+		return (i);
 	else
-		cost = (int)place - dest_len;
-	return (cost);
+		return (i - dest_len);
 }
 
 /*
@@ -69,7 +66,18 @@ int	sort_placement_middle(t_list **lst_src, t_list **lst_dest,
 	int	cost;
 
 	cost = sort_cost(lst_dest, current_val);
-	ft_printf("Cost return was %d\n", cost);
+	while (cost > 0)
+	{
+		if (ra(lst_dest, ops))
+			return (-1);
+		cost--;
+	}
+	while (cost < 0)
+	{
+		if (rra(lst_dest, ops))
+			return (-1);
+		cost++;
+	}
 	if (pa(lst_dest, lst_src, ops))
 		return (-1);
 	return (0);
@@ -96,6 +104,8 @@ int	sort_placement(t_list **lst_src, t_list **lst_dest, t_list **ops)
 	}
 	else if (current_val > to_biggest_val && current_val > to_smallest_val)
 	{
+		if (sort_recenter(lst_dest, ops))
+			return (-1);
 		if (pa(lst_dest, lst_src, ops))
 			return (-1);
 		if (ra(lst_dest, ops))
@@ -125,14 +135,16 @@ int	sort_le_five(t_list **a, t_list **b, t_list **ops, int size)
 	}
 	if (sort_three(a, ops))
 		return (-1);
-	if (sort_le_three(b, ops, size - ft_lstsize(*a)))
+	if (sort_le_three(b, ops, size - ft_lstsize(*a), 1))
 		return (-1);
 	while (ft_lstsize(*a) < size)
 	{
-		ft_lstcmp_test(*a, *b);
+//		ft_lstcmp_test(*a, *b);
 		if (sort_placement(b, a, ops))
 			return (-1);
-		ft_lstcmp_test(*a, *b);
+//		ft_lstcmp_test(*a, *b);
 	}
+	if (sort_recenter(a, ops))
+		return (-1);
 	return (0);
 }

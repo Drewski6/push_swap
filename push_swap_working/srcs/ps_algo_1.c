@@ -69,20 +69,28 @@ int	sort_three(t_list **a, t_list **ops)
  *	Returns 0 on success or -1 on ERROR.
  */
 
-int	sort_le_three(t_list **a, t_list **ops, int size)
+int	sort_le_three(t_list **lst, t_list **ops, int size, int stack)
 {
 	if (size == 1)
 		return (0);
 	else if (size == 2)
 	{
-		if (*(int *)(*a)->content < *(int *)(*a)->next->content)
+		if (*(int *)(*lst)->content < *(int *)(*lst)->next->content)
 			return (0);
-		if (sa(a, ops))
-			return (-1);
+		if (stack == 0)
+		{
+			if (sa(lst, ops))
+				return (-1);
+		}
+		else
+		{
+			if (sb(lst, ops))
+				return (-1);
+		}
 	}
 	else if (size == 3)
 	{
-		if (sort_three(a, ops))
+		if (sort_three(lst, ops))
 			return (-1);
 	}
 	return (0);
@@ -108,7 +116,7 @@ int	sort_entry(t_list **a)
 	b = 0;
 	size = ft_lstsize(*a);
 	if (size <= 3)
-		ret = sort_le_three(a, &ops, size);
+		ret = sort_le_three(a, &ops, size, 0);
 	else if (size <= 5)
 		ret = sort_le_five(a, &b, &ops, size);
 	else
@@ -119,10 +127,10 @@ int	sort_entry(t_list **a)
 		ft_lstclear(&ops, &t_list_free_content);
 		return (-1);
 	}
-	t_list_print(*a, &t_list_print_int, 0);
-	ft_printf("\n");
+//	t_list_print(*a, &t_list_print_int, 0);
+//	ft_printf("\n");
 //	t_list_print(ops, &t_list_print_str, 1);
-//	t_list_print(ops, &t_list_print_str, 0);
+	t_list_print(ops, &t_list_print_str, 0);
 	ft_lstclear(&ops, &t_list_free_content);
 	return (0);
 }

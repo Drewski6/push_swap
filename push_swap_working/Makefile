@@ -21,6 +21,7 @@ SRCS = push_swap.c \
 	ps_utils_t_list_ops.c \
 	ps_algo_1.c \
 	ps_algo_2.c \
+	ps_algo_3.c \
 	ps_lst_1.c \
 	ps_ops_1.c \
 	ps_ops_2.c \
@@ -68,6 +69,6 @@ clean:
 fclean:	clean
 	@make -C libft fclean --silent
 	@rm -f $(NAME)
-	@rm gdb.txt
+	@rm -f gdb.txt
 
 re:	fclean all
