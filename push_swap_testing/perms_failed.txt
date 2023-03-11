@@ -1,0 +1,218 @@
+
+
+==258945== Command: ../push_swap_working/push_swap 1 2 3 4 5
+==258947== Command: ../push_swap_working/push_swap 1 2 3 5 4
+==258948== Command: ../push_swap_working/push_swap 1 2 4 3 5
+==258949== Command: ../push_swap_working/push_swap 1 2 4 5 3
+==258957== Command: ../push_swap_working/push_swap 1 2 5 3 4
+==258958== Command: ../push_swap_working/push_swap 1 2 5 4 3
+==258959== Command: ../push_swap_working/push_swap 1 3 2 4 5
+1 3 2 4 5
+==258960== Command: ../push_swap_working/push_swap 1 3 2 5 4
+1 3 2 4 5
+==258961== Command: ../push_swap_working/push_swap 1 3 4 2 5
+1 3 2 4 5
+==258963== Command: ../push_swap_working/push_swap 1 3 4 5 2
+1 3 2 4 5
+==258964== Command: ../push_swap_working/push_swap 1 3 5 2 4
+1 3 2 4 5
+==258965== Command: ../push_swap_working/push_swap 1 3 5 4 2
+1 3 2 4 5
+==258968== Command: ../push_swap_working/push_swap 1 4 2 3 5
+1 4 2 3 5
+==258972== Command: ../push_swap_working/push_swap 1 4 2 5 3
+1 4 2 3 5
+==258973== Command: ../push_swap_working/push_swap 1 4 3 2 5
+1 4 2 3 5
+==258974== Command: ../push_swap_working/push_swap 1 4 3 5 2
+1 4 2 3 5
+==258975== Command: ../push_swap_working/push_swap 1 4 5 2 3
+1 4 2 3 5
+==258976== Command: ../push_swap_working/push_swap 1 4 5 3 2
+1 4 2 3 5
+==258978== Command: ../push_swap_working/push_swap 1 5 2 3 4
+==258980== Command: ../push_swap_working/push_swap 1 5 2 4 3
+==258981== Command: ../push_swap_working/push_swap 1 5 3 2 4
+==258986== Command: ../push_swap_working/push_swap 1 5 3 4 2
+==258987== Command: ../push_swap_working/push_swap 1 5 4 2 3
+==258988== Command: ../push_swap_working/push_swap 1 5 4 3 2
+==258989== Command: ../push_swap_working/push_swap 2 1 3 4 5
+2 1 3 4 5
+==258990== Command: ../push_swap_working/push_swap 2 1 3 5 4
+2 1 3 4 5
+==258991== Command: ../push_swap_working/push_swap 2 1 4 3 5
+2 1 3 4 5
+==258992== Command: ../push_swap_working/push_swap 2 1 4 5 3
+2 1 3 4 5
+==258993== Command: ../push_swap_working/push_swap 2 1 5 3 4
+2 1 3 4 5
+==258994== Command: ../push_swap_working/push_swap 2 1 5 4 3
+2 1 3 4 5
+==258995== Command: ../push_swap_working/push_swap 2 3 1 4 5
+2 1 4 5 3
+==258996== Command: ../push_swap_working/push_swap 2 3 1 5 4
+2 1 4 5 3
+==258997== Command: ../push_swap_working/push_swap 2 3 4 1 5
+2 1 4 5 3
+==258998== Command: ../push_swap_working/push_swap 2 3 4 5 1
+2 1 4 5 3
+==258999== Command: ../push_swap_working/push_swap 2 3 5 1 4
+2 1 4 5 3
+==259000== Command: ../push_swap_working/push_swap 2 3 5 4 1
+2 1 4 5 3
+==259001== Command: ../push_swap_working/push_swap 2 4 1 3 5
+2 1 3 5 4
+==259002== Command: ../push_swap_working/push_swap 2 4 1 5 3
+2 1 3 5 4
+==259003== Command: ../push_swap_working/push_swap 2 4 3 1 5
+2 1 3 5 4
+==259004== Command: ../push_swap_working/push_swap 2 4 3 5 1
+2 1 3 5 4
+==259005== Command: ../push_swap_working/push_swap 2 4 5 1 3
+2 1 3 5 4
+==259006== Command: ../push_swap_working/push_swap 2 4 5 3 1
+2 1 3 5 4
+==259007== Command: ../push_swap_working/push_swap 2 5 1 3 4
+2 1 3 4 5
+==259008== Command: ../push_swap_working/push_swap 2 5 1 4 3
+2 1 3 4 5
+==259009== Command: ../push_swap_working/push_swap 2 5 3 1 4
+2 1 3 4 5
+==259010== Command: ../push_swap_working/push_swap 2 5 3 4 1
+2 1 3 4 5
+==259011== Command: ../push_swap_working/push_swap 2 5 4 1 3
+2 1 3 4 5
+==259012== Command: ../push_swap_working/push_swap 2 5 4 3 1
+2 1 3 4 5
+==259022== Command: ../push_swap_working/push_swap 3 1 2 4 5
+3 1 2 4 5
+==259023== Command: ../push_swap_working/push_swap 3 1 2 5 4
+3 1 2 4 5
+==259024== Command: ../push_swap_working/push_swap 3 1 4 2 5
+3 1 2 4 5
+==259025== Command: ../push_swap_working/push_swap 3 1 4 5 2
+3 1 2 4 5
+==259026== Command: ../push_swap_working/push_swap 3 1 5 2 4
+3 1 2 4 5
+==259027== Command: ../push_swap_working/push_swap 3 1 5 4 2
+3 1 2 4 5
+==259028== Command: ../push_swap_working/push_swap 3 2 1 4 5
+3 2 1 4 5
+==259029== Command: ../push_swap_working/push_swap 3 2 1 5 4
+3 2 1 4 5
+==259030== Command: ../push_swap_working/push_swap 3 2 4 1 5
+3 2 1 4 5
+==259031== Command: ../push_swap_working/push_swap 3 2 4 5 1
+3 2 1 4 5
+==259032== Command: ../push_swap_working/push_swap 3 2 5 1 4
+3 2 1 4 5
+==259033== Command: ../push_swap_working/push_swap 3 2 5 4 1
+3 2 1 4 5
+==259034== Command: ../push_swap_working/push_swap 3 4 1 2 5
+3 2 5 4 1
+==259035== Command: ../push_swap_working/push_swap 3 4 1 5 2
+3 2 5 4 1
+==259037== Command: ../push_swap_working/push_swap 3 4 2 1 5
+3 2 5 4 1
+==259038== Command: ../push_swap_working/push_swap 3 4 2 5 1
+3 2 5 4 1
+==259039== Command: ../push_swap_working/push_swap 3 4 5 1 2
+3 2 5 4 1
+==259040== Command: ../push_swap_working/push_swap 3 4 5 2 1
+3 2 5 4 1
+==259041== Command: ../push_swap_working/push_swap 3 5 1 2 4
+3 1 2 4 5
+==259042== Command: ../push_swap_working/push_swap 3 5 1 4 2
+3 1 2 4 5
+==259043== Command: ../push_swap_working/push_swap 3 5 2 1 4
+3 1 2 4 5
+==259044== Command: ../push_swap_working/push_swap 3 5 2 4 1
+3 1 2 4 5
+==259045== Command: ../push_swap_working/push_swap 3 5 4 1 2
+3 1 2 4 5
+==259046== Command: ../push_swap_working/push_swap 3 5 4 2 1
+3 1 2 4 5
+==259047== Command: ../push_swap_working/push_swap 4 1 2 3 5
+4 1 2 3 5
+==259048== Command: ../push_swap_working/push_swap 4 1 2 5 3
+4 1 2 3 5
+==259049== Command: ../push_swap_working/push_swap 4 1 3 2 5
+4 1 2 3 5
+==259050== Command: ../push_swap_working/push_swap 4 1 3 5 2
+4 1 2 3 5
+==259051== Command: ../push_swap_working/push_swap 4 1 5 2 3
+4 1 2 3 5
+==259052== Command: ../push_swap_working/push_swap 4 1 5 3 2
+4 1 2 3 5
+==259053== Command: ../push_swap_working/push_swap 4 2 1 3 5
+4 2 1 3 5
+==259054== Command: ../push_swap_working/push_swap 4 2 1 5 3
+4 2 1 3 5
+==259055== Command: ../push_swap_working/push_swap 4 2 3 1 5
+4 2 1 3 5
+==259056== Command: ../push_swap_working/push_swap 4 2 3 5 1
+4 2 1 3 5
+==259057== Command: ../push_swap_working/push_swap 4 2 5 1 3
+4 2 1 3 5
+==259058== Command: ../push_swap_working/push_swap 4 2 5 3 1
+4 2 1 3 5
+==259059== Command: ../push_swap_working/push_swap 4 3 1 2 5
+4 3 1 2 5
+==259060== Command: ../push_swap_working/push_swap 4 3 1 5 2
+4 3 1 2 5
+==259061== Command: ../push_swap_working/push_swap 4 3 2 1 5
+4 3 1 2 5
+==259062== Command: ../push_swap_working/push_swap 4 3 2 5 1
+4 3 1 2 5
+==259063== Command: ../push_swap_working/push_swap 4 3 5 1 2
+4 3 1 2 5
+==259064== Command: ../push_swap_working/push_swap 4 3 5 2 1
+4 3 1 2 5
+==259066== Command: ../push_swap_working/push_swap 4 5 1 2 3
+4 1 2 3 5
+==259067== Command: ../push_swap_working/push_swap 4 5 1 3 2
+4 1 2 3 5
+==259068== Command: ../push_swap_working/push_swap 4 5 2 1 3
+4 1 2 3 5
+==259069== Command: ../push_swap_working/push_swap 4 5 2 3 1
+4 1 2 3 5
+==259070== Command: ../push_swap_working/push_swap 4 5 3 1 2
+4 1 2 3 5
+==259071== Command: ../push_swap_working/push_swap 4 5 3 2 1
+4 1 2 3 5
+==259072== Command: ../push_swap_working/push_swap 5 1 2 3 4
+==259073== Command: ../push_swap_working/push_swap 5 1 2 4 3
+==259074== Command: ../push_swap_working/push_swap 5 1 3 2 4
+==259075== Command: ../push_swap_working/push_swap 5 1 3 4 2
+==259076== Command: ../push_swap_working/push_swap 5 1 4 2 3
+==259077== Command: ../push_swap_working/push_swap 5 1 4 3 2
+==259078== Command: ../push_swap_working/push_swap 5 2 1 3 4
+2 1 3 4 5
+==259079== Command: ../push_swap_working/push_swap 5 2 1 4 3
+2 1 3 4 5
+==259080== Command: ../push_swap_working/push_swap 5 2 3 1 4
+2 1 3 4 5
+==259081== Command: ../push_swap_working/push_swap 5 2 3 4 1
+2 1 3 4 5
+==259082== Command: ../push_swap_working/push_swap 5 2 4 1 3
+2 1 3 4 5
+==259083== Command: ../push_swap_working/push_swap 5 2 4 3 1
+2 1 3 4 5
+==259084== Command: ../push_swap_working/push_swap 5 3 1 2 4
+3 1 2 4 5
+==259085== Command: ../push_swap_working/push_swap 5 3 1 4 2
+3 1 2 4 5
+==259086== Command: ../push_swap_working/push_swap 5 3 2 1 4
+3 1 2 4 5
+==259087== Command: ../push_swap_working/push_swap 5 3 2 4 1
+3 1 2 4 5
+==259088== Command: ../push_swap_working/push_swap 5 3 4 1 2
+3 1 2 4 5
+==259089== Command: ../push_swap_working/push_swap 5 3 4 2 1
+3 1 2 4 5
+==259090== Command: ../push_swap_working/push_swap 5 4 1 2 3
+==259091== Command: ../push_swap_working/push_swap 5 4 1 3 2
+==259092== Command: ../push_swap_working/push_swap 5 4 2 1 3
+==259093== Command: ../push_swap_working/push_swap 5 4 2 3 1
+==259094== Command: ../push_swap_working/push_swap 5 4 3 1 2
+==259095== Command: ../push_swap_working/push_swap 5 4 3 2 1

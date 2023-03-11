@@ -17,13 +17,9 @@
  *
  */
 
-t_list	*ft_lstcmpsm(t_list *l1, t_list *l2)
+int	ft_lstcmplt(int cmp, int ref)
 {
-	if (!l1 || !l2)
-		return (0);
-	if (*(int *)l1->content < *(int *)l2->content)
-		return (l1);
-	return (0);
+	return (cmp < ref);
 }
 
 /*
@@ -31,27 +27,9 @@ t_list	*ft_lstcmpsm(t_list *l1, t_list *l2)
  *
  */
 
-t_list	*ft_lstcmpbg(t_list *l1, t_list *l2)
+int	ft_lstcmpgt(int cmp, int ref)
 {
-	if (!l1 || !l2)
-		return (0);
-	if (*(int *)l1->content > *(int *)l2->content)
-		return (l1);
-	return (0);
-}
-
-/*
- * doesnt work
- *
- */
-
-t_list	*ft_lstcmpeq(t_list *l1, t_list *l2)
-{
-	if (!l1 || !l2)
-		return (0);
-	if (*(int *)l1->content == *(int *)l2->content)
-		return (l1);
-	return (0);
+	return (cmp > ref);
 }
 
 /*
@@ -59,31 +37,23 @@ t_list	*ft_lstcmpeq(t_list *l1, t_list *l2)
  *
  */
 
-t_list	*ft_lstseek_a(t_list *l1, t_list *l2, t_list *(*op)(t_list *, t_list *))
+int	ft_lstcmp(t_list *lst, int (*op)(int, int))
 {
-	t_list	*ret;
+	int		ret;
 	t_list	*current;
 
-	if (!l1)
+	if (!lst)
 		return (0);
-	ret = l1;
-	current = l1;
+	ret = *(int *)lst->content;
+	current = lst;
 	while (current->next)
 	{
-		if (!l2)
-		{
-			if (op(current, ret))
-				ret = current;
-		}
-		else
-		{
-			if (op(current, l2))
-				ret = op(current, l2);
-		}
+		if (op(*(int *)current->content, ret))
+			ret = *(int *)current->content;
 		current = current->next;
 	}
-	if (op(current, ret))
-		ret = current;
+	if (op(*(int *)current->content, ret))
+		ret = *(int *)current->content;
 	return (ret);
 }
 
@@ -92,7 +62,7 @@ t_list	*ft_lstseek_a(t_list *l1, t_list *l2, t_list *(*op)(t_list *, t_list *))
  *
  */
 
-int	ft_lstseek_i(t_list *l1, t_list *l2, t_list *(*op)(t_list *, t_list *))
+int	ft_lstseek_i(t_list *lst, int (*op)(int, int))
 {
 	t_list	*current;
 	int		i;
@@ -100,19 +70,12 @@ int	ft_lstseek_i(t_list *l1, t_list *l2, t_list *(*op)(t_list *, t_list *))
 
 	ret = 0;
 	i = 0;
-	current = l1;
+	current = lst;
 	while (current->next)
 	{
-		if (!l2)
-		{
-			if (op(current, current->next))
-				ret = i;
-		}
-		else
-		{
-			if (op(current, l2))
-				ret = i;
-		}
+		if (op(*(int *)current->content,
+				*(int *)current->next->content))
+			ret = i;
 		current = current->next;
 		i++;
 	}

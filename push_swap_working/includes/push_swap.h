@@ -49,16 +49,14 @@ int		sort_le_three(t_list **a, t_list **ops, int size);
 int		sort_entry(t_list **a);
 
 //	ps_algo_2.c
-int		sort_placement(t_list **lst_from, t_list **lst_to, t_list **ops);
+int		sort_placement(t_list **lst_src, t_list **lst_dest, t_list **ops);
 int		sort_le_five(t_list **a, t_list **b, t_list **ops, int size);
 
 //	ps_lst_1.c
-t_list	*ft_lstcmpsm(t_list *l1, t_list *l2);
-t_list	*ft_lstcmpbg(t_list *l1, t_list *l2);
-t_list	*ft_lstseek_a(t_list *l1, t_list *l2,
-			t_list *(*op)(t_list *, t_list *));
-int		ft_lstseek_i(t_list *l1, t_list *l2,
-			t_list *(*op)(t_list *, t_list *));
+int		ft_lstcmplt(int cmp, int ref);
+int		ft_lstcmpgt(int cmp, int ref);
+int		ft_lstcmp(t_list *lst, int (*op)(int, int));
+int		ft_lstseek_i(t_list *lst, int (*op)(int, int));
 
 //	ps_ops_1.c
 int		sa(t_list **a, t_list **ops);

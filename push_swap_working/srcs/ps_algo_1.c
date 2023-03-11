@@ -120,7 +120,7 @@ int	sort_entry(t_list **a)
 		return (-1);
 	}
 	t_list_print(*a, &t_list_print_int, 0);
-	//ft_printf("\n");
+	ft_printf("\n");
 	//t_list_print(ops, &t_list_print_str, 1);
 	ft_lstclear(&ops, &t_list_free_content);
 	return (0);
