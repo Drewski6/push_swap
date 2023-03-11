@@ -91,13 +91,3 @@ void	table_print(char **table)
 	}
 	return ;
 }
-
-void	ezprint(t_list **lst)
-{
-	t_list_print(*lst, &t_list_print_int, 1);
-}
-
-void	ezprstr(t_list **lst)
-{
-	t_list_print(*lst, &t_list_print_str, 1);
-}

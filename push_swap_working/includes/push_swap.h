@@ -49,7 +49,6 @@ int		sort_le_three(t_list **a, t_list **ops, int size, int stack);
 int		sort_entry(t_list **a);
 
 //	ps_algo_2.c
-void	ft_lstcmp_test(t_list *a, t_list *b);
 int		sort_cost(t_list **lst_dest, int current_val);
 int		sort_placement_middle(t_list **lst_src, t_list **lst_dest,
 			t_list **ops, int current_val);
@@ -57,6 +56,7 @@ int		sort_placement(t_list **lst_src, t_list **lst_dest, t_list **ops);
 int		sort_le_five(t_list **a, t_list **b, t_list **ops, int size);
 
 //	ps_algo_3.c
+int		sort_is_sorted(t_list **lst);
 int		sort_recenter_cost(t_list **lst_dest);
 int		sort_recenter(t_list **a, t_list **ops);
 
@@ -83,13 +83,16 @@ int		ss(t_list **a, t_list **b, t_list **ops);
 int		rr(t_list **a, t_list **b, t_list **ops);
 int		rrr(t_list **a, t_list **b, t_list **ops);
 
-//	ps_debug_tools.c
+//	ps_debug_tools_1.c
 void	t_list_print_int(int i, t_list *current, char h_flag);
 void	t_list_print_str(int i, t_list *current, char h_flag);
 void	t_list_print(t_list *start, void (*ptype)(int, t_list *,
 				char), char h_flag);
 void	table_print(char **table);
+
+//	ps_debug_tools_2.c
 void	ezprint(t_list **lst);
 void	ezprstr(t_list **lst);
+void	ft_lstcmp_test(t_list *a, t_list *b);
 
 #endif

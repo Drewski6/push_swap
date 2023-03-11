@@ -1,0 +1,1328 @@
+   1
+   1 2
+   2 1
+sa
+   1 2 3
+   1 3 2
+sa
+ra
+   2 1 3
+sa
+   2 3 1
+rra
+   3 1 2
+ra
+   3 2 1
+sa
+rra
+   1 2 3 4
+   1 2 4 3
+pb
+sa
+ra
+pa
+   1 3 2 4
+pb
+sa
+pa
+   1 3 4 2
+pb
+rra
+pa
+   1 4 2 3
+pb
+ra
+pa
+   1 4 3 2
+pb
+sa
+rra
+pa
+   2 1 3 4
+pb
+ra
+pa
+rra
+   2 1 4 3
+pb
+sa
+ra
+ra
+pa
+rra
+   2 3 1 4
+pb
+sa
+ra
+pa
+rra
+   2 3 4 1
+pb
+rra
+ra
+pa
+rra
+   2 4 1 3
+pb
+ra
+ra
+pa
+rra
+   2 4 3 1
+pb
+sa
+rra
+ra
+pa
+rra
+   3 1 2 4
+pb
+rra
+pa
+ra
+ra
+   3 1 4 2
+pb
+sa
+ra
+rra
+pa
+ra
+ra
+   3 2 1 4
+pb
+sa
+rra
+pa
+ra
+ra
+   3 2 4 1
+pb
+rra
+rra
+pa
+ra
+ra
+   3 4 1 2
+pb
+ra
+rra
+pa
+ra
+ra
+   3 4 2 1
+pb
+sa
+rra
+rra
+pa
+ra
+ra
+   4 1 2 3
+pb
+pa
+ra
+   4 1 3 2
+pb
+sa
+ra
+pa
+ra
+   4 2 1 3
+pb
+sa
+pa
+ra
+   4 2 3 1
+pb
+rra
+pa
+ra
+   4 3 1 2
+pb
+ra
+pa
+ra
+   4 3 2 1
+pb
+sa
+rra
+pa
+ra
+   1 2 3 4 5
+   1 2 3 5 4
+pb
+pb
+sa
+ra
+sb
+pa
+ra
+pa
+rra
+   1 2 4 3 5
+pb
+pb
+sa
+sb
+pa
+ra
+pa
+rra
+   1 2 4 5 3
+pb
+pb
+rra
+sb
+pa
+ra
+pa
+rra
+   1 2 5 3 4
+pb
+pb
+ra
+sb
+pa
+ra
+pa
+rra
+   1 2 5 4 3
+pb
+pb
+sa
+rra
+sb
+pa
+ra
+pa
+rra
+   1 3 2 4 5
+pb
+pb
+sb
+pa
+ra
+ra
+pa
+rra
+rra
+   1 3 2 5 4
+pb
+pb
+sa
+ra
+sb
+pa
+ra
+ra
+pa
+rra
+rra
+   1 3 4 2 5
+pb
+pb
+sa
+sb
+pa
+ra
+ra
+pa
+rra
+rra
+   1 3 4 5 2
+pb
+pb
+rra
+sb
+pa
+ra
+ra
+pa
+rra
+rra
+   1 3 5 2 4
+pb
+pb
+ra
+sb
+pa
+ra
+ra
+pa
+rra
+rra
+   1 3 5 4 2
+pb
+pb
+sa
+rra
+sb
+pa
+ra
+ra
+pa
+rra
+rra
+   1 4 2 3 5
+pb
+pb
+sb
+pa
+rra
+pa
+ra
+ra
+   1 4 2 5 3
+pb
+pb
+sa
+ra
+sb
+pa
+rra
+pa
+ra
+ra
+   1 4 3 2 5
+pb
+pb
+sa
+sb
+pa
+rra
+pa
+ra
+ra
+   1 4 3 5 2
+pb
+pb
+rra
+sb
+pa
+rra
+pa
+ra
+ra
+   1 4 5 2 3
+pb
+pb
+ra
+sb
+pa
+rra
+pa
+ra
+ra
+   1 4 5 3 2
+pb
+pb
+sa
+rra
+sb
+pa
+rra
+pa
+ra
+ra
+   1 5 2 3 4
+pb
+pb
+sb
+pa
+pa
+ra
+   1 5 2 4 3
+pb
+pb
+sa
+ra
+sb
+pa
+pa
+ra
+   1 5 3 2 4
+pb
+pb
+sa
+sb
+pa
+pa
+ra
+   1 5 3 4 2
+pb
+pb
+rra
+sb
+pa
+pa
+ra
+   1 5 4 2 3
+pb
+pb
+ra
+sb
+pa
+pa
+ra
+   1 5 4 3 2
+pb
+pb
+sa
+rra
+sb
+pa
+pa
+ra
+   2 1 3 4 5
+pb
+pb
+pa
+ra
+pa
+rra
+   2 1 3 5 4
+pb
+pb
+sa
+ra
+pa
+ra
+pa
+rra
+   2 1 4 3 5
+pb
+pb
+sa
+pa
+ra
+pa
+rra
+   2 1 4 5 3
+pb
+pb
+rra
+pa
+ra
+pa
+rra
+   2 1 5 3 4
+pb
+pb
+ra
+pa
+ra
+pa
+rra
+   2 1 5 4 3
+pb
+pb
+sa
+rra
+pa
+ra
+pa
+rra
+   2 3 1 4 5
+pb
+pb
+sb
+ra
+pa
+ra
+pa
+rra
+rra
+   2 3 1 5 4
+pb
+pb
+sa
+ra
+sb
+ra
+pa
+ra
+pa
+rra
+rra
+   2 3 4 1 5
+pb
+pb
+sa
+sb
+ra
+pa
+ra
+pa
+rra
+rra
+   2 3 4 5 1
+pb
+pb
+rra
+sb
+ra
+pa
+ra
+pa
+rra
+rra
+   2 3 5 1 4
+pb
+pb
+ra
+sb
+ra
+pa
+ra
+pa
+rra
+rra
+   2 3 5 4 1
+pb
+pb
+sa
+rra
+sb
+ra
+pa
+ra
+pa
+rra
+rra
+   2 4 1 3 5
+pb
+pb
+sb
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   2 4 1 5 3
+pb
+pb
+sa
+ra
+sb
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   2 4 3 1 5
+pb
+pb
+sa
+sb
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   2 4 3 5 1
+pb
+pb
+rra
+sb
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   2 4 5 1 3
+pb
+pb
+ra
+sb
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   2 4 5 3 1
+pb
+pb
+sa
+rra
+sb
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   2 5 1 3 4
+pb
+pb
+sb
+ra
+pa
+rra
+pa
+ra
+   2 5 1 4 3
+pb
+pb
+sa
+ra
+sb
+ra
+pa
+rra
+pa
+ra
+   2 5 3 1 4
+pb
+pb
+sa
+sb
+ra
+pa
+rra
+pa
+ra
+   2 5 3 4 1
+pb
+pb
+rra
+sb
+ra
+pa
+rra
+pa
+ra
+   2 5 4 1 3
+pb
+pb
+ra
+sb
+ra
+pa
+rra
+pa
+ra
+   2 5 4 3 1
+pb
+pb
+sa
+rra
+sb
+ra
+pa
+rra
+pa
+ra
+   3 1 2 4 5
+pb
+pb
+pa
+ra
+ra
+pa
+rra
+rra
+   3 1 2 5 4
+pb
+pb
+sa
+ra
+pa
+ra
+ra
+pa
+rra
+rra
+   3 1 4 2 5
+pb
+pb
+sa
+pa
+ra
+ra
+pa
+rra
+rra
+   3 1 4 5 2
+pb
+pb
+rra
+pa
+ra
+ra
+pa
+rra
+rra
+   3 1 5 2 4
+pb
+pb
+ra
+pa
+ra
+ra
+pa
+rra
+rra
+   3 1 5 4 2
+pb
+pb
+sa
+rra
+pa
+ra
+ra
+pa
+rra
+rra
+   3 2 1 4 5
+pb
+pb
+ra
+pa
+ra
+pa
+rra
+rra
+   3 2 1 5 4
+pb
+pb
+sa
+ra
+ra
+pa
+ra
+pa
+rra
+rra
+   3 2 4 1 5
+pb
+pb
+sa
+ra
+pa
+ra
+pa
+rra
+rra
+   3 2 4 5 1
+pb
+pb
+rra
+ra
+pa
+ra
+pa
+rra
+rra
+   3 2 5 1 4
+pb
+pb
+ra
+ra
+pa
+ra
+pa
+rra
+rra
+   3 2 5 4 1
+pb
+pb
+sa
+rra
+ra
+pa
+ra
+pa
+rra
+rra
+   3 4 1 2 5
+pb
+pb
+sb
+rra
+pa
+ra
+pa
+ra
+ra
+   3 4 1 5 2
+pb
+pb
+sa
+ra
+sb
+rra
+pa
+ra
+pa
+ra
+ra
+   3 4 2 1 5
+pb
+pb
+sa
+sb
+rra
+pa
+ra
+pa
+ra
+ra
+   3 4 2 5 1
+pb
+pb
+rra
+sb
+rra
+pa
+ra
+pa
+ra
+ra
+   3 4 5 1 2
+pb
+pb
+ra
+sb
+rra
+pa
+ra
+pa
+ra
+ra
+   3 4 5 2 1
+pb
+pb
+sa
+rra
+sb
+rra
+pa
+ra
+pa
+ra
+ra
+   3 5 1 2 4
+pb
+pb
+sb
+rra
+pa
+ra
+ra
+pa
+ra
+   3 5 1 4 2
+pb
+pb
+sa
+ra
+sb
+rra
+pa
+ra
+ra
+pa
+ra
+   3 5 2 1 4
+pb
+pb
+sa
+sb
+rra
+pa
+ra
+ra
+pa
+ra
+   3 5 2 4 1
+pb
+pb
+rra
+sb
+rra
+pa
+ra
+ra
+pa
+ra
+   3 5 4 1 2
+pb
+pb
+ra
+sb
+rra
+pa
+ra
+ra
+pa
+ra
+   3 5 4 2 1
+pb
+pb
+sa
+rra
+sb
+rra
+pa
+ra
+ra
+pa
+ra
+   4 1 2 3 5
+pb
+pb
+pa
+rra
+pa
+ra
+ra
+   4 1 2 5 3
+pb
+pb
+sa
+ra
+pa
+rra
+pa
+ra
+ra
+   4 1 3 2 5
+pb
+pb
+sa
+pa
+rra
+pa
+ra
+ra
+   4 1 3 5 2
+pb
+pb
+rra
+pa
+rra
+pa
+ra
+ra
+   4 1 5 2 3
+pb
+pb
+ra
+pa
+rra
+pa
+ra
+ra
+   4 1 5 3 2
+pb
+pb
+sa
+rra
+pa
+rra
+pa
+ra
+ra
+   4 2 1 3 5
+pb
+pb
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   4 2 1 5 3
+pb
+pb
+sa
+ra
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   4 2 3 1 5
+pb
+pb
+sa
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   4 2 3 5 1
+pb
+pb
+rra
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   4 2 5 1 3
+pb
+pb
+ra
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   4 2 5 3 1
+pb
+pb
+sa
+rra
+ra
+pa
+ra
+ra
+pa
+ra
+ra
+   4 3 1 2 5
+pb
+pb
+rra
+pa
+ra
+pa
+ra
+ra
+   4 3 1 5 2
+pb
+pb
+sa
+ra
+rra
+pa
+ra
+pa
+ra
+ra
+   4 3 2 1 5
+pb
+pb
+sa
+rra
+pa
+ra
+pa
+ra
+ra
+   4 3 2 5 1
+pb
+pb
+rra
+rra
+pa
+ra
+pa
+ra
+ra
+   4 3 5 1 2
+pb
+pb
+ra
+rra
+pa
+ra
+pa
+ra
+ra
+   4 3 5 2 1
+pb
+pb
+sa
+rra
+rra
+pa
+ra
+pa
+ra
+ra
+   4 5 1 2 3
+pb
+pb
+sb
+pa
+ra
+pa
+ra
+   4 5 1 3 2
+pb
+pb
+sa
+ra
+sb
+pa
+ra
+pa
+ra
+   4 5 2 1 3
+pb
+pb
+sa
+sb
+pa
+ra
+pa
+ra
+   4 5 2 3 1
+pb
+pb
+rra
+sb
+pa
+ra
+pa
+ra
+   4 5 3 1 2
+pb
+pb
+ra
+sb
+pa
+ra
+pa
+ra
+   4 5 3 2 1
+pb
+pb
+sa
+rra
+sb
+pa
+ra
+pa
+ra
+   5 1 2 3 4
+pb
+pb
+pa
+pa
+ra
+   5 1 2 4 3
+pb
+pb
+sa
+ra
+pa
+pa
+ra
+   5 1 3 2 4
+pb
+pb
+sa
+pa
+pa
+ra
+   5 1 3 4 2
+pb
+pb
+rra
+pa
+pa
+ra
+   5 1 4 2 3
+pb
+pb
+ra
+pa
+pa
+ra
+   5 1 4 3 2
+pb
+pb
+sa
+rra
+pa
+pa
+ra
+   5 2 1 3 4
+pb
+pb
+ra
+pa
+rra
+pa
+ra
+   5 2 1 4 3
+pb
+pb
+sa
+ra
+ra
+pa
+rra
+pa
+ra
+   5 2 3 1 4
+pb
+pb
+sa
+ra
+pa
+rra
+pa
+ra
+   5 2 3 4 1
+pb
+pb
+rra
+ra
+pa
+rra
+pa
+ra
+   5 2 4 1 3
+pb
+pb
+ra
+ra
+pa
+rra
+pa
+ra
+   5 2 4 3 1
+pb
+pb
+sa
+rra
+ra
+pa
+rra
+pa
+ra
+   5 3 1 2 4
+pb
+pb
+rra
+pa
+ra
+ra
+pa
+ra
+   5 3 1 4 2
+pb
+pb
+sa
+ra
+rra
+pa
+ra
+ra
+pa
+ra
+   5 3 2 1 4
+pb
+pb
+sa
+rra
+pa
+ra
+ra
+pa
+ra
+   5 3 2 4 1
+pb
+pb
+rra
+rra
+pa
+ra
+ra
+pa
+ra
+   5 3 4 1 2
+pb
+pb
+ra
+rra
+pa
+ra
+ra
+pa
+ra
+   5 3 4 2 1
+pb
+pb
+sa
+rra
+rra
+pa
+ra
+ra
+pa
+ra
+   5 4 1 2 3
+pb
+pb
+pa
+ra
+pa
+ra
+   5 4 1 3 2
+pb
+pb
+sa
+ra
+pa
+ra
+pa
+ra
+   5 4 2 1 3
+pb
+pb
+sa
+pa
+ra
+pa
+ra
+   5 4 2 3 1
+pb
+pb
+rra
+pa
+ra
+pa
+ra
+   5 4 3 1 2
+pb
+pb
+ra
+pa
+ra
+pa
+ra
+   5 4 3 2 1
+pb
+pb
+sa
+rra
+pa
+ra
+pa
+ra

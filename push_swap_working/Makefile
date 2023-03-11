@@ -26,7 +26,8 @@ SRCS = push_swap.c \
 	ps_ops_1.c \
 	ps_ops_2.c \
 	ps_ops_3.c \
-	ps_debug_tools.c \
+	ps_debug_tools_1.c \
+	ps_debug_tools_2.c \
 
 SRCS_DIR = srcs/
 

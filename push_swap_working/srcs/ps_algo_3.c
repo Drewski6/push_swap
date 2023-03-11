@@ -17,19 +17,39 @@
  *
  */
 
+int	sort_is_sorted(t_list **lst)
+{
+	int		i;
+	t_list	*current;
+
+	i = 0;
+	current = *lst;
+	while (current->next)
+	{
+		if (*(int *)current->content > *(int *)current->next->content)
+			return (0);
+		i++;
+		current = current->next;
+	}
+	return (1);
+}
+
+/*
+ *
+ *
+ */
+
 int	sort_recenter_cost(t_list **lst_dest)
 {
-	int smallest;
-	int dest_len;
-	int i;
+	int		smallest;
+	int		dest_len;
+	int		i;
 	t_list	*current;
 
 	i = 0;
 	current = *lst_dest;
 	smallest = ft_lstcmp(*lst_dest, &ft_lstcmplt);
 	dest_len = ft_lstsize(*lst_dest);
-//	ft_printf("=smallest is %d\n", smallest);
-//	ft_printf("=dest_len is %d\n", dest_len);
 	while (*(int *)current->content != smallest)
 	{
 		i++;
@@ -48,10 +68,9 @@ int	sort_recenter_cost(t_list **lst_dest)
 
 int	sort_recenter(t_list **lst_dest, t_list **ops)
 {
-	int cost;
+	int	cost;
 
 	cost = sort_recenter_cost(lst_dest);
-//	ft_printf("=return from sort_recenter_cost %d\n", cost);
 	while (cost > 0)
 	{
 		if (ra(lst_dest, ops))
