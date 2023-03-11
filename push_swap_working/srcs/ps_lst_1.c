@@ -13,7 +13,7 @@
 #include "push_swap.h"
 
 /*
- * works with seek address right now
+ *
  *
  */
 
@@ -23,7 +23,7 @@ int	ft_lstcmplt(int cmp, int ref)
 }
 
 /*
- * works with seek address now
+ *
  *
  */
 
@@ -33,7 +33,7 @@ int	ft_lstcmpgt(int cmp, int ref)
 }
 
 /*
- * working with limited testing with small and big
+ *
  *
  */
 
@@ -58,7 +58,7 @@ int	ft_lstcmp(t_list *lst, int (*op)(int, int))
 }
 
 /*
- * not working
+ *
  *
  */
 

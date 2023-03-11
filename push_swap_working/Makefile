@@ -65,9 +65,9 @@ clean:
 	@make -C libft clean --silent
 	@rm -f $(OBJS)
 
-
 fclean:	clean
 	@make -C libft fclean --silent
 	@rm -f $(NAME)
+	@rm gdb.txt
 
 re:	fclean all

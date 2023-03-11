@@ -23,7 +23,7 @@
 void	t_list_print_str(int i, t_list *current, char h_flag)
 {
 	if (h_flag)
-		ft_printf("%5d | %s", i, (char *)current->content);
+		ft_printf("=%5d | %s=", i, (char *)current->content);
 	else
 		ft_putstr_fd((char *)current->content, 1);
 }
@@ -39,7 +39,7 @@ void	t_list_print_str(int i, t_list *current, char h_flag)
 void	t_list_print_int(int i, t_list *current, char h_flag)
 {
 	if (h_flag)
-		ft_printf("%5d | %d\n", i, *(int *)current->content);
+		ft_printf("=%5d | %d=\n", i, *(int *)current->content);
 	else
 		ft_printf("%d ", *(int *)current->content);
 }
@@ -62,7 +62,7 @@ void	t_list_print(t_list *start, void (*ptype)(int, t_list *,
 	current = start;
 	i = 0;
 	if (h_flag)
-		ft_printf("Index | Value\n");
+		ft_printf("=Index | Value=\n");
 	while (current)
 	{
 		ptype(i, current, h_flag);
@@ -86,7 +86,7 @@ void	table_print(char **table)
 	i = 0;
 	while (table[i])
 	{
-		ft_printf("[%02d] %s\n", i, table[i]);
+		ft_printf("=[%02d] %s=\n", i, table[i]);
 		i++;
 	}
 	return ;
