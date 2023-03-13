@@ -120,7 +120,7 @@ int	sort_entry(t_list **a)
 	else if (size <= 5)
 		ret = sort_le_five(a, &b, &ops, size);
 	else
-		ft_printf("Size is greater than 5.\n");
+		ret = sort_gt_five(a, &b, &ops, size);
 	ft_lstclear(&b, &t_list_free_content);
 	if (ret < 0)
 	{
@@ -131,6 +131,3 @@ int	sort_entry(t_list **a)
 	ft_lstclear(&ops, &t_list_free_content);
 	return (0);
 }
-
-//	t_list_print(*a, &t_list_print_int, 0);
-//	ft_printf("\n");
