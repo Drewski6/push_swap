@@ -92,15 +92,28 @@ int	sort_chunk(t_list **a, t_list **ops)
 
 int	sort_fine(t_list **a, t_list **b, t_list **ops)
 {
+	int	cost;
+	int	biggest;
+
 	while (ft_lstsize(b) > 0)
 	{
-
-
+		biggest = ft_lstcmp(b, &ft_lstcmpgt);
+		cost = sort_fine_cost(b, biggest);
+		while (cost > 0)
+		{
+			if (rb(lst_dest, ops))
+				return (-1);
+			cost--;
+		}
+		while (cost < 0)
+		{
+			if (rrb(lst_dest, ops))
+				return (-1);
+			cost++;
+		}
+		if (pa(a, b, ops))
+			return (-1)
 	}
-	// get smallest in b
-	// get cost for smallest
-	// either rb or rrb to get it on top.
-	// push to a
 	return (0);
 }
 
@@ -131,12 +144,11 @@ int	sort_rough(t_list **a, t_list **b, t_list **ops)
  *
  */
 
-int	sort_gt_five(t_list **a, t_list **b, t_list **ops, int size)
+int	sort_gt_five(t_list **a, t_list **b, t_list **ops)
 {
 	if (sort_rough(a, b, ops))
 		return (-1);
 	if (sort_fine(a, b, ops))
 		return (-1);
-	if (size){}
 	return (0);
 }

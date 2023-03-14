@@ -61,7 +61,7 @@ int		sort_recenter_cost(t_list **lst_dest);
 int		sort_recenter(t_list **a, t_list **ops);
 
 //	ps_algo_4.c
-int		sort_gt_five(t_list **a, t_list **b, t_list **ops, int size);
+int		sort_gt_five(t_list **a, t_list **b, t_list **ops);
 
 //	ps_lst_1.c
 int		ft_lstcmplt(int cmp, int ref);
