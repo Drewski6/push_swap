@@ -1,0 +1,1400 @@
+==1143060== Memcheck, a memory error detector
+==1143060== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143060== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143060== Command: ../push_swap_working/push_swap 543094036 -1988189850 1515401911 -1613883732 1031562717 -1595925003 368827091 63166116 91424590 1586858546
+==1143060== 
+==1143060== 
+==1143060== HEAP SUMMARY:
+==1143060==     in use at exit: 0 bytes in 0 blocks
+==1143060==   total heap usage: 103 allocs, 103 frees, 1,129 bytes allocated
+==1143060== 
+==1143060== All heap blocks were freed -- no leaks are possible
+==1143060== 
+==1143060== For lists of detected and suppressed errors, rerun with: -s
+==1143060== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143069== Memcheck, a memory error detector
+==1143069== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143069== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143069== Command: ../push_swap_working/push_swap 1205540983 -999234587 -1418542724 1519523885 -509876364 -1051420604 -1270860309 -1735911787 -1969268224 -1199615101
+==1143069== 
+==1143069== 
+==1143069== HEAP SUMMARY:
+==1143069==     in use at exit: 0 bytes in 0 blocks
+==1143069==   total heap usage: 113 allocs, 113 frees, 1,249 bytes allocated
+==1143069== 
+==1143069== All heap blocks were freed -- no leaks are possible
+==1143069== 
+==1143069== For lists of detected and suppressed errors, rerun with: -s
+==1143069== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143081== Memcheck, a memory error detector
+==1143081== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143081== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143081== Command: ../push_swap_working/push_swap -951942835 -1352844243 -179726489 -350552955 349990541 -1531019373 -264390683 672649834 -2059472361 -1451445154
+==1143081== 
+==1143081== 
+==1143081== HEAP SUMMARY:
+==1143081==     in use at exit: 0 bytes in 0 blocks
+==1143081==   total heap usage: 105 allocs, 105 frees, 1,156 bytes allocated
+==1143081== 
+==1143081== All heap blocks were freed -- no leaks are possible
+==1143081== 
+==1143081== For lists of detected and suppressed errors, rerun with: -s
+==1143081== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143090== Memcheck, a memory error detector
+==1143090== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143090== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143090== Command: ../push_swap_working/push_swap 300860235 -1972823437 -411628304 1296974728 1633453072 -2039308955 2005697113 -2078596210 879371295 -544786824
+==1143090== 
+==1143090== 
+==1143090== HEAP SUMMARY:
+==1143090==     in use at exit: 0 bytes in 0 blocks
+==1143090==   total heap usage: 109 allocs, 109 frees, 1,198 bytes allocated
+==1143090== 
+==1143090== All heap blocks were freed -- no leaks are possible
+==1143090== 
+==1143090== For lists of detected and suppressed errors, rerun with: -s
+==1143090== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143104== Memcheck, a memory error detector
+==1143104== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143104== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143104== Command: ../push_swap_working/push_swap -1556157729 962365497 -1874363784 -1743100796 348576474 1488379776 342066862 1811490671 -1043517017 -567754027
+==1143104== 
+==1143104== 
+==1143104== HEAP SUMMARY:
+==1143104==     in use at exit: 0 bytes in 0 blocks
+==1143104==   total heap usage: 107 allocs, 107 frees, 1,177 bytes allocated
+==1143104== 
+==1143104== All heap blocks were freed -- no leaks are possible
+==1143104== 
+==1143104== For lists of detected and suppressed errors, rerun with: -s
+==1143104== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143113== Memcheck, a memory error detector
+==1143113== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143113== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143113== Command: ../push_swap_working/push_swap 87638159 852230283 -1514080789 -1483527671 1992513588 464472268 -1164240483 1852205622 -1887781114 -1447260233
+==1143113== 
+==1143113== 
+==1143113== HEAP SUMMARY:
+==1143113==     in use at exit: 0 bytes in 0 blocks
+==1143113==   total heap usage: 125 allocs, 125 frees, 1,356 bytes allocated
+==1143113== 
+==1143113== All heap blocks were freed -- no leaks are possible
+==1143113== 
+==1143113== For lists of detected and suppressed errors, rerun with: -s
+==1143113== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143123== Memcheck, a memory error detector
+==1143123== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143123== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143123== Command: ../push_swap_working/push_swap -1717282657 2004859776 -154675143 1143179172 391584877 -1894428427 -1847041300 -1087660005 499684535 -152465203
+==1143123== 
+==1143123== 
+==1143123== HEAP SUMMARY:
+==1143123==     in use at exit: 0 bytes in 0 blocks
+==1143123==   total heap usage: 113 allocs, 113 frees, 1,239 bytes allocated
+==1143123== 
+==1143123== All heap blocks were freed -- no leaks are possible
+==1143123== 
+==1143123== For lists of detected and suppressed errors, rerun with: -s
+==1143123== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143135== Memcheck, a memory error detector
+==1143135== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143135== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143135== Command: ../push_swap_working/push_swap 1750050513 -856278407 -1320845409 -1086129838 -1071829814 -543037757 650198552 -383196676 -822682325 458649734
+==1143135== 
+==1143135== 
+==1143135== HEAP SUMMARY:
+==1143135==     in use at exit: 0 bytes in 0 blocks
+==1143135==   total heap usage: 101 allocs, 101 frees, 1,116 bytes allocated
+==1143135== 
+==1143135== All heap blocks were freed -- no leaks are possible
+==1143135== 
+==1143135== For lists of detected and suppressed errors, rerun with: -s
+==1143135== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143146== Memcheck, a memory error detector
+==1143146== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143146== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143146== Command: ../push_swap_working/push_swap -163174900 -1438116017 -1606204507 -1890630508 -1968586124 724584498 -1381762843 -1104728026 212718839 1347192546
+==1143146== 
+==1143146== 
+==1143146== HEAP SUMMARY:
+==1143146==     in use at exit: 0 bytes in 0 blocks
+==1143146==   total heap usage: 101 allocs, 101 frees, 1,122 bytes allocated
+==1143146== 
+==1143146== All heap blocks were freed -- no leaks are possible
+==1143146== 
+==1143146== For lists of detected and suppressed errors, rerun with: -s
+==1143146== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143156== Memcheck, a memory error detector
+==1143156== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143156== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143156== Command: ../push_swap_working/push_swap 1614893024 -837304161 -13169963 -1672156107 496109786 -1162028855 -2049818273 1001634481 633820549 1053918976
+==1143156== 
+==1143156== 
+==1143156== HEAP SUMMARY:
+==1143156==     in use at exit: 0 bytes in 0 blocks
+==1143156==   total heap usage: 95 allocs, 95 frees, 1,050 bytes allocated
+==1143156== 
+==1143156== All heap blocks were freed -- no leaks are possible
+==1143156== 
+==1143156== For lists of detected and suppressed errors, rerun with: -s
+==1143156== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143165== Memcheck, a memory error detector
+==1143165== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143165== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143165== Command: ../push_swap_working/push_swap 1577400581 -1106147723 279450492 1945808709 88954538 -1426574242 -1009770232 -315148338 -1682591454 1223948562
+==1143165== 
+==1143165== 
+==1143165== HEAP SUMMARY:
+==1143165==     in use at exit: 0 bytes in 0 blocks
+==1143165==   total heap usage: 107 allocs, 107 frees, 1,177 bytes allocated
+==1143165== 
+==1143165== All heap blocks were freed -- no leaks are possible
+==1143165== 
+==1143165== For lists of detected and suppressed errors, rerun with: -s
+==1143165== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143177== Memcheck, a memory error detector
+==1143177== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143177== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143177== Command: ../push_swap_working/push_swap -2095043292 -532419700 -1958259675 -2046063533 -54065539 -274087627 -1371188897 -1598848735 -933427684 -778318
+==1143177== 
+==1143177== 
+==1143177== HEAP SUMMARY:
+==1143177==     in use at exit: 0 bytes in 0 blocks
+==1143177==   total heap usage: 105 allocs, 105 frees, 1,152 bytes allocated
+==1143177== 
+==1143177== All heap blocks were freed -- no leaks are possible
+==1143177== 
+==1143177== For lists of detected and suppressed errors, rerun with: -s
+==1143177== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143188== Memcheck, a memory error detector
+==1143188== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143188== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143188== Command: ../push_swap_working/push_swap 1773575799 78498182 -1407631640 1428616269 -1938274848 -1268785521 1527666951 502046410 -1628087630 -1906274715
+==1143188== 
+==1143188== 
+==1143188== HEAP SUMMARY:
+==1143188==     in use at exit: 0 bytes in 0 blocks
+==1143188==   total heap usage: 115 allocs, 115 frees, 1,256 bytes allocated
+==1143188== 
+==1143188== All heap blocks were freed -- no leaks are possible
+==1143188== 
+==1143188== For lists of detected and suppressed errors, rerun with: -s
+==1143188== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143198== Memcheck, a memory error detector
+==1143198== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143198== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143198== Command: ../push_swap_working/push_swap -1370433223 2099048839 419089395 98353613 -2059290209 -760588608 -1333964210 1858927173 428108075 279541771
+==1143198== 
+==1143198== 
+==1143198== HEAP SUMMARY:
+==1143198==     in use at exit: 0 bytes in 0 blocks
+==1143198==   total heap usage: 113 allocs, 113 frees, 1,233 bytes allocated
+==1143198== 
+==1143198== All heap blocks were freed -- no leaks are possible
+==1143198== 
+==1143198== For lists of detected and suppressed errors, rerun with: -s
+==1143198== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143207== Memcheck, a memory error detector
+==1143207== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143207== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143207== Command: ../push_swap_working/push_swap -1537129425 990629015 2026812745 -477333384 -414316467 1473214027 -2042130976 -695151556 -191641946 -973997510
+==1143207== 
+==1143207== 
+==1143207== HEAP SUMMARY:
+==1143207==     in use at exit: 0 bytes in 0 blocks
+==1143207==   total heap usage: 113 allocs, 113 frees, 1,237 bytes allocated
+==1143207== 
+==1143207== All heap blocks were freed -- no leaks are possible
+==1143207== 
+==1143207== For lists of detected and suppressed errors, rerun with: -s
+==1143207== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143221== Memcheck, a memory error detector
+==1143221== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143221== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143221== Command: ../push_swap_working/push_swap 68928638 834443141 -397923250 1936164450 -2107209548 1376537868 -1290410806 -721247884 20798397 -1702064516
+==1143221== 
+==1143221== 
+==1143221== HEAP SUMMARY:
+==1143221==     in use at exit: 0 bytes in 0 blocks
+==1143221==   total heap usage: 107 allocs, 107 frees, 1,172 bytes allocated
+==1143221== 
+==1143221== All heap blocks were freed -- no leaks are possible
+==1143221== 
+==1143221== For lists of detected and suppressed errors, rerun with: -s
+==1143221== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143230== Memcheck, a memory error detector
+==1143230== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143230== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143230== Command: ../push_swap_working/push_swap 805993337 721178578 253325537 685519572 1985834724 -818894541 -1596057860 128567613 -831246492 1983964348
+==1143230== 
+==1143230== 
+==1143230== HEAP SUMMARY:
+==1143230==     in use at exit: 0 bytes in 0 blocks
+==1143230==   total heap usage: 111 allocs, 111 frees, 1,204 bytes allocated
+==1143230== 
+==1143230== All heap blocks were freed -- no leaks are possible
+==1143230== 
+==1143230== For lists of detected and suppressed errors, rerun with: -s
+==1143230== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143240== Memcheck, a memory error detector
+==1143240== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143240== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143240== Command: ../push_swap_working/push_swap -543309296 -827502031 503355367 -1043462486 -1933059037 -1058738857 1490712058 1054931547 -2042869420 -1221923404
+==1143240== 
+==1143240== 
+==1143240== HEAP SUMMARY:
+==1143240==     in use at exit: 0 bytes in 0 blocks
+==1143240==   total heap usage: 109 allocs, 109 frees, 1,199 bytes allocated
+==1143240== 
+==1143240== All heap blocks were freed -- no leaks are possible
+==1143240== 
+==1143240== For lists of detected and suppressed errors, rerun with: -s
+==1143240== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143249== Memcheck, a memory error detector
+==1143249== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143249== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143249== Command: ../push_swap_working/push_swap 539539183 1389573658 -905603643 1086917995 466756326 1517370434 -1939045381 -183419976 1377641832 1394608568
+==1143249== 
+==1143249== 
+==1143249== HEAP SUMMARY:
+==1143249==     in use at exit: 0 bytes in 0 blocks
+==1143249==   total heap usage: 119 allocs, 119 frees, 1,292 bytes allocated
+==1143249== 
+==1143249== All heap blocks were freed -- no leaks are possible
+==1143249== 
+==1143249== For lists of detected and suppressed errors, rerun with: -s
+==1143249== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143265== Memcheck, a memory error detector
+==1143265== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143265== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143265== Command: ../push_swap_working/push_swap -267474741 87251087 1027151578 70590563 -299159650 70378992 -1298440691 -296385825 -1267034278 -396803720
+==1143265== 
+==1143265== 
+==1143265== HEAP SUMMARY:
+==1143265==     in use at exit: 0 bytes in 0 blocks
+==1143265==   total heap usage: 101 allocs, 101 frees, 1,106 bytes allocated
+==1143265== 
+==1143265== All heap blocks were freed -- no leaks are possible
+==1143265== 
+==1143265== For lists of detected and suppressed errors, rerun with: -s
+==1143265== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143275== Memcheck, a memory error detector
+==1143275== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143275== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143275== Command: ../push_swap_working/push_swap -1404954947 -147903299 -2134677473 149979850 -750697704 1271043193 -1150395582 881315957 -463727638 -1071513253
+==1143275== 
+==1143275== 
+==1143275== HEAP SUMMARY:
+==1143275==     in use at exit: 0 bytes in 0 blocks
+==1143275==   total heap usage: 111 allocs, 111 frees, 1,214 bytes allocated
+==1143275== 
+==1143275== All heap blocks were freed -- no leaks are possible
+==1143275== 
+==1143275== For lists of detected and suppressed errors, rerun with: -s
+==1143275== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143284== Memcheck, a memory error detector
+==1143284== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143284== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143284== Command: ../push_swap_working/push_swap 1363087675 760450363 -78568157 1130627889 -256185982 478855227 -1999527286 -1184075232 1317542396 -931057109
+==1143284== 
+==1143284== 
+==1143284== HEAP SUMMARY:
+==1143284==     in use at exit: 0 bytes in 0 blocks
+==1143284==   total heap usage: 105 allocs, 105 frees, 1,148 bytes allocated
+==1143284== 
+==1143284== All heap blocks were freed -- no leaks are possible
+==1143284== 
+==1143284== For lists of detected and suppressed errors, rerun with: -s
+==1143284== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143300== Memcheck, a memory error detector
+==1143300== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143300== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143300== Command: ../push_swap_working/push_swap -1818209572 1205775868 -801805664 -648577809 -304193491 719793349 -564569080 670314187 -2035016689 -617690064
+==1143300== 
+==1143300== 
+==1143300== HEAP SUMMARY:
+==1143300==     in use at exit: 0 bytes in 0 blocks
+==1143300==   total heap usage: 107 allocs, 107 frees, 1,179 bytes allocated
+==1143300== 
+==1143300== All heap blocks were freed -- no leaks are possible
+==1143300== 
+==1143300== For lists of detected and suppressed errors, rerun with: -s
+==1143300== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143314== Memcheck, a memory error detector
+==1143314== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143314== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143314== Command: ../push_swap_working/push_swap -1190902999 704685988 -1337293944 -1853273866 -947976136 1546347938 811555434 -446402020 833185065 1753495893
+==1143314== 
+==1143314== 
+==1143314== HEAP SUMMARY:
+==1143314==     in use at exit: 0 bytes in 0 blocks
+==1143314==   total heap usage: 107 allocs, 107 frees, 1,172 bytes allocated
+==1143314== 
+==1143314== All heap blocks were freed -- no leaks are possible
+==1143314== 
+==1143314== For lists of detected and suppressed errors, rerun with: -s
+==1143314== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143324== Memcheck, a memory error detector
+==1143324== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143324== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143324== Command: ../push_swap_working/push_swap -632775868 2075372977 978591274 -1598062246 -2022545506 1351163977 569692838 1019992083 -304291795 -1979755395
+==1143324== 
+==1143324== 
+==1143324== HEAP SUMMARY:
+==1143324==     in use at exit: 0 bytes in 0 blocks
+==1143324==   total heap usage: 117 allocs, 117 frees, 1,280 bytes allocated
+==1143324== 
+==1143324== All heap blocks were freed -- no leaks are possible
+==1143324== 
+==1143324== For lists of detected and suppressed errors, rerun with: -s
+==1143324== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143333== Memcheck, a memory error detector
+==1143333== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143333== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143333== Command: ../push_swap_working/push_swap 574629327 -200768554 2136616156 -1287554163 1759905520 -581071917 294495592 -807295502 -300563363 -1718931744
+==1143333== 
+==1143333== 
+==1143333== HEAP SUMMARY:
+==1143333==     in use at exit: 0 bytes in 0 blocks
+==1143333==   total heap usage: 111 allocs, 111 frees, 1,214 bytes allocated
+==1143333== 
+==1143333== All heap blocks were freed -- no leaks are possible
+==1143333== 
+==1143333== For lists of detected and suppressed errors, rerun with: -s
+==1143333== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143347== Memcheck, a memory error detector
+==1143347== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143347== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143347== Command: ../push_swap_working/push_swap 2085994031 2030693846 -607094927 869373271 -163012363 -730513739 652375077 -896191231 -1629124149 1986282842
+==1143347== 
+==1143347== 
+==1143347== HEAP SUMMARY:
+==1143347==     in use at exit: 0 bytes in 0 blocks
+==1143347==   total heap usage: 101 allocs, 101 frees, 1,111 bytes allocated
+==1143347== 
+==1143347== All heap blocks were freed -- no leaks are possible
+==1143347== 
+==1143347== For lists of detected and suppressed errors, rerun with: -s
+==1143347== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143358== Memcheck, a memory error detector
+==1143358== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143358== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143358== Command: ../push_swap_working/push_swap 611703261 -1892028463 -1351369998 210204988 -1057931408 159469814 -1398164162 -421412061 1495965615 829424326
+==1143358== 
+==1143358== 
+==1143358== HEAP SUMMARY:
+==1143358==     in use at exit: 0 bytes in 0 blocks
+==1143358==   total heap usage: 105 allocs, 105 frees, 1,157 bytes allocated
+==1143358== 
+==1143358== All heap blocks were freed -- no leaks are possible
+==1143358== 
+==1143358== For lists of detected and suppressed errors, rerun with: -s
+==1143358== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143368== Memcheck, a memory error detector
+==1143368== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143368== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143368== Command: ../push_swap_working/push_swap -1132944740 -2031425086 -2049480121 -1754492687 -1522074667 1507508516 -680264705 -246922122 -2002065335 -1100502889
+==1143368== 
+==1143368== 
+==1143368== HEAP SUMMARY:
+==1143368==     in use at exit: 0 bytes in 0 blocks
+==1143368==   total heap usage: 105 allocs, 105 frees, 1,168 bytes allocated
+==1143368== 
+==1143368== All heap blocks were freed -- no leaks are possible
+==1143368== 
+==1143368== For lists of detected and suppressed errors, rerun with: -s
+==1143368== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143377== Memcheck, a memory error detector
+==1143377== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143377== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143377== Command: ../push_swap_working/push_swap 1795772083 -1842623218 151976433 1600256098 966241410 -1554130815 -523114601 993129651 310292451 2911383
+==1143377== 
+==1143377== 
+==1143377== HEAP SUMMARY:
+==1143377==     in use at exit: 0 bytes in 0 blocks
+==1143377==   total heap usage: 113 allocs, 113 frees, 1,222 bytes allocated
+==1143377== 
+==1143377== All heap blocks were freed -- no leaks are possible
+==1143377== 
+==1143377== For lists of detected and suppressed errors, rerun with: -s
+==1143377== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143391== Memcheck, a memory error detector
+==1143391== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143391== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143391== Command: ../push_swap_working/push_swap -938069110 875120784 1560574702 127463065 1511902164 -787228552 903020035 -678958522 -1373839439 -1101433229
+==1143391== 
+==1143391== 
+==1143391== HEAP SUMMARY:
+==1143391==     in use at exit: 0 bytes in 0 blocks
+==1143391==   total heap usage: 105 allocs, 105 frees, 1,156 bytes allocated
+==1143391== 
+==1143391== All heap blocks were freed -- no leaks are possible
+==1143391== 
+==1143391== For lists of detected and suppressed errors, rerun with: -s
+==1143391== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143400== Memcheck, a memory error detector
+==1143400== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143400== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143400== Command: ../push_swap_working/push_swap 1637238621 -345836061 635155267 1195709473 645785211 765530479 -1023772611 947267553 187679316 1071105865
+==1143400== 
+==1143400== 
+==1143400== HEAP SUMMARY:
+==1143400==     in use at exit: 0 bytes in 0 blocks
+==1143400==   total heap usage: 101 allocs, 101 frees, 1,104 bytes allocated
+==1143400== 
+==1143400== All heap blocks were freed -- no leaks are possible
+==1143400== 
+==1143400== For lists of detected and suppressed errors, rerun with: -s
+==1143400== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143410== Memcheck, a memory error detector
+==1143410== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143410== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143410== Command: ../push_swap_working/push_swap 1689680920 920144798 -1866665383 226073542 900293893 -1428630346 1946776682 1485517178 1966261850 116805150
+==1143410== 
+==1143410== 
+==1143410== HEAP SUMMARY:
+==1143410==     in use at exit: 0 bytes in 0 blocks
+==1143410==   total heap usage: 103 allocs, 103 frees, 1,129 bytes allocated
+==1143410== 
+==1143410== All heap blocks were freed -- no leaks are possible
+==1143410== 
+==1143410== For lists of detected and suppressed errors, rerun with: -s
+==1143410== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143422== Memcheck, a memory error detector
+==1143422== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143422== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143422== Command: ../push_swap_working/push_swap 1144210828 570059239 -650225913 1141800994 1632182294 -629648228 1550134127 -74441598 464411590 -1420240897
+==1143422== 
+==1143422== 
+==1143422== HEAP SUMMARY:
+==1143422==     in use at exit: 0 bytes in 0 blocks
+==1143422==   total heap usage: 113 allocs, 113 frees, 1,229 bytes allocated
+==1143422== 
+==1143422== All heap blocks were freed -- no leaks are possible
+==1143422== 
+==1143422== For lists of detected and suppressed errors, rerun with: -s
+==1143422== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143433== Memcheck, a memory error detector
+==1143433== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143433== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143433== Command: ../push_swap_working/push_swap 322123313 -1707179890 -1509378865 1334679956 1573664106 -1096584501 -2089911364 291779671 -913682438 859054866
+==1143433== 
+==1143433== 
+==1143433== HEAP SUMMARY:
+==1143433==     in use at exit: 0 bytes in 0 blocks
+==1143433==   total heap usage: 105 allocs, 105 frees, 1,152 bytes allocated
+==1143433== 
+==1143433== All heap blocks were freed -- no leaks are possible
+==1143433== 
+==1143433== For lists of detected and suppressed errors, rerun with: -s
+==1143433== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143444== Memcheck, a memory error detector
+==1143444== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143444== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143444== Command: ../push_swap_working/push_swap -2102041922 -1052184230 635321010 1781704718 762196416 1213588238 -1863945366 904118588 -192512749 -1479563294
+==1143444== 
+==1143444== 
+==1143444== HEAP SUMMARY:
+==1143444==     in use at exit: 0 bytes in 0 blocks
+==1143444==   total heap usage: 107 allocs, 107 frees, 1,180 bytes allocated
+==1143444== 
+==1143444== All heap blocks were freed -- no leaks are possible
+==1143444== 
+==1143444== For lists of detected and suppressed errors, rerun with: -s
+==1143444== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143453== Memcheck, a memory error detector
+==1143453== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143453== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143453== Command: ../push_swap_working/push_swap 304427129 1316646877 -1806872422 -998618351 157979949 -1340976083 -1588203636 730282174 -391507504 -1690123421
+==1143453== 
+==1143453== 
+==1143453== HEAP SUMMARY:
+==1143453==     in use at exit: 0 bytes in 0 blocks
+==1143453==   total heap usage: 119 allocs, 119 frees, 1,300 bytes allocated
+==1143453== 
+==1143453== All heap blocks were freed -- no leaks are possible
+==1143453== 
+==1143453== For lists of detected and suppressed errors, rerun with: -s
+==1143453== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143465== Memcheck, a memory error detector
+==1143465== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143465== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143465== Command: ../push_swap_working/push_swap -30720443 -1634610199 1869104991 -979639394 -1739137986 -1640723386 -865965373 1469357161 152728345 -1770444740
+==1143465== 
+==1143465== 
+==1143465== HEAP SUMMARY:
+==1143465==     in use at exit: 0 bytes in 0 blocks
+==1143465==   total heap usage: 109 allocs, 109 frees, 1,198 bytes allocated
+==1143465== 
+==1143465== All heap blocks were freed -- no leaks are possible
+==1143465== 
+==1143465== For lists of detected and suppressed errors, rerun with: -s
+==1143465== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143476== Memcheck, a memory error detector
+==1143476== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143476== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143476== Command: ../push_swap_working/push_swap -1112225221 900676222 804114267 -1891897150 -812765772 668543620 -1354070058 -1066892009 -1320923759 371946632
+==1143476== 
+==1143476== 
+==1143476== HEAP SUMMARY:
+==1143476==     in use at exit: 0 bytes in 0 blocks
+==1143476==   total heap usage: 113 allocs, 113 frees, 1,238 bytes allocated
+==1143476== 
+==1143476== All heap blocks were freed -- no leaks are possible
+==1143476== 
+==1143476== For lists of detected and suppressed errors, rerun with: -s
+==1143476== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143486== Memcheck, a memory error detector
+==1143486== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143486== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143486== Command: ../push_swap_working/push_swap -239134524 991154786 -1214994992 2122118702 -969327165 828122096 342790892 -1395314809 1376047726 1282469492
+==1143486== 
+==1143486== 
+==1143486== HEAP SUMMARY:
+==1143486==     in use at exit: 0 bytes in 0 blocks
+==1143486==   total heap usage: 117 allocs, 117 frees, 1,274 bytes allocated
+==1143486== 
+==1143486== All heap blocks were freed -- no leaks are possible
+==1143486== 
+==1143486== For lists of detected and suppressed errors, rerun with: -s
+==1143486== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143496== Memcheck, a memory error detector
+==1143496== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143496== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143496== Command: ../push_swap_working/push_swap -956848895 -271921615 1361202851 -1259979919 990931544 -930441359 608607454 -1275435413 -1855849361 -1792041710
+==1143496== 
+==1143496== 
+==1143496== HEAP SUMMARY:
+==1143496==     in use at exit: 0 bytes in 0 blocks
+==1143496==   total heap usage: 109 allocs, 109 frees, 1,203 bytes allocated
+==1143496== 
+==1143496== All heap blocks were freed -- no leaks are possible
+==1143496== 
+==1143496== For lists of detected and suppressed errors, rerun with: -s
+==1143496== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143510== Memcheck, a memory error detector
+==1143510== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143510== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143510== Command: ../push_swap_working/push_swap -971572757 1113775048 984792435 -1422482721 -130631437 939590179 38905160 234000289 -1379596803 -413797426
+==1143510== 
+==1143510== 
+==1143510== HEAP SUMMARY:
+==1143510==     in use at exit: 0 bytes in 0 blocks
+==1143510==   total heap usage: 103 allocs, 103 frees, 1,131 bytes allocated
+==1143510== 
+==1143510== All heap blocks were freed -- no leaks are possible
+==1143510== 
+==1143510== For lists of detected and suppressed errors, rerun with: -s
+==1143510== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143519== Memcheck, a memory error detector
+==1143519== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143519== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143519== Command: ../push_swap_working/push_swap -1133796169 -1544079281 767033537 -2056592268 56894278 -1855653877 -1518984067 -1823586038 1566974469 -1577432790
+==1143519== 
+==1143519== 
+==1143519== HEAP SUMMARY:
+==1143519==     in use at exit: 0 bytes in 0 blocks
+==1143519==   total heap usage: 107 allocs, 107 frees, 1,182 bytes allocated
+==1143519== 
+==1143519== All heap blocks were freed -- no leaks are possible
+==1143519== 
+==1143519== For lists of detected and suppressed errors, rerun with: -s
+==1143519== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143529== Memcheck, a memory error detector
+==1143529== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143529== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143529== Command: ../push_swap_working/push_swap -1991588101 754096644 1623378294 1298501523 435902849 -456762498 1429044208 1001778380 255633924 -2039669878
+==1143529== 
+==1143529== 
+==1143529== HEAP SUMMARY:
+==1143529==     in use at exit: 0 bytes in 0 blocks
+==1143529==   total heap usage: 115 allocs, 115 frees, 1,257 bytes allocated
+==1143529== 
+==1143529== All heap blocks were freed -- no leaks are possible
+==1143529== 
+==1143529== For lists of detected and suppressed errors, rerun with: -s
+==1143529== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143541== Memcheck, a memory error detector
+==1143541== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143541== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143541== Command: ../push_swap_working/push_swap -1838211773 -1646723232 -252184694 -485530311 -428620706 -203996048 -335257040 626771521 -1368568947 -638915660
+==1143541== 
+==1143541== 
+==1143541== HEAP SUMMARY:
+==1143541==     in use at exit: 0 bytes in 0 blocks
+==1143541==   total heap usage: 101 allocs, 101 frees, 1,115 bytes allocated
+==1143541== 
+==1143541== All heap blocks were freed -- no leaks are possible
+==1143541== 
+==1143541== For lists of detected and suppressed errors, rerun with: -s
+==1143541== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143552== Memcheck, a memory error detector
+==1143552== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143552== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143552== Command: ../push_swap_working/push_swap -122617746 1521845877 -1710982374 1958900397 185032056 -764268464 -1712176665 548737970 -596303987 246429137
+==1143552== 
+==1143552== 
+==1143552== HEAP SUMMARY:
+==1143552==     in use at exit: 0 bytes in 0 blocks
+==1143552==   total heap usage: 111 allocs, 111 frees, 1,212 bytes allocated
+==1143552== 
+==1143552== All heap blocks were freed -- no leaks are possible
+==1143552== 
+==1143552== For lists of detected and suppressed errors, rerun with: -s
+==1143552== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143562== Memcheck, a memory error detector
+==1143562== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143562== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143562== Command: ../push_swap_working/push_swap -562357374 78970545 1709924466 65717765 1161278494 297170570 -1151912249 -333169607 -112268062 1125219241
+==1143562== 
+==1143562== 
+==1143562== HEAP SUMMARY:
+==1143562==     in use at exit: 0 bytes in 0 blocks
+==1143562==   total heap usage: 111 allocs, 111 frees, 1,206 bytes allocated
+==1143562== 
+==1143562== All heap blocks were freed -- no leaks are possible
+==1143562== 
+==1143562== For lists of detected and suppressed errors, rerun with: -s
+==1143562== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143571== Memcheck, a memory error detector
+==1143571== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143571== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143571== Command: ../push_swap_working/push_swap 1156410254 -1202283322 -1769183371 1885476312 -1054644310 -544765342 -589617715 107119956 809588529 702813110
+==1143571== 
+==1143571== 
+==1143571== HEAP SUMMARY:
+==1143571==     in use at exit: 0 bytes in 0 blocks
+==1143571==   total heap usage: 103 allocs, 103 frees, 1,134 bytes allocated
+==1143571== 
+==1143571== All heap blocks were freed -- no leaks are possible
+==1143571== 
+==1143571== For lists of detected and suppressed errors, rerun with: -s
+==1143571== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143583== Memcheck, a memory error detector
+==1143583== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143583== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143583== Command: ../push_swap_working/push_swap 757382601 2069595757 -345572055 1088060270 -371991653 964248491 135200356 -1642367793 914761320 -541252055
+==1143583== 
+==1143583== 
+==1143583== HEAP SUMMARY:
+==1143583==     in use at exit: 0 bytes in 0 blocks
+==1143583==   total heap usage: 111 allocs, 111 frees, 1,214 bytes allocated
+==1143583== 
+==1143583== All heap blocks were freed -- no leaks are possible
+==1143583== 
+==1143583== For lists of detected and suppressed errors, rerun with: -s
+==1143583== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143594== Memcheck, a memory error detector
+==1143594== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143594== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143594== Command: ../push_swap_working/push_swap 1460513916 1165033010 -1298188525 280384509 1285401744 4262193 509323105 1201021775 -1328884086 1196538095
+==1143594== 
+==1143594== 
+==1143594== HEAP SUMMARY:
+==1143594==     in use at exit: 0 bytes in 0 blocks
+==1143594==   total heap usage: 109 allocs, 109 frees, 1,194 bytes allocated
+==1143594== 
+==1143594== All heap blocks were freed -- no leaks are possible
+==1143594== 
+==1143594== For lists of detected and suppressed errors, rerun with: -s
+==1143594== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143604== Memcheck, a memory error detector
+==1143604== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143604== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143604== Command: ../push_swap_working/push_swap -560410121 657314720 930453997 -999814773 -84981635 944438854 -505616208 -1978907925 1871730161 1365991370
+==1143604== 
+==1143604== 
+==1143604== HEAP SUMMARY:
+==1143604==     in use at exit: 0 bytes in 0 blocks
+==1143604==   total heap usage: 103 allocs, 103 frees, 1,126 bytes allocated
+==1143604== 
+==1143604== All heap blocks were freed -- no leaks are possible
+==1143604== 
+==1143604== For lists of detected and suppressed errors, rerun with: -s
+==1143604== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143613== Memcheck, a memory error detector
+==1143613== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143613== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143613== Command: ../push_swap_working/push_swap -1579170071 -1077566082 1983380883 1183608719 623533594 427492258 -2080685605 -747989676 -1048675474 219086915
+==1143613== 
+==1143613== 
+==1143613== HEAP SUMMARY:
+==1143613==     in use at exit: 0 bytes in 0 blocks
+==1143613==   total heap usage: 103 allocs, 103 frees, 1,137 bytes allocated
+==1143613== 
+==1143613== All heap blocks were freed -- no leaks are possible
+==1143613== 
+==1143613== For lists of detected and suppressed errors, rerun with: -s
+==1143613== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143627== Memcheck, a memory error detector
+==1143627== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143627== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143627== Command: ../push_swap_working/push_swap 1482395868 103599341 1939288094 -598548783 -492237595 -2109309125 -626076090 -1035824186 2024936023 -350369774
+==1143627== 
+==1143627== 
+==1143627== HEAP SUMMARY:
+==1143627==     in use at exit: 0 bytes in 0 blocks
+==1143627==   total heap usage: 103 allocs, 103 frees, 1,137 bytes allocated
+==1143627== 
+==1143627== All heap blocks were freed -- no leaks are possible
+==1143627== 
+==1143627== For lists of detected and suppressed errors, rerun with: -s
+==1143627== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143636== Memcheck, a memory error detector
+==1143636== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143636== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143636== Command: ../push_swap_working/push_swap 279652922 -983327453 839994843 -174098025 1856688137 -1953265255 -2013027940 -1867962566 47915849 -822666257
+==1143636== 
+==1143636== 
+==1143636== HEAP SUMMARY:
+==1143636==     in use at exit: 0 bytes in 0 blocks
+==1143636==   total heap usage: 109 allocs, 109 frees, 1,187 bytes allocated
+==1143636== 
+==1143636== All heap blocks were freed -- no leaks are possible
+==1143636== 
+==1143636== For lists of detected and suppressed errors, rerun with: -s
+==1143636== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143646== Memcheck, a memory error detector
+==1143646== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143646== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143646== Command: ../push_swap_working/push_swap 925723617 1769960862 -1092177656 1195494782 -820483641 1398320582 -448908139 -821853360 936610927 -1933006798
+==1143646== 
+==1143646== 
+==1143646== HEAP SUMMARY:
+==1143646==     in use at exit: 0 bytes in 0 blocks
+==1143646==   total heap usage: 111 allocs, 111 frees, 1,217 bytes allocated
+==1143646== 
+==1143646== All heap blocks were freed -- no leaks are possible
+==1143646== 
+==1143646== For lists of detected and suppressed errors, rerun with: -s
+==1143646== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143655== Memcheck, a memory error detector
+==1143655== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143655== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143655== Command: ../push_swap_working/push_swap 1625294700 167509666 -81068243 -774632627 1140864603 -1507381805 -353478095 39469924 934645335 817720981
+==1143655== 
+==1143655== 
+==1143655== HEAP SUMMARY:
+==1143655==     in use at exit: 0 bytes in 0 blocks
+==1143655==   total heap usage: 107 allocs, 107 frees, 1,166 bytes allocated
+==1143655== 
+==1143655== All heap blocks were freed -- no leaks are possible
+==1143655== 
+==1143655== For lists of detected and suppressed errors, rerun with: -s
+==1143655== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143669== Memcheck, a memory error detector
+==1143669== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143669== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143669== Command: ../push_swap_working/push_swap -204098523 -1587005614 1462892094 -916888220 -249216175 43530944 1296778183 271061321 4553026 583935156
+==1143669== 
+==1143669== 
+==1143669== HEAP SUMMARY:
+==1143669==     in use at exit: 0 bytes in 0 blocks
+==1143669==   total heap usage: 107 allocs, 107 frees, 1,168 bytes allocated
+==1143669== 
+==1143669== All heap blocks were freed -- no leaks are possible
+==1143669== 
+==1143669== For lists of detected and suppressed errors, rerun with: -s
+==1143669== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143678== Memcheck, a memory error detector
+==1143678== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143678== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143678== Command: ../push_swap_working/push_swap -960719485 -841650097 262424461 -1582184389 1196896745 1833738426 1491427875 -160177993 -1638032748 -1406198041
+==1143678== 
+==1143678== 
+==1143678== HEAP SUMMARY:
+==1143678==     in use at exit: 0 bytes in 0 blocks
+==1143678==   total heap usage: 101 allocs, 101 frees, 1,115 bytes allocated
+==1143678== 
+==1143678== All heap blocks were freed -- no leaks are possible
+==1143678== 
+==1143678== For lists of detected and suppressed errors, rerun with: -s
+==1143678== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143688== Memcheck, a memory error detector
+==1143688== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143688== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143688== Command: ../push_swap_working/push_swap -780309790 -1942513150 -1815185688 -1914448839 612990679 -1466698852 615822131 -2123973379 1014505399 300278351
+==1143688== 
+==1143688== 
+==1143688== HEAP SUMMARY:
+==1143688==     in use at exit: 0 bytes in 0 blocks
+==1143688==   total heap usage: 101 allocs, 101 frees, 1,117 bytes allocated
+==1143688== 
+==1143688== All heap blocks were freed -- no leaks are possible
+==1143688== 
+==1143688== For lists of detected and suppressed errors, rerun with: -s
+==1143688== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143700== Memcheck, a memory error detector
+==1143700== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143700== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143700== Command: ../push_swap_working/push_swap -1307678016 -1903141212 702107915 500169115 -1075806301 241785718 1715997828 759989299 -1738490952 1789756688
+==1143700== 
+==1143700== 
+==1143700== HEAP SUMMARY:
+==1143700==     in use at exit: 0 bytes in 0 blocks
+==1143700==   total heap usage: 101 allocs, 101 frees, 1,112 bytes allocated
+==1143700== 
+==1143700== All heap blocks were freed -- no leaks are possible
+==1143700== 
+==1143700== For lists of detected and suppressed errors, rerun with: -s
+==1143700== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143711== Memcheck, a memory error detector
+==1143711== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143711== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143711== Command: ../push_swap_working/push_swap 1728421496 1311018937 264722527 1084787647 -13728202 920622885 1182245369 -1900100116 -2077390866 1261995210
+==1143711== 
+==1143711== 
+==1143711== HEAP SUMMARY:
+==1143711==     in use at exit: 0 bytes in 0 blocks
+==1143711==   total heap usage: 103 allocs, 103 frees, 1,131 bytes allocated
+==1143711== 
+==1143711== All heap blocks were freed -- no leaks are possible
+==1143711== 
+==1143711== For lists of detected and suppressed errors, rerun with: -s
+==1143711== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143721== Memcheck, a memory error detector
+==1143721== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143721== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143721== Command: ../push_swap_working/push_swap 2058919388 -140802718 -1461598392 1708996958 -437655362 725740324 224385697 158866890 -1515035872 -1438886264
+==1143721== 
+==1143721== 
+==1143721== HEAP SUMMARY:
+==1143721==     in use at exit: 0 bytes in 0 blocks
+==1143721==   total heap usage: 109 allocs, 109 frees, 1,196 bytes allocated
+==1143721== 
+==1143721== All heap blocks were freed -- no leaks are possible
+==1143721== 
+==1143721== For lists of detected and suppressed errors, rerun with: -s
+==1143721== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143730== Memcheck, a memory error detector
+==1143730== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143730== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143730== Command: ../push_swap_working/push_swap -867994131 434263409 -774068293 -1623592840 1887015413 1965409198 557116146 1017347652 1764882570 14501130
+==1143730== 
+==1143730== 
+==1143730== HEAP SUMMARY:
+==1143730==     in use at exit: 0 bytes in 0 blocks
+==1143730==   total heap usage: 103 allocs, 103 frees, 1,125 bytes allocated
+==1143730== 
+==1143730== All heap blocks were freed -- no leaks are possible
+==1143730== 
+==1143730== For lists of detected and suppressed errors, rerun with: -s
+==1143730== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143742== Memcheck, a memory error detector
+==1143742== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143742== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143742== Command: ../push_swap_working/push_swap -86909892 -1558184580 -1309483273 1481029056 428714555 1361706077 453866670 1347886820 -788773298 -274235037
+==1143742== 
+==1143742== 
+==1143742== HEAP SUMMARY:
+==1143742==     in use at exit: 0 bytes in 0 blocks
+==1143742==   total heap usage: 101 allocs, 101 frees, 1,114 bytes allocated
+==1143742== 
+==1143742== All heap blocks were freed -- no leaks are possible
+==1143742== 
+==1143742== For lists of detected and suppressed errors, rerun with: -s
+==1143742== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143753== Memcheck, a memory error detector
+==1143753== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143753== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143753== Command: ../push_swap_working/push_swap -1638879094 -1389782259 1537333408 -895458772 -921538456 -833788493 929337177 -743700999 -799324860 1477065115
+==1143753== 
+==1143753== 
+==1143753== HEAP SUMMARY:
+==1143753==     in use at exit: 0 bytes in 0 blocks
+==1143753==   total heap usage: 103 allocs, 103 frees, 1,136 bytes allocated
+==1143753== 
+==1143753== All heap blocks were freed -- no leaks are possible
+==1143753== 
+==1143753== For lists of detected and suppressed errors, rerun with: -s
+==1143753== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143763== Memcheck, a memory error detector
+==1143763== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143763== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143763== Command: ../push_swap_working/push_swap -861592731 -1215439758 -1414309899 622349450 -985776444 -2146083500 684508109 445385461 1048092828 -202869317
+==1143763== 
+==1143763== 
+==1143763== HEAP SUMMARY:
+==1143763==     in use at exit: 0 bytes in 0 blocks
+==1143763==   total heap usage: 105 allocs, 105 frees, 1,153 bytes allocated
+==1143763== 
+==1143763== All heap blocks were freed -- no leaks are possible
+==1143763== 
+==1143763== For lists of detected and suppressed errors, rerun with: -s
+==1143763== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143772== Memcheck, a memory error detector
+==1143772== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143772== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143772== Command: ../push_swap_working/push_swap 18626432 -2127440533 1629835541 558355032 1088111886 -358723601 581424138 -2015329381 1176371439 1386089813
+==1143772== 
+==1143772== 
+==1143772== HEAP SUMMARY:
+==1143772==     in use at exit: 0 bytes in 0 blocks
+==1143772==   total heap usage: 109 allocs, 109 frees, 1,189 bytes allocated
+==1143772== 
+==1143772== All heap blocks were freed -- no leaks are possible
+==1143772== 
+==1143772== For lists of detected and suppressed errors, rerun with: -s
+==1143772== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143786== Memcheck, a memory error detector
+==1143786== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143786== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143786== Command: ../push_swap_working/push_swap -1825544830 1018790857 514291475 554521452 -1279192069 392854008 -886893574 1241030208 -159073505 -972347154
+==1143786== 
+==1143786== 
+==1143786== HEAP SUMMARY:
+==1143786==     in use at exit: 0 bytes in 0 blocks
+==1143786==   total heap usage: 107 allocs, 107 frees, 1,177 bytes allocated
+==1143786== 
+==1143786== All heap blocks were freed -- no leaks are possible
+==1143786== 
+==1143786== For lists of detected and suppressed errors, rerun with: -s
+==1143786== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143796== Memcheck, a memory error detector
+==1143796== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143796== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143796== Command: ../push_swap_working/push_swap 1590303445 -280436977 597891837 420202890 -329166916 2002353169 1640735430 1283559919 342725086 248908536
+==1143796== 
+==1143796== 
+==1143796== HEAP SUMMARY:
+==1143796==     in use at exit: 0 bytes in 0 blocks
+==1143796==   total heap usage: 117 allocs, 117 frees, 1,263 bytes allocated
+==1143796== 
+==1143796== All heap blocks were freed -- no leaks are possible
+==1143796== 
+==1143796== For lists of detected and suppressed errors, rerun with: -s
+==1143796== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143806== Memcheck, a memory error detector
+==1143806== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143806== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143806== Command: ../push_swap_working/push_swap -337653694 -829114158 1331561169 -1005598767 -2064354815 675793397 -1949946300 753149030 -263385989 1341518697
+==1143806== 
+==1143806== 
+==1143806== HEAP SUMMARY:
+==1143806==     in use at exit: 0 bytes in 0 blocks
+==1143806==   total heap usage: 105 allocs, 105 frees, 1,158 bytes allocated
+==1143806== 
+==1143806== All heap blocks were freed -- no leaks are possible
+==1143806== 
+==1143806== For lists of detected and suppressed errors, rerun with: -s
+==1143806== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143815== Memcheck, a memory error detector
+==1143815== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143815== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143815== Command: ../push_swap_working/push_swap -1603289564 -1167286322 278250759 1801765649 1782999678 1165913813 -1117994976 -1113348635 22431601 -478137878
+==1143815== 
+==1143815== 
+==1143815== HEAP SUMMARY:
+==1143815==     in use at exit: 0 bytes in 0 blocks
+==1143815==   total heap usage: 101 allocs, 101 frees, 1,117 bytes allocated
+==1143815== 
+==1143815== All heap blocks were freed -- no leaks are possible
+==1143815== 
+==1143815== For lists of detected and suppressed errors, rerun with: -s
+==1143815== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143829== Memcheck, a memory error detector
+==1143829== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143829== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143829== Command: ../push_swap_working/push_swap 2059711662 831013153 491412517 -1202964956 1257504947 -1932849572 -1237166820 1569853408 1436264875 -316412156
+==1143829== 
+==1143829== 
+==1143829== HEAP SUMMARY:
+==1143829==     in use at exit: 0 bytes in 0 blocks
+==1143829==   total heap usage: 101 allocs, 101 frees, 1,114 bytes allocated
+==1143829== 
+==1143829== All heap blocks were freed -- no leaks are possible
+==1143829== 
+==1143829== For lists of detected and suppressed errors, rerun with: -s
+==1143829== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143839== Memcheck, a memory error detector
+==1143839== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143839== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143839== Command: ../push_swap_working/push_swap -1920700048 -1900570464 -1657339592 -793878388 553303387 655527780 1335302586 -1124219526 460726135 -1607636397
+==1143839== 
+==1143839== 
+==1143839== HEAP SUMMARY:
+==1143839==     in use at exit: 0 bytes in 0 blocks
+==1143839==   total heap usage: 97 allocs, 97 frees, 1,076 bytes allocated
+==1143839== 
+==1143839== All heap blocks were freed -- no leaks are possible
+==1143839== 
+==1143839== For lists of detected and suppressed errors, rerun with: -s
+==1143839== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143849== Memcheck, a memory error detector
+==1143849== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143849== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143849== Command: ../push_swap_working/push_swap -1845845425 -1948352494 -499315285 1628205254 -1443464768 2082919378 -1245460039 1807226270 1104998620 -860358412
+==1143849== 
+==1143849== 
+==1143849== HEAP SUMMARY:
+==1143849==     in use at exit: 0 bytes in 0 blocks
+==1143849==   total heap usage: 113 allocs, 113 frees, 1,241 bytes allocated
+==1143849== 
+==1143849== All heap blocks were freed -- no leaks are possible
+==1143849== 
+==1143849== For lists of detected and suppressed errors, rerun with: -s
+==1143849== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143861== Memcheck, a memory error detector
+==1143861== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143861== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143861== Command: ../push_swap_working/push_swap -1745425494 -1017955097 1595254261 550081341 -367323049 384856151 -1912985847 -759982804 647285133 1278181818
+==1143861== 
+==1143861== 
+==1143861== HEAP SUMMARY:
+==1143861==     in use at exit: 0 bytes in 0 blocks
+==1143861==   total heap usage: 107 allocs, 107 frees, 1,176 bytes allocated
+==1143861== 
+==1143861== All heap blocks were freed -- no leaks are possible
+==1143861== 
+==1143861== For lists of detected and suppressed errors, rerun with: -s
+==1143861== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143872== Memcheck, a memory error detector
+==1143872== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143872== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143872== Command: ../push_swap_working/push_swap 966080420 800955939 -1471539259 843572112 -543096790 -1132005065 282183093 -1701501639 477112461 -1695489183
+==1143872== 
+==1143872== 
+==1143872== HEAP SUMMARY:
+==1143872==     in use at exit: 0 bytes in 0 blocks
+==1143872==   total heap usage: 99 allocs, 99 frees, 1,091 bytes allocated
+==1143872== 
+==1143872== All heap blocks were freed -- no leaks are possible
+==1143872== 
+==1143872== For lists of detected and suppressed errors, rerun with: -s
+==1143872== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143882== Memcheck, a memory error detector
+==1143882== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143882== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143882== Command: ../push_swap_working/push_swap -281184067 2005425507 1579782745 -131910157 -837636468 -1120033091 -1715984322 245554120 -1524439510 1043928755
+==1143882== 
+==1143882== 
+==1143882== HEAP SUMMARY:
+==1143882==     in use at exit: 0 bytes in 0 blocks
+==1143882==   total heap usage: 101 allocs, 101 frees, 1,117 bytes allocated
+==1143882== 
+==1143882== All heap blocks were freed -- no leaks are possible
+==1143882== 
+==1143882== For lists of detected and suppressed errors, rerun with: -s
+==1143882== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143892== Memcheck, a memory error detector
+==1143892== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143892== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143892== Command: ../push_swap_working/push_swap -1165146278 -1559329191 -1041264965 1600387899 -657084423 -1738694297 -1357179782 553772070 -1618574000 -1511738258
+==1143892== 
+==1143892== 
+==1143892== HEAP SUMMARY:
+==1143892==     in use at exit: 0 bytes in 0 blocks
+==1143892==   total heap usage: 113 allocs, 113 frees, 1,249 bytes allocated
+==1143892== 
+==1143892== All heap blocks were freed -- no leaks are possible
+==1143892== 
+==1143892== For lists of detected and suppressed errors, rerun with: -s
+==1143892== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143905== Memcheck, a memory error detector
+==1143905== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143905== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143905== Command: ../push_swap_working/push_swap -861872801 1951442379 1121464362 -1571802545 -1335018113 -222389226 -537857672 1842512389 -1481318063 -232922428
+==1143905== 
+==1143905== 
+==1143905== HEAP SUMMARY:
+==1143905==     in use at exit: 0 bytes in 0 blocks
+==1143905==   total heap usage: 121 allocs, 121 frees, 1,319 bytes allocated
+==1143905== 
+==1143905== All heap blocks were freed -- no leaks are possible
+==1143905== 
+==1143905== For lists of detected and suppressed errors, rerun with: -s
+==1143905== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143916== Memcheck, a memory error detector
+==1143916== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143916== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143916== Command: ../push_swap_working/push_swap -1177970161 835053934 -838913043 -759730311 -1264675216 -578181679 1523245727 1985693033 382487993 137432837
+==1143916== 
+==1143916== 
+==1143916== HEAP SUMMARY:
+==1143916==     in use at exit: 0 bytes in 0 blocks
+==1143916==   total heap usage: 101 allocs, 101 frees, 1,107 bytes allocated
+==1143916== 
+==1143916== All heap blocks were freed -- no leaks are possible
+==1143916== 
+==1143916== For lists of detected and suppressed errors, rerun with: -s
+==1143916== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143926== Memcheck, a memory error detector
+==1143926== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143926== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143926== Command: ../push_swap_working/push_swap 2050127188 1277241978 -157845794 -447505791 345167363 -1024929335 -858331221 2017751889 -1634755808 -1933356099
+==1143926== 
+==1143926== 
+==1143926== HEAP SUMMARY:
+==1143926==     in use at exit: 0 bytes in 0 blocks
+==1143926==   total heap usage: 109 allocs, 109 frees, 1,200 bytes allocated
+==1143926== 
+==1143926== All heap blocks were freed -- no leaks are possible
+==1143926== 
+==1143926== For lists of detected and suppressed errors, rerun with: -s
+==1143926== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143936== Memcheck, a memory error detector
+==1143936== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143936== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143936== Command: ../push_swap_working/push_swap -33149401 -2022806044 -1929426355 -142445918 -574360827 851186254 -1281482901 -1570933105 769167548 1767749455
+==1143936== 
+==1143936== 
+==1143936== HEAP SUMMARY:
+==1143936==     in use at exit: 0 bytes in 0 blocks
+==1143936==   total heap usage: 107 allocs, 107 frees, 1,177 bytes allocated
+==1143936== 
+==1143936== All heap blocks were freed -- no leaks are possible
+==1143936== 
+==1143936== For lists of detected and suppressed errors, rerun with: -s
+==1143936== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143950== Memcheck, a memory error detector
+==1143950== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143950== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143950== Command: ../push_swap_working/push_swap -1788688398 1403203864 -534885763 1022653188 229002690 -724192488 388956355 1666961829 -210715249 -1242829127
+==1143950== 
+==1143950== 
+==1143950== HEAP SUMMARY:
+==1143950==     in use at exit: 0 bytes in 0 blocks
+==1143950==   total heap usage: 115 allocs, 115 frees, 1,260 bytes allocated
+==1143950== 
+==1143950== All heap blocks were freed -- no leaks are possible
+==1143950== 
+==1143950== For lists of detected and suppressed errors, rerun with: -s
+==1143950== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143960== Memcheck, a memory error detector
+==1143960== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143960== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143960== Command: ../push_swap_working/push_swap -1283710067 515130300 -182798437 -853873692 681995750 1196213183 77858881 1667259963 1774391416 889360585
+==1143960== 
+==1143960== 
+==1143960== HEAP SUMMARY:
+==1143960==     in use at exit: 0 bytes in 0 blocks
+==1143960==   total heap usage: 101 allocs, 101 frees, 1,102 bytes allocated
+==1143960== 
+==1143960== All heap blocks were freed -- no leaks are possible
+==1143960== 
+==1143960== For lists of detected and suppressed errors, rerun with: -s
+==1143960== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143971== Memcheck, a memory error detector
+==1143971== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143971== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143971== Command: ../push_swap_working/push_swap -583618403 1972161076 -1248261261 -220875499 -131833972 -1550961740 -618075854 -856252275 868008329 -106019937
+==1143971== 
+==1143971== 
+==1143971== HEAP SUMMARY:
+==1143971==     in use at exit: 0 bytes in 0 blocks
+==1143971==   total heap usage: 105 allocs, 105 frees, 1,154 bytes allocated
+==1143971== 
+==1143971== All heap blocks were freed -- no leaks are possible
+==1143971== 
+==1143971== For lists of detected and suppressed errors, rerun with: -s
+==1143971== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143983== Memcheck, a memory error detector
+==1143983== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143983== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143983== Command: ../push_swap_working/push_swap 1039723155 -514797957 232789128 -1679776563 610045200 -1595841901 1418936029 2102173237 1277967285 140399757
+==1143983== 
+==1143983== 
+==1143983== HEAP SUMMARY:
+==1143983==     in use at exit: 0 bytes in 0 blocks
+==1143983==   total heap usage: 101 allocs, 101 frees, 1,110 bytes allocated
+==1143983== 
+==1143983== All heap blocks were freed -- no leaks are possible
+==1143983== 
+==1143983== For lists of detected and suppressed errors, rerun with: -s
+==1143983== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1143995== Memcheck, a memory error detector
+==1143995== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1143995== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1143995== Command: ../push_swap_working/push_swap 1964329080 1529764367 225547618 424797080 -597800937 -1182163820 -162985633 3673494 1315647544 1067441969
+==1143995== 
+==1143995== 
+==1143995== HEAP SUMMARY:
+==1143995==     in use at exit: 0 bytes in 0 blocks
+==1143995==   total heap usage: 95 allocs, 95 frees, 1,045 bytes allocated
+==1143995== 
+==1143995== All heap blocks were freed -- no leaks are possible
+==1143995== 
+==1143995== For lists of detected and suppressed errors, rerun with: -s
+==1143995== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144005== Memcheck, a memory error detector
+==1144005== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144005== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144005== Command: ../push_swap_working/push_swap -146294274 -1447999027 -289918886 336990632 1072209464 -1335701746 -676720930 1451593935 986571921 -1872006526
+==1144005== 
+==1144005== 
+==1144005== HEAP SUMMARY:
+==1144005==     in use at exit: 0 bytes in 0 blocks
+==1144005==   total heap usage: 111 allocs, 111 frees, 1,215 bytes allocated
+==1144005== 
+==1144005== All heap blocks were freed -- no leaks are possible
+==1144005== 
+==1144005== For lists of detected and suppressed errors, rerun with: -s
+==1144005== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144014== Memcheck, a memory error detector
+==1144014== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144014== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144014== Command: ../push_swap_working/push_swap -504901500 -2072874928 2106198906 -263973669 -1826897816 -2104137683 -16658318 6734620 530597397 -266784778
+==1144014== 
+==1144014== 
+==1144014== HEAP SUMMARY:
+==1144014==     in use at exit: 0 bytes in 0 blocks
+==1144014==   total heap usage: 105 allocs, 105 frees, 1,148 bytes allocated
+==1144014== 
+==1144014== All heap blocks were freed -- no leaks are possible
+==1144014== 
+==1144014== For lists of detected and suppressed errors, rerun with: -s
+==1144014== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144026== Memcheck, a memory error detector
+==1144026== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144026== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144026== Command: ../push_swap_working/push_swap -1589432141 -1395711512 -2044211867 -1819332682 1868728858 695624724 1984523321 1070276205 -1103327145 1050077027
+==1144026== 
+==1144026== 
+==1144026== HEAP SUMMARY:
+==1144026==     in use at exit: 0 bytes in 0 blocks
+==1144026==   total heap usage: 105 allocs, 105 frees, 1,161 bytes allocated
+==1144026== 
+==1144026== All heap blocks were freed -- no leaks are possible
+==1144026== 
+==1144026== For lists of detected and suppressed errors, rerun with: -s
+==1144026== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144043== Memcheck, a memory error detector
+==1144043== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144043== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144043== Command: ../push_swap_working/push_swap 1709196363 177844689 -1522119243 -647749527 990316376 -436450787 1565227555 119138771 35840819 1805697139
+==1144043== 
+==1144043== 
+==1144043== HEAP SUMMARY:
+==1144043==     in use at exit: 0 bytes in 0 blocks
+==1144043==   total heap usage: 97 allocs, 97 frees, 1,062 bytes allocated
+==1144043== 
+==1144043== All heap blocks were freed -- no leaks are possible
+==1144043== 
+==1144043== For lists of detected and suppressed errors, rerun with: -s
+==1144043== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144075== Memcheck, a memory error detector
+==1144075== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144075== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144075== Command: ../push_swap_working/push_swap -1979227382 -849710274 -732977120 -422572001 -925721995 370044365 -717425694 -778843650 786310121 -1267870736
+==1144075== 
+==1144075== 
+==1144075== HEAP SUMMARY:
+==1144075==     in use at exit: 0 bytes in 0 blocks
+==1144075==   total heap usage: 105 allocs, 105 frees, 1,153 bytes allocated
+==1144075== 
+==1144075== All heap blocks were freed -- no leaks are possible
+==1144075== 
+==1144075== For lists of detected and suppressed errors, rerun with: -s
+==1144075== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144090== Memcheck, a memory error detector
+==1144090== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144090== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144090== Command: ../push_swap_working/push_swap -1009892485 -703710218 -1636290035 -953563070 -1280447118 -534638873 832917470 -758644991 -1697468571 -77747325
+==1144090== 
+==1144090== 
+==1144090== HEAP SUMMARY:
+==1144090==     in use at exit: 0 bytes in 0 blocks
+==1144090==   total heap usage: 113 allocs, 113 frees, 1,235 bytes allocated
+==1144090== 
+==1144090== All heap blocks were freed -- no leaks are possible
+==1144090== 
+==1144090== For lists of detected and suppressed errors, rerun with: -s
+==1144090== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144104== Memcheck, a memory error detector
+==1144104== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144104== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144104== Command: ../push_swap_working/push_swap -2003376845 -499797639 1117379017 2019848796 61346749 283860341 -726175832 847954708 540283631 -1192234219
+==1144104== 
+==1144104== 
+==1144104== HEAP SUMMARY:
+==1144104==     in use at exit: 0 bytes in 0 blocks
+==1144104==   total heap usage: 105 allocs, 105 frees, 1,148 bytes allocated
+==1144104== 
+==1144104== All heap blocks were freed -- no leaks are possible
+==1144104== 
+==1144104== For lists of detected and suppressed errors, rerun with: -s
+==1144104== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144113== Memcheck, a memory error detector
+==1144113== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144113== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144113== Command: ../push_swap_working/push_swap -1030498207 658790904 -707712664 1318652282 2130780194 -1455944919 -788724071 1352620534 2054451246 -1532387820
+==1144113== 
+==1144113== 
+==1144113== HEAP SUMMARY:
+==1144113==     in use at exit: 0 bytes in 0 blocks
+==1144113==   total heap usage: 115 allocs, 115 frees, 1,257 bytes allocated
+==1144113== 
+==1144113== All heap blocks were freed -- no leaks are possible
+==1144113== 
+==1144113== For lists of detected and suppressed errors, rerun with: -s
+==1144113== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144138== Memcheck, a memory error detector
+==1144138== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144138== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144138== Command: ../push_swap_working/push_swap -608809657 -1830849609 -66385027 -253541086 1470233330 -1055854426 105719520 1692537324 1553637026 370239185
+==1144138== 
+==1144138== 
+==1144138== HEAP SUMMARY:
+==1144138==     in use at exit: 0 bytes in 0 blocks
+==1144138==   total heap usage: 105 allocs, 105 frees, 1,151 bytes allocated
+==1144138== 
+==1144138== All heap blocks were freed -- no leaks are possible
+==1144138== 
+==1144138== For lists of detected and suppressed errors, rerun with: -s
+==1144138== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144150== Memcheck, a memory error detector
+==1144150== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144150== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144150== Command: ../push_swap_working/push_swap -1231886890 -821073345 -1538143740 -1476895645 -727372342 -371528507 -1307702129 1430648549 -119867047 600729867
+==1144150== 
+==1144150== 
+==1144150== HEAP SUMMARY:
+==1144150==     in use at exit: 0 bytes in 0 blocks
+==1144150==   total heap usage: 95 allocs, 95 frees, 1,056 bytes allocated
+==1144150== 
+==1144150== All heap blocks were freed -- no leaks are possible
+==1144150== 
+==1144150== For lists of detected and suppressed errors, rerun with: -s
+==1144150== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144161== Memcheck, a memory error detector
+==1144161== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144161== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144161== Command: ../push_swap_working/push_swap 763700027 172147855 -531398248 1544906272 990104209 -418887831 -1081994778 1684669107 806658089 507074186
+==1144161== 
+==1144161== 
+==1144161== HEAP SUMMARY:
+==1144161==     in use at exit: 0 bytes in 0 blocks
+==1144161==   total heap usage: 107 allocs, 107 frees, 1,167 bytes allocated
+==1144161== 
+==1144161== All heap blocks were freed -- no leaks are possible
+==1144161== 
+==1144161== For lists of detected and suppressed errors, rerun with: -s
+==1144161== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144171== Memcheck, a memory error detector
+==1144171== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144171== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144171== Command: ../push_swap_working/push_swap 1902070305 1126356534 479561308 -1572551867 735492616 279886895 -1819112222 -819030672 -1318458257 -491144205
+==1144171== 
+==1144171== 
+==1144171== HEAP SUMMARY:
+==1144171==     in use at exit: 0 bytes in 0 blocks
+==1144171==   total heap usage: 105 allocs, 105 frees, 1,156 bytes allocated
+==1144171== 
+==1144171== All heap blocks were freed -- no leaks are possible
+==1144171== 
+==1144171== For lists of detected and suppressed errors, rerun with: -s
+==1144171== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1144180== Memcheck, a memory error detector
+==1144180== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1144180== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1144180== Command: ../push_swap_working/push_swap -658584491 886808274 1973728070 1437190559 -924291675 64704999 1189454922 1203431728 226608896 1710996017
+==1144180== 
+==1144180== 
+==1144180== HEAP SUMMARY:
+==1144180==     in use at exit: 0 bytes in 0 blocks
+==1144180==   total heap usage: 111 allocs, 111 frees, 1,206 bytes allocated
+==1144180== 
+==1144180== All heap blocks were freed -- no leaks are possible
+==1144180== 
+==1144180== For lists of detected and suppressed errors, rerun with: -s
+==1144180== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

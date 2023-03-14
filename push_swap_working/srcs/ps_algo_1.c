@@ -120,7 +120,7 @@ int	sort_entry(t_list **a)
 	else if (size <= 5)
 		ret = sort_le_five(a, &b, &ops, size);
 	else
-		ret = sort_gt_five(a, &b, &ops, size);
+		ret = sort_gt_five(a, &b, &ops);
 	ft_lstclear(&b, &t_list_free_content);
 	if (ret < 0)
 	{
