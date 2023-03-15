@@ -17,21 +17,44 @@
  *
  */
 
-void	ft_lstdup_clear(t_list **lst)
+t_list	*ft_lstdup_node(t_list *src)
 {
-	t_list	*current;
-	t_list	*next_node;
+	void	*content_new;
+	t_list	*current_new;
 
-	if (lst == 0)
-		return ;
-	current = *lst;
+	content_new = t_list_alloc_content(*(int *)src->content);
+	if (!content_new)
+		return (0);
+	current_new = ft_lstnew(content_new);
+	if (!current_new)
+		return (0);
+	return (current_new);
+}
+
+/*
+ *
+ *
+ */
+
+t_list	*ft_lstdup_lst(t_list *lst_old)
+{
+	t_list	*lst_new;
+	t_list	*current;
+	t_list	*current_new;
+
+	lst_new = ft_lstdup_node(lst_old);
+	if (!lst_new)
+		return (0);
+	current = lst_old->next;
 	while (current)
 	{
-		next_node = current->next;
-		free(current);
-		current = next_node;
+		current_new = ft_lstdup_node(current);
+		if (!current_new)
+			return (0);
+		ft_lstadd_back(&lst_new, current_new);
+		current = current->next;
 	}
-	*lst = 0;
+	return (lst_new);
 }
 
 /*
@@ -49,6 +72,7 @@ t_list	*ft_lstseek_by_index(t_list **lst, int index)
 	while (i < index && node)
 	{
 		node = node->next;
+		i++;
 	}
 	if(!node)
 		return (0);
@@ -64,11 +88,20 @@ int	ft_lstdel_and_relink_by_index(t_list **lst, int index)
 {
 	t_list	*del_target;
 
-	if (index < 1 || index > ft_lstsize(*lst) + 1)
+	if (index == 0)
+	{
+		del_target = *lst;
+		*lst = (*lst)->next;
+		ft_lstdelone(del_target, &t_list_free_content);
+	}
+	else if (index < 1 || index > ft_lstsize(*lst) + 1)
 		return (-1);
-	del_target = ft_lstseek_by_index(lst, index);
-	ft_lstseek_by_index(lst, index - 1)->next = del_target->next;
-	free(del_target);
+	else
+	{
+		del_target = ft_lstseek_by_index(lst, index);
+		ft_lstseek_by_index(lst, index - 1)->next = del_target->next;
+		ft_lstdelone(del_target, &t_list_free_content);
+	}
 	return (0);
 }
 
@@ -77,47 +110,48 @@ int	ft_lstdel_and_relink_by_index(t_list **lst, int index)
  *
  */
 
-t_list	*ft_lstsort(t_list *lst)
+int	ft_lstseek_i_by_val(t_list *lst, int val)
 {
 	int		i;
 	t_list	*current;
-	int		smallest_i;
-	t_list	*sorted;
 
 	i = 0;
 	current = lst;
 	while (current)
 	{
-		smallest_i = ft_lstseek_i(lst, &ft_lstcmplt);
-		ft_lstadd_back(&sorted, ft_lstseek_by_index(&lst, smallest_i));
-		ft_lstdel_and_relink_by_index(&lst, smallest_i);
+		if (*(int *)current->content == val)
+			return (i);
+		i++;
+		current = current->next;
 	}
-	ft_lstdup_clear(&lst);
-	return (lst);
+	return (-1);
 }
 
 /*
- *
+ * taking a break, but ft_lstseek_i doesnt return the smallest if list is in descending order
  *
  */
 
-t_list	*ft_lstdup(t_list *lst_old)
+t_list	*ft_lstsort(t_list *lst)
 {
-	t_list *lst_new;
-	int		i;
-	t_list	*current;
+	int		smallest_i;
+	t_list	*sorted;
+	t_list	*new;
+	t_list	*buf;
 
-	i = 0;
-	current = lst_old;
-	while (current)
+	sorted = 0;
+	while (lst)
 	{
-		lst_new = ft_lstnew(current->content);
-		if (!lst_new)
+		smallest_i = ft_lstseek_i_by_val(lst, ft_lstcmp(lst, &ft_lstcmplt));
+		buf = ft_lstseek_by_index(&lst, smallest_i);
+		if (!buf)
 			return (0);
-		ft_lstadd_back(&lst_old, lst_new);
-		current = current->next;
+		new = ft_lstdup_node(buf);
+		ft_lstadd_back(&sorted, new);
+		ft_lstdel_and_relink_by_index(&lst, smallest_i);
 	}
-	return (lst_new);
+	ft_lstclear(&lst, &t_list_free_content);
+	return (sorted);
 }
 
 /*
@@ -130,11 +164,12 @@ int	get_bottom_quart_size(t_list **a, int *bottom_quart)
 	t_list	*c;
 	t_list	*c_sorted;
 
-	c = ft_lstdup(*a);
+	c = ft_lstdup_lst(*a);
 	if (!c)
 		return (-1);
 	c_sorted = ft_lstsort(c);
 	bottom_quart[0] = ft_lstsize(*a) / 4;
 	bottom_quart[1] = *(int *)ft_lstseek_by_index(&c_sorted, bottom_quart[0])->content;
+	ft_lstclear(&c_sorted, &t_list_free_content);
 	return (0);
 }

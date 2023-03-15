@@ -26,6 +26,14 @@ int	sort_chunk(t_list **a, t_list **b, t_list **ops)
 	i = 0;
 	if (get_bottom_quart_size(a, bottom_quart))
 		return (-1);
+	if (bottom_quart[0] == 0)
+	{
+		while (ft_lstsize(*a) > 0)
+		{
+			if (pb(a, b, ops))
+				return (-1);
+		}
+	}
 	while (i < bottom_quart[0])
 	{
 		if (*(int *)(*a)->content < bottom_quart[1])
@@ -50,10 +58,13 @@ int	sort_chunk(t_list **a, t_list **b, t_list **ops)
 
 int	sort_rough(t_list **a, t_list **b, t_list **ops)
 {
-	while (ft_lstsize(*a) > 10)
+	if (ft_lstsize(*a) > 10)
 	{
-		if (sort_chunk(a, b, ops))
-			return (-1);
+		while (ft_lstsize(*a) > 0)
+		{
+			if (sort_chunk(a, b, ops))
+				return (-1);
+		}
 	}
 	while (ft_lstsize(*a) > 0)
 	{
