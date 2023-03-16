@@ -3,7 +3,8 @@ import re
 import sys
 
 def generator(number):
-	lst_num = np.random.randint(-2147483648, 2147483647, size=number)
+	# lst_num = np.random.randint(-2147483648, 2147483647, size=number)
+	lst_num = np.random.choice(range(-number, number), size=number, replace=False)
 	s = str(lst_num)
 	s = s.replace('[', '')
 	s = s.replace(']', '')
@@ -25,4 +26,4 @@ with open("numbers.txt", 'w') as f:
 	s = re.sub(' +', ' ', s)
 	f.write(s)
 
-print(f"Generated {size} number(s) and stored them in number.txt\n")
+print(f"Generated {size} number(s) between -{size} and {size} and stored them in number.txt\n")

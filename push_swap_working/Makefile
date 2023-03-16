@@ -24,6 +24,7 @@ SRCS = push_swap.c \
 	ps_algo_3.c \
 	ps_algo_4.c \
 	ps_algo_5.c \
+	ps_algo_6.c \
 	ps_lst_1.c \
 	ps_ops_1.c \
 	ps_ops_2.c \

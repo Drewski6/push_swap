@@ -68,7 +68,17 @@ int		sort_fine(t_list **a, t_list **b, t_list **ops);
 int		sort_gt_five(t_list **a, t_list **b, t_list **ops);
 
 //	ps_algo_5.c
-int	get_bottom_quart_size(t_list **a, int *bottom_quart);
+t_list	*ft_lstseek_by_index(t_list **lst, int index);
+int		ft_lstdel_and_relink_by_index(t_list **lst, int index);
+int		ft_lstseek_i_by_val(t_list *lst, int val);
+t_list	*ft_lstsort(t_list *lst);
+int		get_bottom_quart_size(t_list **a, int *bottom_quart);
+
+//	ps_algo_6.c
+t_list	*ft_lstdup_node(t_list *src);
+t_list	*ft_lstdup_lst(t_list *lst_old);
+int		sort_dump_remainder(t_list **a, t_list **b,
+			t_list **ops, int *bottom_quart);
 
 //	ps_lst_1.c
 int		ft_lstcmplt(int cmp, int ref);

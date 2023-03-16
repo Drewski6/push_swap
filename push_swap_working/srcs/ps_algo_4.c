@@ -12,7 +12,6 @@
 
 #include "push_swap.h"
 
-
 /*
  *
  *
@@ -21,9 +20,7 @@
 int	sort_chunk(t_list **a, t_list **b, t_list **ops)
 {
 	int		bottom_quart[2];
-	int		i;
 
-	i = 0;
 	if (get_bottom_quart_size(a, bottom_quart))
 		return (-1);
 	if (bottom_quart[0] == 0)
@@ -34,20 +31,8 @@ int	sort_chunk(t_list **a, t_list **b, t_list **ops)
 				return (-1);
 		}
 	}
-	while (i < bottom_quart[0])
-	{
-		if (*(int *)(*a)->content < bottom_quart[1])
-		{
-			if (pb(a, b, ops))
-				return (-1);
-			i++;
-		}
-		else
-		{
-			if (ra(a, ops))
-				return (-1);
-		}
-	}
+	if (sort_dump_remainder(a, b, ops, bottom_quart))
+		return (-1);
 	return (0);
 }
 

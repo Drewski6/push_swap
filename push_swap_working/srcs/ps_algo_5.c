@@ -17,51 +17,6 @@
  *
  */
 
-t_list	*ft_lstdup_node(t_list *src)
-{
-	void	*content_new;
-	t_list	*current_new;
-
-	content_new = t_list_alloc_content(*(int *)src->content);
-	if (!content_new)
-		return (0);
-	current_new = ft_lstnew(content_new);
-	if (!current_new)
-		return (0);
-	return (current_new);
-}
-
-/*
- *
- *
- */
-
-t_list	*ft_lstdup_lst(t_list *lst_old)
-{
-	t_list	*lst_new;
-	t_list	*current;
-	t_list	*current_new;
-
-	lst_new = ft_lstdup_node(lst_old);
-	if (!lst_new)
-		return (0);
-	current = lst_old->next;
-	while (current)
-	{
-		current_new = ft_lstdup_node(current);
-		if (!current_new)
-			return (0);
-		ft_lstadd_back(&lst_new, current_new);
-		current = current->next;
-	}
-	return (lst_new);
-}
-
-/*
- *
- *
- */
-
 t_list	*ft_lstseek_by_index(t_list **lst, int index)
 {
 	int		i;	
@@ -74,7 +29,7 @@ t_list	*ft_lstseek_by_index(t_list **lst, int index)
 		node = node->next;
 		i++;
 	}
-	if(!node)
+	if (!node)
 		return (0);
 	return (node);
 }
@@ -128,7 +83,7 @@ int	ft_lstseek_i_by_val(t_list *lst, int val)
 }
 
 /*
- * taking a break, but ft_lstseek_i doesnt return the smallest if list is in descending order
+ *
  *
  */
 
@@ -169,7 +124,8 @@ int	get_bottom_quart_size(t_list **a, int *bottom_quart)
 		return (-1);
 	c_sorted = ft_lstsort(c);
 	bottom_quart[0] = ft_lstsize(*a) / 4;
-	bottom_quart[1] = *(int *)ft_lstseek_by_index(&c_sorted, bottom_quart[0])->content;
+	bottom_quart[1] = *(int *)ft_lstseek_by_index(&c_sorted,
+			bottom_quart[0])->content;
 	ft_lstclear(&c_sorted, &t_list_free_content);
 	return (0);
 }
