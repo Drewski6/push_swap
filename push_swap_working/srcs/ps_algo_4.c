@@ -43,7 +43,7 @@ int	sort_chunk(t_list **a, t_list **b, t_list **ops)
 
 int	sort_rough(t_list **a, t_list **b, t_list **ops)
 {
-	if (ft_lstsize(*a) > 10)
+	if (ft_lstsize(*a) > SMALLEST_ALLOWED_CHUNK)
 	{
 		while (ft_lstsize(*a) > 0)
 		{

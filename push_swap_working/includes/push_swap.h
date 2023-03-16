@@ -14,6 +14,18 @@
 # define PUSH_SWAP_H
 # include "../libft/includes/libft.h"
 
+# ifndef BIG_CHUNK_SIZE
+#  define BIG_CHUNK_SIZE 8
+# endif
+
+# ifndef SMALL_CHUNK_SIZE
+#  define SMALL_CHUNK_SIZE 4
+# endif
+
+# ifndef SMALLEST_ALLOWED_CHUNK
+#  define SMALLEST_ALLOWED_CHUNK 10
+# endif
+
 //	push_swap.c
 int		error(void);
 t_list	*arg_switch(t_list *a, int argc, char **argv);

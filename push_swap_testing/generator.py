@@ -11,7 +11,7 @@ def generator(number):
 	s = s.replace('\n', '')
 	return s
 
-print(sys.argv)
+# print(sys.argv)
 try:
 	size = int(sys.argv[1])
 except:
@@ -26,4 +26,4 @@ with open("numbers.txt", 'w') as f:
 	s = re.sub(' +', ' ', s)
 	f.write(s)
 
-print(f"Generated {size} number(s) between -{size} and {size} and stored them in number.txt\n")
+# print(f"Generated {size} number(s) between -{size} and {size} and stored them in number.txt\n")

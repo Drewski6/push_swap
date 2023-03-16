@@ -118,12 +118,17 @@ int	get_bottom_quart_size(t_list **a, int *bottom_quart)
 {
 	t_list	*c;
 	t_list	*c_sorted;
+	int		a_len;
 
+	a_len = ft_lstsize(*a);
 	c = ft_lstdup_lst(*a);
 	if (!c)
 		return (-1);
 	c_sorted = ft_lstsort(c);
-	bottom_quart[0] = ft_lstsize(*a) / 4;
+	if (a_len <= 100)
+		bottom_quart[0] = a_len / SMALL_CHUNK_SIZE;
+	else
+		bottom_quart[0] = a_len / BIG_CHUNK_SIZE;
 	bottom_quart[1] = *(int *)ft_lstseek_by_index(&c_sorted,
 			bottom_quart[0])->content;
 	ft_lstclear(&c_sorted, &t_list_free_content);

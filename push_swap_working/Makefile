@@ -48,7 +48,11 @@ OBJS_DIR = objs/
 
 # ***** Compile and Archiver *****
 
-CFLAGS = -Wall -Wextra -Werror -g
+BCS=12
+SCS=4
+SAC=10
+
+CFLAGS = -Wall -Wextra -Werror -g -D'BIG_CHUNK_SIZE=${BCS}' -D'SMALL_CHUNK_SIZE=${SCS}' -D'SMALLEST_ALLOWED_CHUNK=${SAC}'
 
 CC = cc
 
