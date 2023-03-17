@@ -111,8 +111,8 @@ t_list	*ft_lstsort(t_list *lst)
 
 /*
  *
- *	bottom_quart[2] = holds number of items in the smallest chunk
- *	bottom_quart[3] = value of the upper limit of the smallest chunk
+ *	bottom_quart[0] = holds number of items in the smallest chunk
+ *	bottom_quart[1] = value of the upper limit of the smallest chunk
  */
 
 int	get_bottom_quart_size(t_list **a, int *bottom_quart)
@@ -126,12 +126,11 @@ int	get_bottom_quart_size(t_list **a, int *bottom_quart)
 	if (!c)
 		return (-1);
 	c_sorted = ft_lstsort(c);
-	if (a_len > bottom_quart[2])
-		bottom_quart[3] = *(int *)ft_lstseek_by_index(&c_sorted,
-				bottom_quart[2])->content;
+	if (a_len > bottom_quart[0])
+		bottom_quart[1] = *(int *)ft_lstseek_by_index(&c_sorted,
+				bottom_quart[0])->content;
 	else
-		bottom_quart[3] = *(int *)ft_lstseek_by_index(&c_sorted,
-				ft_lstsize(c_sorted) - 1)->content;
+		bottom_quart[1] = *(int *)ft_lstlast(c_sorted)->content;
 	ft_lstclear(&c_sorted, &t_list_free_content);
 	return (0);
 }

@@ -27,24 +27,20 @@ int	sort_chunk(t_list **a, t_list **b, t_list **ops, int *bottom_quart)
 }
 
 /*
- *	bottom_quart[0] = holds big chunk count
- *	bottom_quart[1] = hold small chunk count
- *	bottom_quart[2] = holds number of items in the smallest chunk
- *	bottom_quart[3] = value of the upper limit of the smallest chunk
+ *	bottom_quart[0] = holds number of items in the smallest chunk
+ *	bottom_quart[1] = value of the upper limit of the smallest chunk
  */
 
 int	sort_rough(t_list **a, t_list **b, t_list **ops)
 {
-	static int		bottom_quart[4];
+	static int		bottom_quart[2];
 	int				a_len;
 
 	a_len = ft_lstsize(*a);
-	bottom_quart[0] = BIG_CHUNK_COUNT;
-	bottom_quart[1] = SMALL_CHUNK_COUNT;
 	if (a_len <= 200)
-		bottom_quart[2] = (a_len / bottom_quart[1]) - 1;
+		bottom_quart[0] = (a_len / SMALL_CHUNK_COUNT) - 1;
 	else
-		bottom_quart[2] = (a_len / bottom_quart[0]) - 1;
+		bottom_quart[0] = (a_len / BIG_CHUNK_COUNT) - 1;
 	while (ft_lstsize(*a) > SMALLEST_ALLOWED_CHUNK)
 	{
 		if (sort_chunk(a, b, ops, bottom_quart))

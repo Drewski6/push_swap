@@ -72,7 +72,7 @@ int	sort_move_chunk(t_list **a, t_list **b,
 	a_len = ft_lstsize(*a);
 	while (i < a_len)
 	{
-		if (*(int *)(*a)->content < bottom_quart[3])
+		if (*(int *)(*a)->content < bottom_quart[1])
 		{
 			if (pb(a, b, ops))
 				return (-1);
