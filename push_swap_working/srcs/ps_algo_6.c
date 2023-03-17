@@ -62,25 +62,27 @@ t_list	*ft_lstdup_lst(t_list *lst_old)
  *
  */
 
-int	sort_dump_remainder(t_list **a, t_list **b,
+int	sort_move_chunk(t_list **a, t_list **b,
 	t_list **ops, int *bottom_quart)
 {
 	int	i;
+	int	a_len;
 
 	i = 0;
-	while (i < bottom_quart[0])
+	a_len = ft_lstsize(*a);
+	while (i < a_len)
 	{
-		if (*(int *)(*a)->content < bottom_quart[1])
+		if (*(int *)(*a)->content < bottom_quart[3])
 		{
 			if (pb(a, b, ops))
 				return (-1);
-			i++;
 		}
 		else
 		{
 			if (ra(a, ops))
 				return (-1);
 		}
+		i++;
 	}
 	return (0);
 }

@@ -14,12 +14,12 @@
 # define PUSH_SWAP_H
 # include "../libft/includes/libft.h"
 
-# ifndef BIG_CHUNK_SIZE
-#  define BIG_CHUNK_SIZE 8
+# ifndef BIG_CHUNK_COUNT
+#  define BIG_CHUNK_COUNT 8
 # endif
 
-# ifndef SMALL_CHUNK_SIZE
-#  define SMALL_CHUNK_SIZE 4
+# ifndef SMALL_CHUNK_COUNT
+#  define SMALL_CHUNK_COUNT 4
 # endif
 
 # ifndef SMALLEST_ALLOWED_CHUNK
@@ -73,7 +73,8 @@ int		sort_recenter_cost(t_list **lst_dest);
 int		sort_recenter(t_list **a, t_list **ops);
 
 //	ps_algo_4.c
-int		sort_chunk(t_list **a, t_list **b, t_list **ops);
+int		sort_chunk(t_list **a, t_list **b, t_list **ops,
+			int *bottom_quart);
 int		sort_rough(t_list **a, t_list **b, t_list **ops);
 int		sort_fine_cost(t_list **lst, int current_val);
 int		sort_fine(t_list **a, t_list **b, t_list **ops);
@@ -89,7 +90,7 @@ int		get_bottom_quart_size(t_list **a, int *bottom_quart);
 //	ps_algo_6.c
 t_list	*ft_lstdup_node(t_list *src);
 t_list	*ft_lstdup_lst(t_list *lst_old);
-int		sort_dump_remainder(t_list **a, t_list **b,
+int		sort_move_chunk(t_list **a, t_list **b,
 			t_list **ops, int *bottom_quart);
 
 //	ps_lst_1.c

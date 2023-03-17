@@ -17,39 +17,38 @@
  *
  */
 
-int	sort_chunk(t_list **a, t_list **b, t_list **ops)
+int	sort_chunk(t_list **a, t_list **b, t_list **ops, int *bottom_quart)
 {
-	int		bottom_quart[2];
-
 	if (get_bottom_quart_size(a, bottom_quart))
 		return (-1);
-	if (bottom_quart[0] == 0)
-	{
-		while (ft_lstsize(*a) > 0)
-		{
-			if (pb(a, b, ops))
-				return (-1);
-		}
-	}
-	if (sort_dump_remainder(a, b, ops, bottom_quart))
+	if (sort_move_chunk(a, b, ops, bottom_quart))
 		return (-1);
 	return (0);
 }
 
 /*
- *
- *
+ *	bottom_quart[0] = holds big chunk count
+ *	bottom_quart[1] = hold small chunk count
+ *	bottom_quart[2] = holds number of items in the smallest chunk
+ *	bottom_quart[3] = value of the upper limit of the smallest chunk
  */
 
 int	sort_rough(t_list **a, t_list **b, t_list **ops)
 {
-	if (ft_lstsize(*a) > SMALLEST_ALLOWED_CHUNK)
+	static int		bottom_quart[4];
+	int				a_len;
+
+	a_len = ft_lstsize(*a);
+	bottom_quart[0] = BIG_CHUNK_COUNT;
+	bottom_quart[1] = SMALL_CHUNK_COUNT;
+	if (a_len <= 200)
+		bottom_quart[2] = (a_len / bottom_quart[1]) - 1;
+	else
+		bottom_quart[2] = (a_len / bottom_quart[0]) - 1;
+	while (ft_lstsize(*a) > SMALLEST_ALLOWED_CHUNK)
 	{
-		while (ft_lstsize(*a) > 0)
-		{
-			if (sort_chunk(a, b, ops))
-				return (-1);
-		}
+		if (sort_chunk(a, b, ops, bottom_quart))
+			return (-1);
 	}
 	while (ft_lstsize(*a) > 0)
 	{
