@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ps_algo_5.c                                        :+:      :+:    :+:   */
+/*   ps_algo_rough_2.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpentlan <dpentlan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -17,12 +17,14 @@
  *
  */
 
-t_list	*ft_lstseek_by_index(t_list **lst, int index)
+t_list	*ft_lstseek_a_by_i(t_list **lst, int index)
 {
 	int		i;	
 	t_list	*node;
 
 	i = 0;
+	if (index < 0 || !lst)
+		return (0);
 	node = *lst;
 	while (i < index && node)
 	{
@@ -53,8 +55,8 @@ int	ft_lstdel_and_relink_by_index(t_list **lst, int index)
 		return (-1);
 	else
 	{
-		del_target = ft_lstseek_by_index(lst, index);
-		ft_lstseek_by_index(lst, index - 1)->next = del_target->next;
+		del_target = ft_lstseek_a_by_i(lst, index);
+		ft_lstseek_a_by_i(lst, index - 1)->next = del_target->next;
 		ft_lstdelone(del_target, &t_list_free_content);
 	}
 	return (0);
@@ -98,7 +100,7 @@ t_list	*ft_lstsort(t_list *lst)
 	while (lst)
 	{
 		smallest_i = ft_lstseek_i_by_val(lst, ft_lstcmp(lst, &ft_lstcmplt));
-		buf = ft_lstseek_by_index(&lst, smallest_i);
+		buf = ft_lstseek_a_by_i(&lst, smallest_i);
 		if (!buf)
 			return (0);
 		new = ft_lstdup_node(buf);
@@ -107,30 +109,4 @@ t_list	*ft_lstsort(t_list *lst)
 	}
 	ft_lstclear(&lst, &t_list_free_content);
 	return (sorted);
-}
-
-/*
- *
- *	bottom_quart[0] = holds number of items in the smallest chunk
- *	bottom_quart[1] = value of the upper limit of the smallest chunk
- */
-
-int	get_bottom_quart_size(t_list **a, int *bottom_quart)
-{
-	t_list	*c;
-	t_list	*c_sorted;
-	int		a_len;
-
-	a_len = ft_lstsize(*a);
-	c = ft_lstdup_lst(*a);
-	if (!c)
-		return (-1);
-	c_sorted = ft_lstsort(c);
-	if (a_len > bottom_quart[0])
-		bottom_quart[1] = *(int *)ft_lstseek_by_index(&c_sorted,
-				bottom_quart[0])->content;
-	else
-		bottom_quart[1] = *(int *)ft_lstlast(c_sorted)->content;
-	ft_lstclear(&c_sorted, &t_list_free_content);
-	return (0);
 }

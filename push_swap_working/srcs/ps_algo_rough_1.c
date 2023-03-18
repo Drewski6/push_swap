@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ps_algo_4.c                                        :+:      :+:    :+:   */
+/*   ps_algo_rough_1.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpentlan <dpentlan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -11,6 +11,62 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+/*
+ *
+ *
+ */
+
+int	sort_move_chunk(t_list **a, t_list **b,
+	t_list **ops, int *bottom_quart)
+{
+	int	i;
+	int	a_len;
+
+	i = 0;
+	a_len = ft_lstsize(*a);
+	while (i < a_len)
+	{
+		if (*(int *)(*a)->content <= bottom_quart[1])
+		{
+			if (pb(a, b, ops))
+				return (-1);
+		}
+		else
+		{
+			if (ra(a, ops))
+				return (-1);
+		}
+		i++;
+	}
+	return (0);
+}
+
+/*
+ *
+ *	bottom_quart[0] = holds number of items in the smallest chunk
+ *	bottom_quart[1] = value of the upper limit of the smallest chunk
+ */
+
+int	get_bottom_quart_size(t_list **a, int *bottom_quart)
+{
+	t_list	*c;
+	t_list	*c_sorted;
+	int		a_len;
+
+	a_len = ft_lstsize(*a);
+	c = ft_lstdup_lst(*a);
+	if (!c)
+		return (-1);
+	c_sorted = ft_lstsort(c);
+	if (a_len > bottom_quart[0])
+		bottom_quart[1] = *(int *)ft_lstseek_a_by_i(&c_sorted,
+				bottom_quart[0])->content;
+	else
+		bottom_quart[1] = *(int *)ft_lstlast(c_sorted)->content;
+	ft_lstclear(&c_sorted, &t_list_free_content);
+	return (0);
+}
 
 /*
  *
@@ -28,7 +84,8 @@ int	sort_chunk(t_list **a, t_list **b, t_list **ops, int *bottom_quart)
 
 /*
  *	bottom_quart[0] = holds number of items in the smallest chunk
- *	bottom_quart[1] = value of the upper limit of the smallest chunk
+ *	bottom_quart[1] = value of the upper limit of the smallest chunk.
+ *			Acts like a high-pass filter.
  */
 
 int	sort_rough(t_list **a, t_list **b, t_list **ops)
@@ -49,63 +106,6 @@ int	sort_rough(t_list **a, t_list **b, t_list **ops)
 	while (ft_lstsize(*a) > 0)
 	{
 		if (pb(a, b, ops))
-			return (-1);
-	}
-	return (0);
-}
-
-/*
- *
- *
- */
-
-int	sort_fine_cost(t_list **lst, int current_val)
-{
-	int		i;
-	int		lst_len;
-	t_list	*current;
-
-	i = 0;
-	lst_len = ft_lstsize(*lst);
-	current = *lst;
-	while (*(int *)(current)->content != current_val)
-	{
-		i++;
-		current = current->next;
-	}
-	if (lst_len / 2 >= i)
-		return (i);
-	else
-		return (i - lst_len);
-}
-
-/*
- *
- *
- */
-
-int	sort_fine(t_list **a, t_list **b, t_list **ops)
-{
-	int	cost;
-	int	biggest;
-
-	while (ft_lstsize(*b) > 0)
-	{
-		biggest = ft_lstcmp(*b, &ft_lstcmpgt);
-		cost = sort_fine_cost(b, biggest);
-		while (cost > 0)
-		{
-			if (rb(b, ops))
-				return (-1);
-			cost--;
-		}
-		while (cost < 0)
-		{
-			if (rrb(b, ops))
-				return (-1);
-			cost++;
-		}
-		if (pa(a, b, ops))
 			return (-1);
 	}
 	return (0);

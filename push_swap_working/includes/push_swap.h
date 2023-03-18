@@ -72,26 +72,28 @@ int		sort_is_sorted(t_list **lst);
 int		sort_recenter_cost(t_list **lst_dest);
 int		sort_recenter(t_list **a, t_list **ops);
 
-//	ps_algo_4.c
+//	ps_algo_rough_1.c
+int		sort_move_chunk(t_list **a, t_list **b,
+			t_list **ops, int *bottom_quart);
+int		get_bottom_quart_size(t_list **a, int *bottom_quart);
 int		sort_chunk(t_list **a, t_list **b, t_list **ops,
 			int *bottom_quart);
 int		sort_rough(t_list **a, t_list **b, t_list **ops);
-int		sort_fine_cost(t_list **lst, int current_val);
-int		sort_fine(t_list **a, t_list **b, t_list **ops);
 int		sort_gt_five(t_list **a, t_list **b, t_list **ops);
 
-//	ps_algo_5.c
-t_list	*ft_lstseek_by_index(t_list **lst, int index);
+//	ps_algo_rough_2.c
+t_list	*ft_lstseek_a_by_i(t_list **lst, int index);
 int		ft_lstdel_and_relink_by_index(t_list **lst, int index);
 int		ft_lstseek_i_by_val(t_list *lst, int val);
 t_list	*ft_lstsort(t_list *lst);
-int		get_bottom_quart_size(t_list **a, int *bottom_quart);
 
-//	ps_algo_6.c
+//	ps_algo_rough_3.c
 t_list	*ft_lstdup_node(t_list *src);
 t_list	*ft_lstdup_lst(t_list *lst_old);
-int		sort_move_chunk(t_list **a, t_list **b,
-			t_list **ops, int *bottom_quart);
+
+//	ps_algo_fine_1.c
+int		sort_fine_cost(t_list **lst, int current_val);
+int		sort_fine(t_list **a, t_list **b, t_list **ops);
 
 //	ps_lst_1.c
 int		ft_lstcmplt(int cmp, int ref);

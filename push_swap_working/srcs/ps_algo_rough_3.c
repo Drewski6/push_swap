@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ps_algo_6.c                                        :+:      :+:    :+:   */
+/*   ps_algo_rough_3.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpentlan <dpentlan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -55,34 +55,4 @@ t_list	*ft_lstdup_lst(t_list *lst_old)
 		current = current->next;
 	}
 	return (lst_new);
-}
-
-/*
- *
- *
- */
-
-int	sort_move_chunk(t_list **a, t_list **b,
-	t_list **ops, int *bottom_quart)
-{
-	int	i;
-	int	a_len;
-
-	i = 0;
-	a_len = ft_lstsize(*a);
-	while (i < a_len)
-	{
-		if (*(int *)(*a)->content <= bottom_quart[1])
-		{
-			if (pb(a, b, ops))
-				return (-1);
-		}
-		else
-		{
-			if (ra(a, ops))
-				return (-1);
-		}
-		i++;
-	}
-	return (0);
 }
