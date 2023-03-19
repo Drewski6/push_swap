@@ -1,4 +1,9 @@
-/visualizer/*
-/visualizer
 push_swap_testing/perms_failed.txt
 push_swap_testing/perms_output.txt
+push_swap_testing/.~lock.push_swap_flowchart.odg#
+push_swap_testing/bulk_moves100.csv
+push_swap_testing/bulk_moves500.csv
+push_swap_testing/data100.csv
+push_swap_testing/data500.csv
+push_swap_testing/moves.txt
+push_swap_testing/numbers.txt
