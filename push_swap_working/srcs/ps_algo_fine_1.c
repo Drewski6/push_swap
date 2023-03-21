@@ -95,7 +95,7 @@ int	furthest(int first, int second)
  *
  */
 
-int	push_and_swap_pos(t_list **a, t_list **b, t_list **ops, int* cost)
+int	push_and_swap_pos(t_list **a, t_list **b, t_list **ops, int *cost)
 {
 	while (ft_lstseek_i_by_val(*b, cost[0]) >= 0
 		|| ft_lstseek_i_by_val(*b, cost[1]) >= 0)
@@ -125,7 +125,7 @@ int	push_and_swap_pos(t_list **a, t_list **b, t_list **ops, int* cost)
  *
  */
 
-int	push_and_swap_neg(t_list **a, t_list **b, t_list **ops, int* cost)
+int	push_and_swap_neg(t_list **a, t_list **b, t_list **ops, int *cost)
 {
 	while (ft_lstseek_i_by_val(*b, cost[0]) >= 0
 		|| ft_lstseek_i_by_val(*b, cost[1]) >= 0)
@@ -155,7 +155,7 @@ int	push_and_swap_neg(t_list **a, t_list **b, t_list **ops, int* cost)
  *
  */
 
-int	push_direct(t_list **a, t_list **b, t_list **ops, int* cost)
+int	push_direct(t_list **a, t_list **b, t_list **ops, int *cost)
 {
 	while (cost[2] > 0)
 	{
@@ -191,6 +191,9 @@ int	sort_fine(t_list **a, t_list **b, t_list **ops)
 		cost[1] = fine_second_biggest(b, cost[0]);
 		cost[2] = sort_fine_cost(b, cost[0]);
 		cost[3] = sort_fine_cost(b, cost[1]);
+		if (push_direct(a, b, ops, cost))
+			return (-1);
+		/*
 		if (cost[2] >= 0 && cost[3] >= 0)
 		{
 			if (push_and_swap_pos(a, b, ops, cost))
@@ -206,6 +209,7 @@ int	sort_fine(t_list **a, t_list **b, t_list **ops)
 			if (push_direct(a, b, ops, cost))
 				return (-1);
 		}
+		*/
 	}
 	if (ft_lstsize(*b) == 1)
 	{

@@ -32,6 +32,13 @@ int	sort_move_chunk(t_list **a, t_list **b,
 			if (pb(a, b, ops))
 				return (-1);
 		}
+		else if (*(int *)(*a)->content <= chunk_info[2])
+		{
+			if (pb(a, b, ops))
+				return (-1);
+			if (rb(b, ops))
+				return (-1);
+		}
 		else
 		{
 			if (ra(a, ops))
@@ -65,6 +72,11 @@ int	get_chunk_info(t_list **a, int *chunk_info)
 				chunk_info[0])->content;
 	else
 		chunk_info[1] = *(int *)ft_lstlast(c_sorted)->content;
+	if (a_len > chunk_info[0] * 2)
+		chunk_info[2] = *(int *)ft_lstseek_a_by_i(&c_sorted,
+				chunk_info[0] * 2)->content;
+	else
+		chunk_info[2] = *(int *)ft_lstlast(c_sorted)->content;
 	ft_lstclear(&c_sorted, &t_list_free_content);
 	return (0);
 }
