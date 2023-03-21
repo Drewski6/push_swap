@@ -21,9 +21,7 @@ except:
 		print("Input needs to be a number.")
 		exit()	
 
-with open("numbers.txt", 'w') as f:
-	s = generator(size)
-	s = re.sub(' +', ' ', s)
-	f.write(s)
-
+s = generator(size)
+s = re.sub(' +', ' ', s)
+print(s)
 # print(f"Generated {size} number(s) between -{size} and {size} and stored them in number.txt\n")

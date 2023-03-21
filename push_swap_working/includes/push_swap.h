@@ -74,10 +74,10 @@ int		sort_recenter(t_list **a, t_list **ops);
 
 //	ps_algo_rough_1.c
 int		sort_move_chunk(t_list **a, t_list **b,
-			t_list **ops, int *bottom_quart);
-int		get_bottom_quart_size(t_list **a, int *bottom_quart);
+			t_list **ops, int *chunk_info);
+int		get_chunk_info(t_list **a, int *chunk_info);
 int		sort_chunk(t_list **a, t_list **b, t_list **ops,
-			int *bottom_quart);
+			int *chunk_info);
 int		sort_rough(t_list **a, t_list **b, t_list **ops);
 int		sort_gt_five(t_list **a, t_list **b, t_list **ops);
 
