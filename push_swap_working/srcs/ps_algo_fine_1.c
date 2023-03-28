@@ -17,7 +17,7 @@
  *
  */
 
-int	fine_second_biggest(t_list **lst, int biggest)
+int	find_next_biggest(t_list **lst, int value)
 {
 	int		ret;
 	int		i;
@@ -25,7 +25,7 @@ int	fine_second_biggest(t_list **lst, int biggest)
 
 	i = 0;
 	current = (*lst);
-	if (*(int *)current->content == biggest)
+	if (*(int *)current->content == value)
 		ret = 1;
 	else
 		ret = 0;
@@ -33,7 +33,7 @@ int	fine_second_biggest(t_list **lst, int biggest)
 	{
 		if (*(int *)current->content
 			> *(int *)ft_lstseek_a_by_i(lst, ret)->content
-			&& *(int *)current->content < biggest)
+			&& *(int *)current->content < value)
 			ret = i;
 		current = current->next;
 		i++;
@@ -64,30 +64,6 @@ int	sort_fine_cost(t_list **lst, int current_val)
 		return (i);
 	else
 		return (i - lst_len);
-}
-
-/*
- *
- *
- */
-
-int	furthest(int first, int second)
-{
-	if (first >= 0 && second >= 0)
-	{
-		if (first - second >= 0)
-			return (first);
-		else
-			return (second);
-	}
-	if (first <= 0 && second <= 0)
-	{
-		if (first - second <= 0)
-			return (first);
-		else
-			return (second);
-	}
-	return (0);
 }
 
 /*
@@ -188,12 +164,9 @@ int	sort_fine(t_list **a, t_list **b, t_list **ops)
 	while (ft_lstsize(*b) > 1)
 	{
 		cost[0] = ft_lstcmp(*b, &ft_lstcmpgt);
-		cost[1] = fine_second_biggest(b, cost[0]);
+		cost[1] = find_next_biggest(b, cost[0]);
 		cost[2] = sort_fine_cost(b, cost[0]);
 		cost[3] = sort_fine_cost(b, cost[1]);
-		if (push_direct(a, b, ops, cost))
-			return (-1);
-		/*
 		if (cost[2] >= 0 && cost[3] >= 0)
 		{
 			if (push_and_swap_pos(a, b, ops, cost))
@@ -209,7 +182,6 @@ int	sort_fine(t_list **a, t_list **b, t_list **ops)
 			if (push_direct(a, b, ops, cost))
 				return (-1);
 		}
-		*/
 	}
 	if (ft_lstsize(*b) == 1)
 	{
