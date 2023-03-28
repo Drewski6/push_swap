@@ -15,11 +15,11 @@
 # include "../libft/includes/libft.h"
 
 # ifndef BIG_CHUNK_COUNT
-#  define BIG_CHUNK_COUNT 11
+#  define BIG_CHUNK_COUNT 16
 # endif
 
 # ifndef SMALL_CHUNK_COUNT
-#  define SMALL_CHUNK_COUNT 5
+#  define SMALL_CHUNK_COUNT 6
 # endif
 
 # ifndef SMALLEST_ALLOWED_CHUNK

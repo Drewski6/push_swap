@@ -6,7 +6,7 @@
 #    By: dpentlan <dpentlan@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/30 14:27:11 by dpentlan          #+#    #+#              #
-#    Updated: 2023/03/21 16:46:44 by dpentlan         ###   ########.fr        #
+#    Updated: 2023/01/30 14:27:14 by dpentlan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,11 +49,11 @@ OBJS_DIR = objs/
 
 # ***** Compile and Archiver *****
 
-BCC=11
-SCC=5
+BCC=16
+SCC=6
 SAC=10
- 
-CFLAGS = -Wall -Wextra -Werror -pg -g -D'BIG_CHUNK_COUNT=${BCC}' -D'SMALL_CHUNK_COUNT=${SCC}' -D'SMALLEST_ALLOWED_CHUNK=${SAC}'
+
+CFLAGS = -Wall -Wextra -Werror -g -D'BIG_CHUNK_COUNT=${BCC}' -D'SMALL_CHUNK_COUNT=${SCC}' -D'SMALLEST_ALLOWED_CHUNK=${SAC}'
 
 CC = cc
 

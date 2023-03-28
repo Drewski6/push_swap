@@ -36,8 +36,11 @@ int	sort_move_chunk(t_list **a, t_list **b,
 		{
 			if (pb(a, b, ops))
 				return (-1);
-			if (rb(b, ops))
-				return (-1);
+			if ((*b)->next)
+			{
+				if (rb(b, ops))
+					return (-1);
+			}
 		}
 		else
 		{
