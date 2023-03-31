@@ -48,11 +48,13 @@ int	find_next_biggest(t_list **lst, int value)
 
 int	get_cost_value_info(t_list **lst, int *cost, int *value)
 {
-	value[0] = ft_lstcmp(*lst, &ft_lstcmpgt);
-	value[1] = find_next_biggest(lst, value[0]);
+	value[0] = 4;
+	value[1] = ft_lstcmp(*lst, &ft_lstcmpgt);
 	value[2] = find_next_biggest(lst, value[1]);
-	cost[0] = sort_fine_cost(lst, value[0]);
+	value[3] = find_next_biggest(lst, value[2]);
+	cost[0] = 4;
 	cost[1] = sort_fine_cost(lst, value[1]);
 	cost[2] = sort_fine_cost(lst, value[2]);
+	cost[3] = sort_fine_cost(lst, value[3]);
 	return (0);
 }
