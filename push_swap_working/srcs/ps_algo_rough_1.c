@@ -34,13 +34,8 @@ int	sort_move_chunk(t_list **a, t_list **b,
 		}
 		else if (*(int *)(*a)->content <= chunk_info[2])
 		{
-			if (pb(a, b, ops))
+			if (sort_move_chunk_ext(a, b, ops))
 				return (-1);
-			if ((*b)->next)
-			{
-				if (rb(b, ops))
-					return (-1);
-			}
 		}
 		else
 		{

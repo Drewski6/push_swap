@@ -56,3 +56,21 @@ t_list	*ft_lstdup_lst(t_list *lst_old)
 	}
 	return (lst_new);
 }
+
+/*
+ *
+ *
+ */
+
+int	sort_move_chunk_ext(t_list **a, t_list **b,
+	t_list **ops)
+{
+	if (pb(a, b, ops))
+		return (-1);
+	if ((*b)->next)
+	{
+		if (rb(b, ops))
+			return (-1);
+	}
+	return (0);
+}

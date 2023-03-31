@@ -90,10 +90,19 @@ t_list	*ft_lstsort(t_list *lst);
 //	ps_algo_rough_3.c
 t_list	*ft_lstdup_node(t_list *src);
 t_list	*ft_lstdup_lst(t_list *lst_old);
+int		sort_move_chunk_ext(t_list **a, t_list **b,
+			t_list **ops);
 
 //	ps_algo_fine_1.c
 int		sort_fine_cost(t_list **lst, int current_val);
+int		push_and_swap_pos(t_list **a, t_list **b, t_list **ops, int *value);
+int		push_and_swap_neg(t_list **a, t_list **b, t_list **ops, int *value);
+int		push_direct(t_list **a, t_list **b, t_list **ops, int *cost);
 int		sort_fine(t_list **a, t_list **b, t_list **ops);
+
+//	ps_algo_fine_2.c
+int		find_next_biggest(t_list **lst, int value);
+int		get_cost_value_info(t_list **lst, int *cost, int *value);
 
 //	ps_lst_1.c
 int		ft_lstcmplt(int cmp, int ref);
