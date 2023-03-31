@@ -155,6 +155,8 @@ int	push_direct(t_list **a, t_list **b, t_list **ops, int *cost)
  *	cost[1] = s_biggest;
  *	cost[2] = biggest_cost;
  *	cost[3] = s_biggest_cost;
+ *	cost[4] = t_biggest
+ *	cost[5] = t_biggest_cost;
  */
 
 int	sort_fine(t_list **a, t_list **b, t_list **ops)
