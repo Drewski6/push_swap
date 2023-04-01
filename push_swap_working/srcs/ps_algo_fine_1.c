@@ -50,9 +50,8 @@ int	sort_top_three(t_list **a, t_list **ops)
  *
  */
 
-int	check_post_push(int pushes, t_list **a, t_list **ops)
+int	check_post_push(t_list **a, t_list **ops)
 {
-	if (pushes) {}
 	if (ft_lstsize(*a) == 1)
 		return (0);
 	if (ft_lstsize(*a) == 2)
@@ -77,6 +76,21 @@ int	check_post_push(int pushes, t_list **a, t_list **ops)
  *
  */
 
+int	(push_direct_push_logic(t_list **a, t_list **b, int *value, int *cost))
+{
+	return (*(int *)(*b)->content == value[0]
+			|| *(int *)(*b)->content == value[1]
+			|| ((*(int *)(*b)->content == value[2]
+			&& ft_lstsize(*a) > 0
+			&& *(int *)(*a)->content == value[1])
+			&& cost[0] > 0));
+}
+
+/*
+ *
+ *
+ */
+
 int	push_direct(t_list **a, t_list **b, t_list **ops)
 {
 	int	value[3];
@@ -86,21 +100,12 @@ int	push_direct(t_list **a, t_list **b, t_list **ops)
 
 	pushes = 0;
 	get_cost_value_info(b, cost, value);
+	op = &rrb;
 	if (cost[0] >= 0)
 		op = &rb;
-	else
-	{
-		op = &rrb;
-		cost[0] = cost[0] * -1;
-	}
 	while (ft_lstseek_i_by_val(*b, value[0]) != -1)
 	{
-		if (*(int *)(*b)->content == value[0]
-			|| *(int *)(*b)->content == value[1]
-			|| ((*(int *)(*b)->content == value[2]
-			&& ft_lstsize(*a) > 0
-			&& *(int *)(*a)->content == value[1])
-			&& cost[0] > 0))
+		if (push_direct_push_logic(a, b, value, cost))
 		{
 			if (pa(a, b, ops))
 				return (-1);
@@ -111,7 +116,6 @@ int	push_direct(t_list **a, t_list **b, t_list **ops)
 			if (op(b, ops))
 				return (-1);
 		}
-		cost[0]--;
 	}
 	return (pushes);
 }
@@ -127,7 +131,7 @@ int	push_direct(t_list **a, t_list **b, t_list **ops)
 
 int	sort_fine(t_list **a, t_list **b, t_list **ops)
 {
-	int pushes;
+	int	pushes;
 
 	pushes = 0;
 	while (ft_lstsize(*b) > 3)
@@ -135,7 +139,7 @@ int	sort_fine(t_list **a, t_list **b, t_list **ops)
 		pushes = push_direct(a, b, ops);
 		if (pushes == -1)
 			return (-1);
-		if (check_post_push(pushes, a, ops))
+		if (check_post_push(a, ops))
 			return (-1);
 	}
 	pushes = 0;
@@ -145,7 +149,7 @@ int	sort_fine(t_list **a, t_list **b, t_list **ops)
 			return (-1);
 		pushes++;
 	}
-	if (check_post_push(pushes, a, ops))
+	if (check_post_push(a, ops))
 		return (-1);
 	return (0);
 }

@@ -99,6 +99,10 @@ int	sort_chunk(t_list **a, t_list **b, t_list **ops, int *chunk_info)
  *			Acts like a high-pass filter.
  *	chunk_info[2] = value of the lower limit of the largest chunk.
  *			Acts like a low-pass filter.
+ *	
+ *	SMALL_CHUNK_COUNT = 6
+ *	BIG_CHUNK_COUNT = 16
+ *	SMALLEST_ALLOWED_CHUNK = 10
  */
 
 int	sort_rough(t_list **a, t_list **b, t_list **ops)
@@ -108,10 +112,10 @@ int	sort_rough(t_list **a, t_list **b, t_list **ops)
 
 	a_len = ft_lstsize(*a);
 	if (a_len <= 200)
-		chunk_info[0] = (a_len / SMALL_CHUNK_COUNT) - 1;
+		chunk_info[0] = (a_len / 6) - 1;
 	else
-		chunk_info[0] = (a_len / BIG_CHUNK_COUNT) - 1;
-	while (ft_lstsize(*a) > SMALLEST_ALLOWED_CHUNK)
+		chunk_info[0] = (a_len / 16) - 1;
+	while (ft_lstsize(*a) > 10)
 	{
 		if (sort_chunk(a, b, ops, chunk_info))
 			return (-1);

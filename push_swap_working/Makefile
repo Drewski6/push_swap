@@ -54,7 +54,7 @@ BCC=16
 SCC=6
 SAC=10
 
-CFLAGS = -Wall -Wextra -Werror -g -D'BIG_CHUNK_COUNT=${BCC}' -D'SMALL_CHUNK_COUNT=${SCC}' -D'SMALLEST_ALLOWED_CHUNK=${SAC}'
+CFLAGS = -Wall -Wextra -Werror -g
 
 CC = cc
 

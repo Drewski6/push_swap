@@ -14,18 +14,6 @@
 # define PUSH_SWAP_H
 # include "../libft/includes/libft.h"
 
-# ifndef BIG_CHUNK_COUNT
-#  define BIG_CHUNK_COUNT 16
-# endif
-
-# ifndef SMALL_CHUNK_COUNT
-#  define SMALL_CHUNK_COUNT 6
-# endif
-
-# ifndef SMALLEST_ALLOWED_CHUNK
-#  define SMALLEST_ALLOWED_CHUNK 10
-# endif
-
 //	push_swap.c
 int		error(void);
 t_list	*arg_switch(t_list *a, int argc, char **argv);
@@ -92,6 +80,9 @@ int		sort_move_chunk_ext(t_list **a, t_list **b,
 			t_list **ops);
 
 //	ps_algo_fine_1.c
+int		sort_top_three(t_list **a, t_list **ops);
+int		check_post_push(t_list **a, t_list **ops);
+int		push_direct_push_logic(t_list **a, t_list **b, int *value, int *cost);
 int		push_direct(t_list **a, t_list **b, t_list **ops);
 int		sort_fine(t_list **a, t_list **b, t_list **ops);
 

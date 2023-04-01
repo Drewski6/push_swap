@@ -42,7 +42,7 @@ turn()
 	c_compile $2 $3 $4
 	if [ ! -s $OUTPUT ];
 	then
-		echo "Result,BCC,SCC,SAC,List Size,Number,sa,ra,rra,sb,rb,rrb,pa,pb,ss,rr,rrr,Input " >> $OUTPUT
+		echo "Result,BCC,SCC,SAC,List Size,Number,sa,ra,rra,sb,rb,rrb,pa,pb,ss,rr,rrr,Input," >> $OUTPUT
 	fi
 	test_loop $1 $2 $3 $4 $5
 }
