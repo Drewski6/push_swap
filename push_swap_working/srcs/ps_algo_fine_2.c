@@ -46,6 +46,31 @@ int	find_next_biggest(t_list **lst, int value)
  *
  */
 
+int	sort_fine_cost(t_list **lst, int current_val)
+{
+	int		i;
+	int		lst_len;
+	t_list	*current;
+
+	i = 0;
+	lst_len = ft_lstsize(*lst);
+	current = *lst;
+	while (*(int *)(current)->content != current_val)
+	{
+		i++;
+		current = current->next;
+	}
+	if (lst_len / 2 >= i)
+		return (i);
+	else
+		return (i - lst_len);
+}
+
+/*
+ *
+ *
+ */
+
 int	get_cost_value_info(t_list **lst, int *cost, int *value)
 {
 	value[0] = ft_lstcmp(*lst, &ft_lstcmpgt);

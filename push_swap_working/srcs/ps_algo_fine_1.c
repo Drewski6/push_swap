@@ -17,106 +17,30 @@
  *
  */
 
-int	sort_fine_cost(t_list **lst, int current_val)
+int	sort_top_three(t_list **a, t_list **ops)
 {
-	int		i;
-	int		lst_len;
-	t_list	*current;
+	int	first;
+	int	second;
+	int	third;
+	int	ret;
 
-	i = 0;
-	lst_len = ft_lstsize(*lst);
-	current = *lst;
-	while (*(int *)(current)->content != current_val)
-	{
-		i++;
-		current = current->next;
-	}
-	if (lst_len / 2 >= i)
-		return (i);
-	else
-		return (i - lst_len);
-}
-
-/*
- *
- *
- */
-
-int	push_and_swap_pos(t_list **a, t_list **b, t_list **ops, int *value)
-{
-	while (ft_lstseek_i_by_val(*b, value[0]) >= 0
-		|| ft_lstseek_i_by_val(*b, value[1]) >= 0)
-	{
-		if (*(int *)(*b)->content == value[0]
-			|| *(int *)(*b)->content == value[1])
-		{
-			if (pa(a, b, ops))
-				return (-1);
-		}
-		else
-		{
-			if (rb(b, ops))
-				return (-1);
-		}
-	}
-	if (*(int *)(*a)->content > *(int *)(*a)->next->content)
-	{
-		if (sa(a, ops))
-			return (-1);
-	}
-	return (0);
-}
-
-/*
- *
- *
- */
-
-int	push_and_swap_neg(t_list **a, t_list **b, t_list **ops, int *value)
-{
-	while (ft_lstseek_i_by_val(*b, value[0]) >= 0
-		|| ft_lstseek_i_by_val(*b, value[1]) >= 0)
-	{
-		if (*(int *)(*b)->content == value[0]
-			|| *(int *)(*b)->content == value[1])
-		{
-			if (pa(a, b, ops))
-				return (-1);
-		}
-		else
-		{
-			if (rrb(b, ops))
-				return (-1);
-		}
-	}
-	if (*(int *)(*a)->content > *(int *)(*a)->next->content)
-	{
-		if (sa(a, ops))
-			return (-1);
-	}
-	return (0);
-}
-
-/*
- *
- *
- */
-
-int	push_direct(t_list **a, t_list **b, t_list **ops, int *cost)
-{
-	while (cost[0] > 0)
-	{
-		if (rb(b, ops))
-			return (-1);
-		cost[0]--;
-	}
-	while (cost[0] < 0)
-	{
-		if (rrb(b, ops))
-			return (-1);
-		cost[0]++;
-	}
-	if (pa(a, b, ops))
+	first = *(int *)(*a)->content;
+	second = *(int *)(*a)->next->content;
+	third = *(int *)(*a)->next->next->content;
+	ret = 0;
+	if (first < second && second < third && third > first)
+		return (0);
+	else if (first > second && second < third && third > first)
+		ret = sa(a, ops);
+	else if (first > second && second > third && third < first)
+		ret = sort_multi_ops(a, ops, 5, &sa, &ra, &sa, &rra, &sa);
+	else if (first > second && second < third && third < first)
+		ret = sort_multi_ops(a, ops, 4, &sa, &ra, &sa, &rra);
+	else if (first < second && second > third && third > first)
+		ret = sort_multi_ops(a, ops, 3, &ra, &sa, &rra);
+	else if (first < second && second > third && third < first)
+		ret = sort_multi_ops(a, ops, 4, &ra, &sa, &rra, &sa);
+	if (ret < 0)
 		return (-1);
 	return (0);
 }
@@ -126,64 +50,24 @@ int	push_direct(t_list **a, t_list **b, t_list **ops, int *cost)
  *
  */
 
-int	biggest_in_array(size_t size, int *array)
+int	check_post_push(int pushes, t_list **a, t_list **ops)
 {
-	int	biggest;
-	size_t	i;
-
-	i = 0;
-	biggest = array[i];
-	while (i < size)
+	if (pushes) {}
+	if (ft_lstsize(*a) == 1)
+		return (0);
+	if (ft_lstsize(*a) == 2)
 	{
-		if (array[i] > biggest)
-			biggest = array[i];
-		i++;
+		if (*(int *)(*a)->content >
+			*(int *)(*a)->next->content)
+		{
+			if (sa(a, ops))
+				return (-1);
+		}
 	}
-	return (biggest);
-}
-
-int	smallest_in_array(size_t size, int *array)
-{
-	int	smallest;
-	size_t	i;
-
-	i = 0;
-	smallest = array[i];
-	while (i < size)
+	if (ft_lstsize(*a) >= 3)
 	{
-		if (array[i] < smallest)
-			smallest = array[i];
-		i++;
-	}
-	return (smallest);
-}
-
-/*
- *
- *
- */
-
-int	ft_abs(int value)
-{
-	if (value < 0)
-		value = value * -1;
-	return (value);
-}
-
-/*
- *
- *
- */
-
-int	init_array(size_t size, int *array)
-{
-	size_t	i;
-
-	i = 0;
-	while (i < size)
-	{
-		array[i] = 0;
-		i++;
+		if (sort_top_three(a, ops))
+			return (-1);
 	}
 	return (0);
 }
@@ -193,32 +77,43 @@ int	init_array(size_t size, int *array)
  *
  */
 
-int	cost_sort_three_shortest(int lst_size, size_t size, int *array)
+int	push_direct(t_list **a, t_list **b, t_list **ops)
 {
-	int		positives[3];
-	int		negatives[3];
-	int		pos_offset;
-	int		neg_offset;
-	size_t	i;
+	int	value[3];
+	int	cost[3];
+	int	(*op)(t_list **, t_list **);
+	int	pushes;
 
-	i = 0;
-	init_array(3, positives);
-	init_array(3, negatives);
-	while (i < size)
-	{
-		if (array[i] >= 0)
-			positives[i] = array[i];
-		else
-			negatives[i] = array[i];
-		i++;
-	}
-	pos_offset = biggest_in_array(3, positives);
-	neg_offset = ft_abs(smallest_in_array(3, negatives));
-	if ((pos_offset * 2) + neg_offset > lst_size)
-	{}
+	pushes = 0;
+	get_cost_value_info(b, cost, value);
+	if (cost[0] >= 0)
+		op = &rb;
 	else
-	{}
-	return (pos_offset + neg_offset);
+	{
+		op = &rrb;
+		cost[0] = cost[0] * -1;
+	}
+	while (ft_lstseek_i_by_val(*b, value[0]) != -1)
+	{
+		if (*(int *)(*b)->content == value[0]
+			|| *(int *)(*b)->content == value[1]
+			|| ((*(int *)(*b)->content == value[2]
+			&& ft_lstsize(*a) > 0
+			&& *(int *)(*a)->content == value[1])
+			&& cost[0] > 0))
+		{
+			if (pa(a, b, ops))
+				return (-1);
+			pushes++;
+		}
+		else
+		{
+			if (op(b, ops))
+				return (-1);
+		}
+		cost[0]--;
+	}
+	return (pushes);
 }
 
 /*
@@ -232,35 +127,25 @@ int	cost_sort_three_shortest(int lst_size, size_t size, int *array)
 
 int	sort_fine(t_list **a, t_list **b, t_list **ops)
 {
-	int	value[3];
-	int	cost[3];
-	int	cost_return;
+	int pushes;
 
-	while (ft_lstsize(*b) > 1)
+	pushes = 0;
+	while (ft_lstsize(*b) > 3)
 	{
-		get_cost_value_info(b, cost, value);
-		cost_return = cost_sort_three_shortest(ft_lstsize(*b), 3, cost);
-		if (cost_return) {}
-		if (cost[0] >= 0 && cost[1] >= 0)
-		{
-			if (push_and_swap_pos(a, b, ops, value))
-				return (-1);
-		}
-		else if (cost[0] <= 0 && cost[1] <= 0)
-		{
-			if (push_and_swap_neg(a, b, ops, value))
-				return (-1);
-		}	
-		else
-		{
-			if (push_direct(a, b, ops, cost))
-				return (-1);
-		}
+		pushes = push_direct(a, b, ops);
+		if (pushes == -1)
+			return (-1);
+		if (check_post_push(pushes, a, ops))
+			return (-1);
 	}
-	if (ft_lstsize(*b) == 1)
+	pushes = 0;
+	while (ft_lstsize(*b) > 0)
 	{
 		if (pa(a, b, ops))
 			return (-1);
+		pushes++;
 	}
+	if (check_post_push(pushes, a, ops))
+		return (-1);
 	return (0);
 }

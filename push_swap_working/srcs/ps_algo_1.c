@@ -17,14 +17,25 @@
  *
  */
 
-int	sort_two_ops(t_list **a, t_list **ops,
-		int (*op1)(t_list **, t_list **),
-		int (*op2)(t_list **, t_list **))
+int	sort_multi_ops(t_list **lst, t_list **ops, int size, ...)
 {
-	if (op1(a, ops))
-		return (-1);
-	if (op2(a, ops))
-		return (-1);
+	va_list	parg;
+	int		(*op)(t_list **, t_list **);
+	int		i;
+
+	i = 0;
+	va_start(parg, size);
+	while (i < size)
+	{
+		op = va_arg(parg, int (*)(t_list **, t_list **));
+		if (op(lst, ops))
+		{
+			va_end(parg);
+			return (-1);
+		}
+		i++;
+	}
+	va_end(parg);
 	return (0);
 }
 
@@ -49,11 +60,11 @@ int	sort_three(t_list **a, t_list **ops)
 	else if (first > second && second < third && third > first)
 		ret = sa(a, ops);
 	else if (first > second && second > third && third < first)
-		ret = sort_two_ops(a, ops, &sa, &rra);
+		ret = sort_multi_ops(a, ops, 2, &sa, &rra);
 	else if (first > second && second < third && third < first)
 		ret = ra(a, ops);
 	else if (first < second && second > third && third > first)
-		ret = sort_two_ops(a, ops, &sa, &ra);
+		ret = sort_multi_ops(a, ops, 2, &sa, &ra);
 	else if (first < second && second > third && third < first)
 		ret = rra(a, ops);
 	if (ret < 0)

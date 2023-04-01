@@ -20,8 +20,10 @@ if (total_result.sum()):
 	print(f"Total number of FAILED runs: {total_result.sum()}")
 else:
 	print(f"All runs PASSED checker_linux")
-# print(f"Total number greater than 700: {total_100.sum()}")
-print(f"Total number greater than 5500: {total_500.sum()}")
+if (SIZE == 100):
+	print(f"Total number greater than 700: {total_100.sum()}")
+if (SIZE == 500):
+	print(f"Total number greater than 5500: {total_500.sum()}")
 print(f"Max Number: {df.loc[index_of_max]['Number']}")
 print(f"Min Number: {df.loc[index_of_min]['Number']}")
 print(f"Mean Number: {df['Number'].mean()}")

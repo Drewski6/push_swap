@@ -53,9 +53,7 @@ int		int_max_check(char *str_num, int *number);
 int		t_list_ops_add(t_list **ops, char *content);
 
 //	ps_algo_1.c
-int		sort_two_ops(t_list **a, t_list **ops,
-			int (*op1)(t_list **, t_list **),
-			int (*op2)(t_list **, t_list **));
+int		sort_multi_ops(t_list **a, t_list **ops, int size, ...);
 int		sort_three(t_list **a, t_list **ops);
 int		sort_le_three(t_list **a, t_list **ops, int size, int stack);
 int		sort_entry(t_list **a);
@@ -94,13 +92,11 @@ int		sort_move_chunk_ext(t_list **a, t_list **b,
 			t_list **ops);
 
 //	ps_algo_fine_1.c
-int		sort_fine_cost(t_list **lst, int current_val);
-int		push_and_swap_pos(t_list **a, t_list **b, t_list **ops, int *value);
-int		push_and_swap_neg(t_list **a, t_list **b, t_list **ops, int *value);
-int		push_direct(t_list **a, t_list **b, t_list **ops, int *cost);
+int		push_direct(t_list **a, t_list **b, t_list **ops);
 int		sort_fine(t_list **a, t_list **b, t_list **ops);
 
 //	ps_algo_fine_2.c
+int		sort_fine_cost(t_list **lst, int current_val);
 int		find_next_biggest(t_list **lst, int value);
 int		get_cost_value_info(t_list **lst, int *cost, int *value);
 
