@@ -41,9 +41,9 @@ SRCS = ps_switch.c \
 
 SRCS_DIR = srcs/
 
-BONUS_SRCS = checker.c \
+SRCS_BONUS = checker.c \
 
-BONUS_SRCS_DIR = bonus/srcs/
+SRCS_DIR_BONUS = bonus/srcs/
 
 # ***** Includes *****
 
@@ -58,11 +58,11 @@ OBJS = $(patsubst %.c,$(OBJS_DIR)%.o,$(SRCS))
 
 OBJS_MAN = $(patsubst %.c,$(OBJS_DIR)%.o,$(SRCS_MAN))
 
+OBJS_BONUS = $(patsubst %.c,$(OBJS_DIR_BONUS)%.o,$(SRCS_BONUS))
+
 OBJS_DIR = objs/
 
-BONUS_OBJS = $(patsubst %.c,$(BONUS_OBJS_DIR)%.o,$(BONUS_SRCS))
-
-BONUS_OBJS_DIR = bonus/objs/
+OBJS_DIR_BONUS = bonus/objs/
 
 # ***** Compile and Archiver *****
 # Variables for testing best chunk size.
@@ -87,23 +87,23 @@ $(NAME): $(OBJS) $(OBJS_MAN)
 	make -C libft
 	$(CC) $(CFLAGS) $(OBJS) $(OBJS_MAN) $(LIBFT) -o $(NAME)
 
-$(BONUS): $(OBJS) $(BONUS_OBJS)
+$(BONUS): $(OBJS) $(OBJS_BONUS)
 	make -C libft
-	$(CC) $(CFLAGS) $(OBJS) $(BONUS_OBJS) $(LIBFT) -o $(BONUS)
+	$(CC) $(CFLAGS) $(OBJS) $(OBJS_BONUS) $(LIBFT) -o $(BONUS)
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
 	@mkdir -p $(OBJS_DIR)
 	$(CC) -c $(CFLAGS) -I$(INCS_DIR) $< -o $@
 
-$(BONUS_OBJS_DIR)%.o: $(BONUS_SRCS_DIR)%.c
-	@mkdir -p $(BONUS_OBJS_DIR)
+$(OBJS_DIR_BONUS)%.o: $(SRCS_DIR_BONUS)%.c
+	@mkdir -p $(OBJS_DIR_BONUS)
 	$(CC) -c $(CFLAGS) -I$(INCS_DIR) $< -o $@
 
 clean:
 	@make -C libft clean --silent
 	@rm -f $(OBJS)
 	@rm -f $(OBJS_MAN)
-	@rm -f $(BONUS_OBJS)
+	@rm -f $(OBJS_BONUS)
 
 fclean:	clean
 	@make -C libft fclean --silent
