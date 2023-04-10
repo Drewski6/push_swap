@@ -39,6 +39,8 @@ int		int_max_check(char *str_num, int *number);
 
 //	ps_utils_t_list_ops.c
 int		t_list_ops_add(t_list **ops, char *content);
+int		ops_del_two_and_replace(t_list **head, char *content);
+int		optimize_list_entry(t_list **ops);
 
 //	ps_algo_1.c
 int		sort_multi_ops(t_list **a, t_list **ops, int size, ...);
@@ -124,6 +126,7 @@ void	table_print(char **table);
 //	ps_debug_tools_2.c
 void	ezprint(t_list **lst);
 void	ezprstr(t_list **lst);
+void	ezprstr_c(t_list **lst);
 void	ft_lstcmp_test(t_list *a, t_list *b);
 
 #endif

@@ -22,6 +22,28 @@ void	ezprstr(t_list **lst)
 	t_list_print(*lst, &t_list_print_str, 1);
 }
 
+void	ezprstr_c(t_list **lst)
+{
+	t_list	*current;
+	int		i;
+	void	(*ptype)(int, t_list *, char);
+	int		h_flag;
+
+	ptype = &t_list_print_str;
+	h_flag = 1;
+	current = *lst;
+	i = 0;
+	if (h_flag)
+		ft_printf("= Index | Value =\n");
+	while (i < 5)
+	{
+		ptype(i, current, h_flag);
+		i++;
+		current = current->next;
+	}
+	return ;
+}
+
 void	ft_lstcmp_test(t_list *a, t_list *b)
 {
 	ft_printf("=------------------=\n");

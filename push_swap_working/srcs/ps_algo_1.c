@@ -117,7 +117,6 @@ int	sort_le_three(t_list **lst, t_list **ops, int size, int stack)
 
 int	sort_entry(t_list **a)
 {
-	int		size;
 	int		ret;
 	t_list	*ops;
 	t_list	*b;
@@ -125,11 +124,10 @@ int	sort_entry(t_list **a)
 	ret = 0;
 	ops = 0;
 	b = 0;
-	size = ft_lstsize(*a);
-	if (size <= 3)
-		ret = sort_le_three(a, &ops, size, 0);
-	else if (size <= 5)
-		ret = sort_le_five(a, &b, &ops, size);
+	if (ft_lstsize(*a) <= 3)
+		ret = sort_le_three(a, &ops, ft_lstsize(*a), 0);
+	else if (ft_lstsize(*a) <= 5)
+		ret = sort_le_five(a, &b, &ops, ft_lstsize(*a));
 	else
 		ret = sort_gt_five(a, &b, &ops);
 	ft_lstclear(&b, &t_list_free_content);
@@ -138,6 +136,8 @@ int	sort_entry(t_list **a)
 		ft_lstclear(&ops, &t_list_free_content);
 		return (-1);
 	}
+	if (optimize_list_entry(&ops))
+		return (-1);
 	t_list_print(ops, &t_list_print_str, 0);
 	ft_lstclear(&ops, &t_list_free_content);
 	return (0);
