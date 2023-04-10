@@ -37,9 +37,14 @@ t_list	*t_list_construct(char **table);
 void	t_list_free_content(void *content);
 int		int_max_check(char *str_num, int *number);
 
-//	ps_utils_t_list_ops.c
+//	ps_utils_t_list_ops_1.c
 int		t_list_ops_add(t_list **ops, char *content);
+
+//	ps_utils_t_list_ops_2.c
 int		ops_del_two_and_replace(t_list **head, char *content);
+int		optimize_lst_ss(t_list **head);
+int		optimize_lst_rr(t_list **head);
+int		optimize_lst_rrr(t_list **head);
 int		optimize_list_entry(t_list **ops);
 
 //	ps_algo_1.c

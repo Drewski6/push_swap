@@ -136,7 +136,7 @@ int	sort_entry(t_list **a)
 		ft_lstclear(&ops, &t_list_free_content);
 		return (-1);
 	}
-	if (optimize_list_entry(&ops))
+	if (ft_lstsize(*a) > 4 && optimize_list_entry(&ops))
 		return (-1);
 	t_list_print(ops, &t_list_print_str, 0);
 	ft_lstclear(&ops, &t_list_free_content);
