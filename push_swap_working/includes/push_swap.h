@@ -15,9 +15,11 @@
 # include "../libft/includes/libft.h"
 
 //	push_swap.c
+//	int main (int argc, char **argv);
+
+//	ps_switch.c
 int		error(void);
 t_list	*arg_switch(t_list *a, int argc, char **argv);
-//	int main (int argc, char **argv);
 
 //	ps_utils_args.c
 void	table_free(char **table);
