@@ -25,6 +25,12 @@ int	main(int argc, char **argv)
 		error();
 		return (-1);
 	}
+	if (psb_read_inst(&a))
+	{
+		error();
+		ft_lstclear(&a, &t_list_free_content);
+		return (-1);
+	}
 	psb_check_sort(&a);
 	ft_lstclear(&a, &t_list_free_content);
 	return (0);

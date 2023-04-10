@@ -16,5 +16,6 @@
 
 //	psb_verify_stack.c
 int	psb_check_sort(t_list **a);
+int	psb_read_inst(t_list **lst);
 
 #endif

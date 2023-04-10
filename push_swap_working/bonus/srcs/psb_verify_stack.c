@@ -12,6 +12,23 @@
 
 #include "push_swap_bonus.h"
 
+int	psb_read_inst(t_list **lst)
+{
+	char	*stdin_line;
+
+	if (lst) {}
+	stdin_line = get_next_line(0);
+	while (stdin_line)
+	{
+		// check for valid input string here
+			// if good, continue loop
+			// if bad, print error, free stdin_line from before and return. free list. free all
+		free(stdin_line);
+		stdin_line = get_next_line(0);
+	}
+	return (0);
+}
+
 /*
  *
  *
