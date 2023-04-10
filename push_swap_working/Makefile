@@ -42,6 +42,7 @@ SRCS = ps_switch.c \
 SRCS_DIR = srcs/
 
 SRCS_BONUS = checker.c \
+	psb_verify_stack.c \
 
 SRCS_DIR_BONUS = bonus/srcs/
 

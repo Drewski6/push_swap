@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap_bonus.h                                  :+:      :+:    :+:   */
+/*   psb_verify_stack.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpentlan <dpentlan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/10 16:44:49 by dpentlan          #+#    #+#             */
-/*   Updated: 2023/04/10 16:45:08 by dpentlan         ###   ########.fr       */
+/*   Created: 2023/04/10 17:34:41 by dpentlan          #+#    #+#             */
+/*   Updated: 2023/04/10 17:35:02 by dpentlan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_BONUS_H
-# define PUSH_SWAP_BONUS_H
-# include "push_swap.h"
+#include "push_swap_bonus.h"
 
-//	psb_verify_stack.c
-int	psb_check_sort(t_list **a);
+/*
+ *
+ *
+ */
 
-#endif
+int	psb_check_sort(t_list **a)
+{
+	if (sort_is_sorted(a))
+		write(1, "OK\n", 3);
+	else
+		write(1, "KO\n", 3);
+	return (0);
+}
