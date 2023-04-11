@@ -43,6 +43,9 @@ SRCS_DIR = srcs/
 
 SRCS_BONUS = checker.c \
 	psb_verify_stack.c \
+	psb_ops_1.c \
+	psb_ops_2.c \
+	psb_ops_3.c \
 
 SRCS_DIR_BONUS = bonus/srcs/
 
