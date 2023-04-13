@@ -12,7 +12,6 @@
 
 #include "push_swap_bonus.h"
 
-//int	(*)(t_list **, t_list **)psb_check_input(char *input)
 void	*psb_check_input(char *input)
 {
 	if (!ft_strncmp(input, "sa\n", 3))
@@ -40,6 +39,11 @@ void	*psb_check_input(char *input)
 	return (0);
 }
 
+/*
+ *
+ *
+ */
+
 int	psb_read_inst(t_list **a, t_list **b)
 {
 	char	*stdin_line;
@@ -59,8 +63,8 @@ int	psb_read_inst(t_list **a, t_list **b)
 		free(stdin_line);
 		stdin_line = get_next_line(0, 0);
 	}
-	free(stdin_line);
 	free(get_next_line(0, 1));
+	free(stdin_line);
 	if (psb_exec_inst(a, b, &ops))
 		return (ft_lstclear(&ops, &t_list_free_content), -1);
 	ft_lstclear(&ops, &t_list_free_content);

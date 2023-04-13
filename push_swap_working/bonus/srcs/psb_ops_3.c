@@ -87,7 +87,7 @@ int	rr_checker(t_list **a, t_list **b)
 	t_list	*second_b;
 	t_list	*last_b;
 
-	if (*a)
+	if (*a && (*a)->next)
 	{
 		second_a = (*a)->next;
 		last_a = ft_lstlast(*a);
@@ -95,7 +95,7 @@ int	rr_checker(t_list **a, t_list **b)
 		last_a->next->next = 0;
 		(*a) = second_a;
 	}
-	if (*b)
+	if (*b && (*b)->next)
 	{
 		second_b = (*b)->next;
 		last_b = ft_lstlast(*b);
