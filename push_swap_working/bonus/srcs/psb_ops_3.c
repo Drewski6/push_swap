@@ -22,7 +22,7 @@ int	pa_checker(t_list **a, t_list **b)
 	t_list	*second_b;
 
 	if (!(*b))
-		return (-1);
+		return (0);
 	second_b = (*b)->next;
 	(*b)->next = (*a);
 	(*a) = (*b);
@@ -40,7 +40,7 @@ int	pb_checker(t_list **a, t_list **b)
 	t_list	*second_a;
 
 	if (!(*a))
-		return (-1);
+		return (0);
 	second_a = (*a)->next;
 	(*a)->next = (*b);
 	(*b) = (*a);
@@ -58,6 +58,8 @@ int	ss_checker(t_list **a, t_list **b)
 	t_list	*p_a;
 	t_list	*p_b;
 
+	if (!(*a) || !(*b))
+		return (0);
 	p_a = (*a)->next;
 	(*a)->next = (*a)->next->next;
 	p_a->next = *a;
@@ -81,6 +83,8 @@ int	rr_checker(t_list **a, t_list **b)
 	t_list	*second_b;
 	t_list	*last_b;
 
+	if (!(*a) || !(*b))
+		return (0);
 	second_a = (*a)->next;
 	last_a = ft_lstlast(*a);
 	last_a->next = (*a);
@@ -104,6 +108,8 @@ int	rrr_checker(t_list **a, t_list **b)
 	t_list	*last_a;
 	t_list	*last_b;
 
+	if (!(*a) || !(*b))
+		return (0);
 	last_a = ft_lstlast(*a);
 	last_a->next = (*a);
 	(*a) = last_a;
