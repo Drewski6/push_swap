@@ -38,11 +38,13 @@ int	int_max_check(char *str_num, int *number)
 	itoa_ret = ft_itoa(*number);
 	if (!itoa_ret)
 		return (-1);
-	if (ft_strncmp(str_num, itoa_ret, ft_strlen(str_num)))
+	if (str_num[0] == '+')
 	{
-		free(itoa_ret);
-		return (-1);
+		if (ft_strncmp((str_num + 1), itoa_ret, ft_strlen(str_num)))
+			return (free(itoa_ret), -1);
 	}
+	else if (ft_strncmp(str_num, itoa_ret, ft_strlen(str_num)))
+		return (free(itoa_ret), -1);
 	free(itoa_ret);
 	return (0);
 }
