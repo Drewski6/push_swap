@@ -18,6 +18,13 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+typedef struct s_gnl
+{
+	char		*buf;
+	char		*ret_str;
+	int			r_size;
+}	t_gnl;
+
 char	*get_next_line(int fd, int clear_flag);
 void	ft_bzero(void *str, size_t len);
 void	*ft_memcpy(void *dest, const void *src, size_t len);

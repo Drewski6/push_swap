@@ -136,30 +136,28 @@ static char	*clean_s_buf(char *s_buf)
 char	*get_next_line(int fd, int clear_flag)
 {
 	static char	*s_buf[4096];
-	char		*buf;
-	char		*ret_str;
-	int			r_size;
+	t_gnl		buf_info;
 
 	if (clear_flag)
 		return (free(s_buf[fd]), NULL);
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
-	buf = malloc(BUFFER_SIZE + 1);
-	if (!buf)
+	buf_info.buf = malloc(BUFFER_SIZE + 1);
+	if (!buf_info.buf)
 		return (0);
-	r_size = 1;
+	buf_info.r_size = 1;
 	while (nl_loc(s_buf[fd]) == -1)
 	{
-		r_size = read(fd, buf, BUFFER_SIZE);
-		if (r_size <= 0)
+		buf_info.r_size = read(fd, buf_info.buf, BUFFER_SIZE);
+		if (buf_info.r_size <= 0)
 			break ;
-		buf[r_size] = 0;
-		s_buf[fd] = ft_strjoin_gnl(s_buf[fd], buf);
+		buf_info.buf[buf_info.r_size] = 0;
+		s_buf[fd] = ft_strjoin_gnl(s_buf[fd], buf_info.buf);
 	}
-	free(buf);
-	if (r_size == -1)
+	free(buf_info.buf);
+	if (buf_info.r_size == -1)
 		return (0);
-	ret_str = ret_str_build(s_buf[fd]);
+	buf_info.ret_str = ret_str_build(s_buf[fd]);
 	s_buf[fd] = clean_s_buf(s_buf[fd]);
-	return (ret_str);
+	return (buf_info.ret_str);
 }

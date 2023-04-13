@@ -49,13 +49,8 @@ int	psb_read_inst(t_list **a, t_list **b)
 	stdin_line = get_next_line(0, 0);
 	while (stdin_line)
 	{
-		if (!psb_check_input(stdin_line))
-		{
-			free(stdin_line);
-			ft_lstclear(&ops, &t_list_free_content);
-			return (-1);
-		}
-		if (t_list_ops_add(&ops, stdin_line))
+		if (!psb_check_input(stdin_line)
+			|| t_list_ops_add(&ops, stdin_line))
 		{
 			free(stdin_line);
 			ft_lstclear(&ops, &t_list_free_content);
@@ -65,13 +60,9 @@ int	psb_read_inst(t_list **a, t_list **b)
 		stdin_line = get_next_line(0, 0);
 	}
 	free(stdin_line);
-	if (psb_exec_inst(a, b, &ops))
-	{
-		free(get_next_line(0, 1));
-		ft_lstclear(&ops, &t_list_free_content);
-		return (-1);
-	}
 	free(get_next_line(0, 1));
+	if (psb_exec_inst(a, b, &ops))
+		return (ft_lstclear(&ops, &t_list_free_content), -1);
 	ft_lstclear(&ops, &t_list_free_content);
 	return (0);
 }
