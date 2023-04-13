@@ -58,14 +58,14 @@ int	ss_checker(t_list **a, t_list **b)
 	t_list	*p_a;
 	t_list	*p_b;
 
-	if (*a)
+	if (*a && (*a)->next)
 	{
 		p_a = (*a)->next;
 		(*a)->next = (*a)->next->next;
 		p_a->next = *a;
 		*a = p_a;
 	}
-	if (*b)
+	if (*b && (*b)->next)
 	{
 		p_b = (*b)->next;
 		(*b)->next = (*b)->next->next;

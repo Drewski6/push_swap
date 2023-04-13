@@ -101,7 +101,9 @@ int	psb_exec_inst(t_list **a, t_list **b, t_list **ops)
 
 int	psb_check_sort(t_list **a, t_list **b)
 {
-	if (sort_is_sorted(a) && ft_lstsize(*b) == 0)
+	if (!a || !(*a))
+		write(1, "KO\n", 3);
+	else if (sort_is_sorted(a) && ft_lstsize(*b) == 0)
 		write(1, "OK\n", 3);
 	else
 		write(1, "KO\n", 3);
