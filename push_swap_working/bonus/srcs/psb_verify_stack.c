@@ -49,6 +49,12 @@ int	psb_read_inst(t_list **a, t_list **b)
 	stdin_line = get_next_line(0, 0);
 	while (stdin_line)
 	{
+		if (!psb_check_input(stdin_line))
+		{
+			free(stdin_line);
+			ft_lstclear(&ops, &t_list_free_content);
+			return (-1);
+		}
 		if (t_list_ops_add(&ops, stdin_line))
 		{
 			free(stdin_line);
@@ -85,13 +91,9 @@ int	psb_exec_inst(t_list **a, t_list **b, t_list **ops)
 	{
 		ret = (int (*)(t_list **, t_list **))psb_check_input(current->content);
 		if (!ret)
-		{
 			return (-1);
-		}
 		if (ret(a, b))
-		{
 			return (-1);
-		}
 		current = current->next;
 	}
 	return (0);

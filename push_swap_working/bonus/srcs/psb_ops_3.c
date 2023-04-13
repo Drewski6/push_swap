@@ -58,16 +58,20 @@ int	ss_checker(t_list **a, t_list **b)
 	t_list	*p_a;
 	t_list	*p_b;
 
-	if (!(*a) || !(*b))
-		return (0);
-	p_a = (*a)->next;
-	(*a)->next = (*a)->next->next;
-	p_a->next = *a;
-	*a = p_a;
-	p_b = (*b)->next;
-	(*b)->next = (*b)->next->next;
-	p_b->next = *b;
-	*b = p_b;
+	if (*a)
+	{
+		p_a = (*a)->next;
+		(*a)->next = (*a)->next->next;
+		p_a->next = *a;
+		*a = p_a;
+	}
+	if (*b)
+	{
+		p_b = (*b)->next;
+		(*b)->next = (*b)->next->next;
+		p_b->next = *b;
+		*b = p_b;
+	}
 	return (0);
 }
 
@@ -83,18 +87,22 @@ int	rr_checker(t_list **a, t_list **b)
 	t_list	*second_b;
 	t_list	*last_b;
 
-	if (!(*a) || !(*b))
-		return (0);
-	second_a = (*a)->next;
-	last_a = ft_lstlast(*a);
-	last_a->next = (*a);
-	last_a->next->next = 0;
-	(*a) = second_a;
-	second_b = (*b)->next;
-	last_b = ft_lstlast(*b);
-	last_b->next = (*b);
-	last_b->next->next = 0;
-	(*b) = second_b;
+	if (*a)
+	{
+		second_a = (*a)->next;
+		last_a = ft_lstlast(*a);
+		last_a->next = (*a);
+		last_a->next->next = 0;
+		(*a) = second_a;
+	}
+	if (*b)
+	{
+		second_b = (*b)->next;
+		last_b = ft_lstlast(*b);
+		last_b->next = (*b);
+		last_b->next->next = 0;
+		(*b) = second_b;
+	}
 	return (0);
 }
 
@@ -108,19 +116,23 @@ int	rrr_checker(t_list **a, t_list **b)
 	t_list	*last_a;
 	t_list	*last_b;
 
-	if (!(*a) || !(*b))
-		return (0);
-	last_a = ft_lstlast(*a);
-	last_a->next = (*a);
-	(*a) = last_a;
-	while (last_a->next != *a)
-		last_a = last_a->next;
-	last_a->next = 0;
-	last_b = ft_lstlast(*b);
-	last_b->next = (*b);
-	(*b) = last_b;
-	while (last_b->next != *b)
-		last_b = last_b->next;
-	last_b->next = 0;
+	if (*a)
+	{
+		last_a = ft_lstlast(*a);
+		last_a->next = (*a);
+		(*a) = last_a;
+		while (last_a->next != *a)
+			last_a = last_a->next;
+		last_a->next = 0;
+	}
+	if (*b)
+	{
+		last_b = ft_lstlast(*b);
+		last_b->next = (*b);
+		(*b) = last_b;
+		while (last_b->next != *b)
+			last_b = last_b->next;
+		last_b->next = 0;
+	}
 	return (0);
 }
