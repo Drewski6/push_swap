@@ -127,17 +127,21 @@ static char	*clean_s_buf(char *s_buf)
  *  Uses static char buffer to keep portion after newline
  *  for next function call if needed.
  *  Checks for negative buffer size or invalid file descriptor.
+ *	User can send a file descriptor and a clear_flag.
+ *	If the clear_flag is non-zero, gnl will free the pointer at s_buf[fd].
  *  Returns malloced string from staring position to next newline
  *  in open file stream.
  */
 
-char	*get_next_line(int fd)
+char	*get_next_line(int fd, int clear_flag)
 {
 	static char	*s_buf[4096];
 	char		*buf;
 	char		*ret_str;
 	int			r_size;
 
+	if (clear_flag)
+		return (free(s_buf[fd]), NULL);
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
 	buf = malloc(BUFFER_SIZE + 1);
@@ -150,7 +154,7 @@ char	*get_next_line(int fd)
 		if (r_size <= 0)
 			break ;
 		buf[r_size] = 0;
-		s_buf[fd] = ft_strjoin(s_buf[fd], buf);
+		s_buf[fd] = ft_strjoin_gnl(s_buf[fd], buf);
 	}
 	free(buf);
 	if (r_size == -1)

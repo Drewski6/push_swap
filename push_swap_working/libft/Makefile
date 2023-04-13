@@ -62,6 +62,7 @@ BONUS_SRCS =	ft_lstnew.c \
 	ft_lstmap.c \
 
 GNL_SRCS = get_next_line_bonus.c \
+	ft_strjoin_gnl.c \
 
 FT_PRINTF_SRCS = ft_printf_bonus.c \
 	ft_printf_utils_1_bonus.c \
