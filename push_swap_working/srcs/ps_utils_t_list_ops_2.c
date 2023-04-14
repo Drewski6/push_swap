@@ -48,10 +48,10 @@ int	optimize_lst_ss(t_list **head)
 	t_list	*current;
 
 	current = *head;
-	if ((!strncmp(current->next->content, "sa\n", 3)
-			&& !strncmp(current->next->next->content, "sb\n", 3))
-		|| (!strncmp(current->next->content, "sb\n", 3)
-			&& !strncmp(current->next->next->content, "sa\n", 3)))
+	if ((!ft_strncmp(current->next->content, "sa\n", 3)
+			&& !ft_strncmp(current->next->next->content, "sb\n", 3))
+		|| (!ft_strncmp(current->next->content, "sb\n", 3)
+			&& !ft_strncmp(current->next->next->content, "sa\n", 3)))
 	{
 		if (ops_del_two_and_replace(&current, "ss\n"))
 			return (-1);
@@ -69,10 +69,10 @@ int	optimize_lst_rr(t_list **head)
 	t_list	*current;
 
 	current = *head;
-	if ((!strncmp(current->next->content, "ra\n", 3)
-			&& !strncmp(current->next->next->content, "rb\n", 3))
-		|| (!strncmp(current->next->content, "rb\n", 3)
-			&& !strncmp(current->next->next->content, "ra\n", 3)))
+	if ((!ft_strncmp(current->next->content, "ra\n", 3)
+			&& !ft_strncmp(current->next->next->content, "rb\n", 3))
+		|| (!ft_strncmp(current->next->content, "rb\n", 3)
+			&& !ft_strncmp(current->next->next->content, "ra\n", 3)))
 	{
 		if (ops_del_two_and_replace(&current, "rr\n"))
 			return (-1);
@@ -90,10 +90,10 @@ int	optimize_lst_rrr(t_list **head)
 	t_list	*current;
 
 	current = *head;
-	if ((!strncmp(current->next->content, "rra\n", 4)
-			&& !strncmp(current->next->next->content, "rrb\n", 4))
-		|| (!strncmp(current->next->content, "rrb\n", 4)
-			&& !strncmp(current->next->next->content, "rra\n", 4)))
+	if ((!ft_strncmp(current->next->content, "rra\n", 4)
+			&& !ft_strncmp(current->next->next->content, "rrb\n", 4))
+		|| (!ft_strncmp(current->next->content, "rrb\n", 4)
+			&& !ft_strncmp(current->next->next->content, "rra\n", 4)))
 	{
 		if (ops_del_two_and_replace(&current, "rrr\n"))
 			return (-1);

@@ -12,33 +12,6 @@
 
 #include "ft_printf_bonus.h"
 
-/*	*** t_flags_inspect (type flags (struct) inspect) ***
- *
- *	This is a debugging function to use to view a t_flags struct and its
- *	values.
- *	Would like to update. quick and dirty for now.....
- *	Takes a t_flags struct pointer 'seq_info'.
- *	Returns nothing.
- */
-
-void	t_flags_inspect(t_flags *seq_info)
-{
-	printf("\n");
-	printf("minus_flag:\t%d\n", seq_info->minus_flag);
-	printf("zero_flag:\t%d\n", seq_info->zero_flag);
-	printf("decimal_flag:\t%d\n", seq_info->decimal_flag);
-	printf("pound_flag:\t%d\n", seq_info->pound_flag);
-	printf("space_flag:\t%d\n", seq_info->space_flag);
-	printf("plus_flag:\t%d\n", seq_info->plus_flag);
-	printf("fs:\t\t%c\n", seq_info->fs);
-	printf("width:\t\t%ld\n", seq_info->width);
-	printf("precision:\t%ld\n", seq_info->precision);
-	printf("buf_len:\t%ld\n", seq_info->buf_len);
-	printf("buf:\t\t[%s]\n", seq_info->buf);
-	printf("\n");
-	return ;
-}
-
 /*	*** t_flags_init (type flags (struct) initializer) ***
  *
  *	Creates a new instance of t_flags struct and initializes values to 0.
