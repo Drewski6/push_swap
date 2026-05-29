@@ -7,3 +7,6 @@ push_swap_testing/data100.csv
 push_swap_testing/data500.csv
 push_swap_testing/moves.txt
 push_swap_testing/numbers.txt
+*.o
+*.a
+push_swap
